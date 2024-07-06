@@ -157,8 +157,16 @@ body{
     width: 100%;
     height: 600px;
     object-fit: fill;
+    position: relative;
     /* border: 2px solid red; */
     border-radius: 25px;
+}
+.media::-webkit-media-controls,
+.media::-webkit-media-controls-enclosure,
+.media::-webkit-media-controls-panel,
+.media::-webkit-media-controls-play-button,
+.media::-webkit-media-controls-start-playback-button {
+  display: none !important;
 }
 
 /* Swiper */
@@ -172,8 +180,8 @@ body{
     justify-content: space-between;
 }
 .Projects_Swiper h2 {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 38px;
+    font-weight: 500;
 }
 .swiper_btn_group {
     width: 7.5%;
@@ -492,3 +500,13 @@ body{
     height: 100%;
   }
  
+  .Map_container{
+    height: auto;
+    padding: 70px 0px 40px 0px;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid red;
+  }
+  .Map_container h2{
+    font-size: 38px;
+    margin-left: 180px;
+  }
