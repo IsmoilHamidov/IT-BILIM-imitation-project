@@ -1,0 +1,48 @@
+/* Project slider */
+.Projects_Swiper h2{
+    margin-bottom: 50px;
+}
+.swiper_slide{
+    width: 300px !important;
+    height: 140px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(48, 48, 48, 0.1);
+}
+.swiper_slide img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.slider-container {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.slick-slide {
+    transition: transform 0s linear;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust for right-to-left animation */
+.slider-container.rtl .slick-track {
+    animation: continuous-scroll-right 90s linear infinite; /* Adjusted for moderate speed */
+}
+
+@keyframes continuous-scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(50% + 16px)); /* Adjust distance from left slider */
+    }
+}

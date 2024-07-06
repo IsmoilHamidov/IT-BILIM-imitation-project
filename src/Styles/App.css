@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.Carsuel_box{
+    padding: 60px;
+    /* border: 2px solid red; */
+    height: 750px;
+}
+
+.slide{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid orange; */
+    position: relative;
+}
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 25px;
+}
+
+.navbar{
+    position: absolute;
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+
+.navbar-right{
+    width: 54% !important;
+    height: 44px;
+    border-bottom-left-radius: 19px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.svg{
+    position: absolute;
+    top: 0px;
+    left: 46%;
+    z-index: 3;
+}
+.svg2{
+    position: absolute;
+    top: 44px;
+    right: 0px;
+    z-index: 3;
+}
+.svg3{
+    position: absolute;
+    right: 48.57%;   
+    bottom: 0px;
+    transform: rotate(180deg);
+    z-index: 3;
+}
+.svg4{
+    position: absolute;
+    left: 0%;   
+    bottom: 54px;
+    transform: rotate(180deg);
+    z-index: 3;
+}
+.navbar-brand img{
+    width: 180px;
+    object-fit: contain;
+}
+.nav-item{
+    width: 17%;
+    height: 100%;
+    background-color: #7eb649;
+    border-radius: 15px 15px 0px 0px; 
+}
+.nav-item a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px !important;
+    color: white !important;
+}
+
+.bottom_box{
+    position: absolute;
+    background-color: white;
+    bottom: 0px;
+    height: 54px;
+    width: 50%;
+    /* border: 2px solid rgb(0, 255, 157); */
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.bottom_box button{
+    width: 23%;
+    height: 82%;
+    border: 1px solid #303030;
+    color: #303030;
+    padding: 6.4px 5px;
+    font-size: 14.5px;
+    font-weight: 500;
+    border-radius: 12px;
+    outline: none;
+    background-color: white;
+    transition: .3s ease-in
+    
+}
+.bottom_box button:hover{
+    background-color: #303030;
+    color: white;
+}
+
+.info_Project_box{
+    height: auto;
+    display: flex;
+    padding: 60px;
+}
+.info_Project_box div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+.info_Project_box div p{
+    width: 90%;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.media{
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+    /* border: 2px solid red; */
+    border-radius: 25px;
+}
+
+/* Swiper */
+.Projects_Swiper{
+    overflow: hidden;
+    padding: 70px 60px;
+}
+.swiper_top {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.Projects_Swiper h2 {
+    font-size: 39px;
+}
+.swiper_btn_group {
+    width: 7.5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.swiper_btn_group button {
+    width: 45px;
+    height: 45px;
+    background-color: #7eb649;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.swiper_btn_group button i {
+    font-size: 18px;
+}
+.swiper_bottom {
+    width: 100%;
+    height: auto;
+    margin: 35px 0px 0px 0px;
+}
+.swiper_bottom_inner {
+    display: flex;
+    column-gap: 25px;
+    transition: transform 0.5s ease; 
+}
+.swiper_bottom_Card {
+    min-width: 49%;
+    height: 530px;
+    background-color: #7eb649;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.swiper_bottom_Card img {
+    width: 100%;
+    height: 64%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.swiper_card_Images {
+    width: 100%;
+    height: 64%;
+    border-radius: 15px;
+    box-shadow: 20 50 22px rgba(0, 0, 0, 0.807) inset;
+}
+.swiper_card_Images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.swiper_bottom_Card p {
+    font-size: 16px;
+    margin: 0px 0px 15px 0px;
+    line-height: 23px;
+}
+.swiper_bottom_Card a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.swiper_bottom_Card a i {
+    transition: transform 0.3s ease;
+}
+.swiper_bottom_Card a:hover i {
+    transform: translateX(8px);
+}
+
+.Courses_card_box{
+    width: 100%;
+    height: auto;
+    margin: 35px 0px 0px 0px;
+}
+
+.Course_cards{
+    width: 33%;
+    height: 650px;
+    background-color: white;
+    border-radius: 15px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+.Course_cards:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.Course_cards p{
+    margin: 0px;
+}
+
+.Course_cards img{
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.Line_holder{
+    height: 333px;
+    display: grid;
+    padding: 20px;
+}
+.first_line_text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.first_line_text p{
+    font-size: 20px;
+}
+
+.grey_text{
+    color: #a4a4a4;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.second_line_text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.second_line_text div{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 7px 10px 0px;
+}
+.second_line_text div p{
+    font-weight: 400;
+    font-size: 17px;
+}
+.second_line_text div h5{
+    font-size: 17.5px;
+    font-weight: 600;
+}
+
+.Data_numbers_box{
+    height: auto;
+    padding: 70px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #7065f0;
+}
+.numbers{
+    width: 320px;
+    height: 170px;
+    max-height: 210px;
+    color: white;
+    display: grid;
+    align-content: center;
+    row-gap: 15px;
+}
+.numbers h3{
+    font-size: 58px;
+    font-weight: 400;
+    margin: 0px;
+}
+.numbers p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.IT_bilim_holder{
+    height: auto;
+}
+.IT_bilim_holder div{
+    padding: 60px;
+    height: 300px;
+    max-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.IT_bilim_holder h2{
+    width: 50%;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 45px;
+} 
+.IT_bilim_holder a{
+    font-size: 38px;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+.IT_bilim_holder a:hover{
+    text-decoration: underline;
+}
