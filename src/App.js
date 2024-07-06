@@ -9,6 +9,7 @@ import Top_courses from './Components/Top_Courses';
 import Data_Numbes from './Components/Data_numbers';
 import Partnership from './Components/Partnership';
 import IT_Bilim from './Components/@IT_bilim';
+import Video_Card from './Components/Video_Card';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Data_Numbes/>
           <Partnership/>
           <IT_Bilim/>
+          <Video_Card/>
         </h1>
     </div>
   );
