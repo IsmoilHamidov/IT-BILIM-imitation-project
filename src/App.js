@@ -11,7 +11,8 @@ import Partnership from './Components/Partnership';
 import IT_Bilim from './Components/@IT_bilim';
 import Video_Card from './Components/Video_Card';
 import Video_ads from './Components/Video_ads';
-import Map from './Components/Map';
+import MapComponent from './Components/Map';
+import Footer from './Components/Footer';
 
 
 
@@ -20,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-        <h1 className="text-3xl font-bold underline text-red-600">
           <Introduction/>
           <Info_Project/>
           <Carusel_ads/>
@@ -31,8 +31,8 @@ function App() {
           <IT_Bilim/>
           <Video_Card/>
           <Video_ads/>
-          <Map/>
-        </h1>
+          <MapComponent/>
+          <Footer/>
     </div>
   );
 }

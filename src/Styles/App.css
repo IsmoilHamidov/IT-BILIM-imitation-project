@@ -343,13 +343,13 @@ body{
     height: auto;
     padding: 70px 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: #7065f0;
 }
 .numbers{
-    width: 320px;
+    width: 30%;
     height: 170px;
     max-height: 210px;
     color: white;
@@ -363,7 +363,7 @@ body{
     margin: 0px;
 }
 .numbers p{
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -502,11 +502,103 @@ body{
  
   .Map_container{
     height: auto;
-    padding: 70px 0px 40px 0px;
+    padding: 70px 0px 0px 0px;
     background-color: rgb(243, 243, 243);
-    border: 2px solid red;
   }
   .Map_container h2{
-    font-size: 38px;
-    margin-left: 180px;
+    font-size: 39px;
+    font-weight: 500;
+    margin: 0px 0px 40px 250px;
   }
+
+  .Footer{
+    width: 100%;
+    height: auto;
+    padding: 30px ;
+    background-color: #303030;
+  }
+
+  .footer_left{
+    height: 914px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+  }
+  .footer_left img{
+    width: 185px;
+    height: 65px;
+    object-fit: contain;
+  }
+  .footer_left_Info{
+    width: 100%;
+    height: auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    list-style-type: none;
+  }
+  .f_white_text{
+    color: white;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px ;
+  }
+  .f_grey_box{
+    width: 100%;
+    color: #a4a4a4;
+    font-weight: 400;
+  }
+  .f_grey_box p{
+    margin: 0px;
+    font-size: 18px;
+  }
+  .f_grey_box a{
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #a4a4a4 ; 
+    margin-bottom: 11px;
+    transition: .2s ease-in-out;
+  }
+  .f_grey_box a:hover{
+    color: #7eb649;
+  }
+  .Icons_box{
+    width: 49%;
+    height: auto;
+    border: 2px solid aqua;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Icons_box div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+  }
+  .Icons_box div img{
+    width: 20px;
+    height: 20px;
+  }
+  .Icons_box div:hover{
+    background-color: #7eb649;
+  }
+  .Icons_box div:hover img{
+    filter: invert(1); 
+  }
+  .Email_box{
+    width: 100%;
+    border: 1px solid rebeccapurple;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
