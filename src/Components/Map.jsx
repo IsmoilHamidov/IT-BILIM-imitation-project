@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const MapComponent = () => {
+  const mapRef = useRef(null);
+
   const mapData = {
     center: [41.2995, 69.2401],
     zoom: 12,
@@ -12,14 +14,28 @@ const MapComponent = () => {
     yandexMapDisablePoiInteractivity: true,
   };
 
-  const blackWhiteStyle = [
-    {
-      featureType: 'all',
-      stylers: [{ saturation: -100 }, { lightness: 50 }],
-    },
-  ];
-
   const coordinates = [41.2995, 69.2401];
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (!e.get('domEvent').shiftKey) {
+        e.preventDefault(); // Prevent zooming if Shift key is not held down
+      }
+    };
+
+    const map = mapRef.current;
+    if (map) {
+      map.behaviors.disable('scrollZoom');
+      map.events.add('wheel', handleWheel);
+      map.behaviors.enable('scrollZoom', { key: 'shift' });
+    }
+
+    return () => {
+      if (map) {
+        map.events.remove('wheel', handleWheel);
+      }
+    };
+  }, []);
 
   return (
     <div className='container-fluid Map_container'>
@@ -29,14 +45,11 @@ const MapComponent = () => {
           defaultState={mapData}
           width="100%"
           height="500px"
-          options={{ ...mapOptions, ...blackWhiteStyle }}
-          modules={['control.ZoomControl', 'control.FullscreenControl']}
+          options={mapOptions}
           instanceRef={(map) => {
-            if (map) {
-              map.behaviors.disable('scrollZoom');
-              map.behaviors.enable('scrollZoom', { key: 'shift' });
-            }
+            mapRef.current = map;
           }}
+          modules={['control.ZoomControl', 'control.FullscreenControl']}
         >
           <Placemark
             geometry={coordinates}

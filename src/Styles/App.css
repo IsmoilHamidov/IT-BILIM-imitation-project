@@ -12,7 +12,7 @@ body{
     font-weight: 300;
 }
 .Carsuel_box{
-    padding: 60px;
+    padding: 60px 20px;
     /* border: 2px solid red; */
     height: 750px;
 }
@@ -22,13 +22,27 @@ body{
     height: auto;
     /* border: 2px solid orange; */
     position: relative;
+    z-index: 10;
 }
+.Logo{
+    width: 200px;
+    height: 75px;
+    left:3%;
+    top: 3%;
+    position: absolute;
+    object-fit: contain;
+    z-index: 15;
+    filter: contrast(120%); ;
+}
+
 .carousel-item img{
     width: 100%;
-    height: 600px;
+    height: 650px;
     object-fit: cover;
     position: relative;
     border-radius: 25px;
+    filter: brightness(70%);
+
 }
 
 .navbar{
@@ -45,19 +59,46 @@ body{
 }
 
 .navbar-right{
-    width: 54% !important;
-    height: 44px;
-    border-bottom-left-radius: 19px;
+    width: 52% !important;
+    height: 45px;
+    border-bottom-left-radius: 27px;
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    column-gap: 13px;
 }
 
+.navbar-brand img{
+    width: 180px;
+    object-fit: contain;
+}
+.nav-item{
+    height: 100%;
+    padding: 0px 18px;
+    min-width: auto; /* Minimum width */
+    max-width: 260px;
+    background-color: #7eb649;
+    border-radius: 22px 22px 0px 0px; 
+}
+.nav-item a{
+    width: 100%;
+    height: 100%;
+    flex: 0 1 auto;
+    height: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px !important;
+    color: white !important;
+}
 .svg{
     position: absolute;
     top: 0px;
-    left: 46%;
+    left: 48%;
     z-index: 3;
 }
 .svg2{
@@ -68,7 +109,7 @@ body{
 }
 .svg3{
     position: absolute;
-    right: 48.57%;   
+    right: 43.70%;   
     bottom: 0px;
     transform: rotate(180deg);
     z-index: 3;
@@ -76,53 +117,30 @@ body{
 .svg4{
     position: absolute;
     left: 0%;   
-    bottom: 54px;
+    bottom: 60px;
     transform: rotate(180deg);
     z-index: 3;
 }
-.navbar-brand img{
-    width: 180px;
-    object-fit: contain;
-}
-.nav-item{
-    width: 17%;
-    height: 100%;
-    background-color: #7eb649;
-    border-radius: 15px 15px 0px 0px; 
-}
-.nav-item a{
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px !important;
-    color: white !important;
-}
-
 .bottom_box{
     position: absolute;
     background-color: white;
     bottom: 0px;
-    height: 54px;
-    width: 50%;
+    height: 60px;
+    width: 55%;
     /* border: 2px solid rgb(0, 255, 157); */
     border-top-right-radius: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: end;
+    column-gap: 14px;
 }
 .bottom_box button{
-    width: 23%;
+    width: 22%;
     height: 82%;
     border: 1px solid #303030;
     color: #303030;
-    padding: 6.4px 5px;
-    font-size: 14.5px;
+    padding: 2px;
+    font-size: 16px;
     font-weight: 500;
     border-radius: 12px;
     outline: none;
@@ -138,7 +156,7 @@ body{
 .info_Project_box{
     height: auto;
     display: flex;
-    padding: 60px;
+    padding: 60px 20px;
 }
 .info_Project_box div{
     height: auto;
@@ -146,11 +164,15 @@ body{
     flex-direction: column;
     row-gap: 13px;
 }
+.info_Project_box h2{
+    font-size: 38px;
+    font-weight: 400;
+}
 .info_Project_box div p{
     width: 90%;
-    font-size: 16px; 
+    font-size: 17px; 
     font-weight: 400;
-    line-height: 25px;
+    line-height: 26px;
 }
 
 .media{
@@ -172,7 +194,7 @@ body{
 /* Swiper */
 .Projects_Swiper{
     overflow: hidden;
-    padding: 70px 60px;
+    padding: 70px 20px;
 }
 .swiper_top {
     height: 50px;
@@ -214,7 +236,7 @@ body{
 }
 .swiper_bottom_Card {
     min-width: 49%;
-    height: 530px;
+    height: 570px;
     background-color: #7eb649;
     padding: 30px;
     border-radius: 10px;
@@ -227,7 +249,7 @@ body{
 }
 .swiper_bottom_Card img {
     width: 100%;
-    height: 64%;
+    height: 62%;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -242,6 +264,10 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+.swiper_bottom_Card h2{
+    font-size: 35px;
+    font-weight: 400;
 }
 .swiper_bottom_Card p {
     font-size: 16px;
@@ -259,6 +285,8 @@ body{
 .swiper_bottom_Card a:hover i {
     transform: translateX(8px);
 }
+
+
 
 .Courses_card_box{
     width: 100%;
@@ -372,7 +400,7 @@ body{
     height: auto;
 }
 .IT_bilim_holder div{
-    padding: 60px;
+    padding: 60px 20px;
     height: 300px;
     max-height: 400px;
     display: flex;
@@ -380,8 +408,8 @@ body{
     align-items: center;
 }
 .IT_bilim_holder h2{
-    width: 50%;
-    font-size: 38px;
+    width: 40%;
+    font-size: 40px;
     font-weight: 400;
     line-height: 45px;
 } 
@@ -398,7 +426,7 @@ body{
 .Video_Card{
     width: 100%;
     height: auto;
-    padding: 70px 60px;
+    padding: 70px 20px;
 }
 .card {
     width: 33%;
@@ -514,26 +542,28 @@ body{
   .Footer{
     width: 100%;
     height: auto;
-    padding: 30px ;
+    padding: 30px 25px 0px 25px;
     background-color: #303030;
   }
-
+    .footer_top{
+        height: auto;
+        display: flex;
+    }
   .footer_left{
-    height: 914px;
+    height: auto;
     width: 30%;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
   }
   .footer_left img{
-    width: 185px;
-    height: 65px;
+    width: 195px;
+    height: 75px;
     object-fit: contain;
   }
   .footer_left_Info{
     width: 100%;
     height: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     margin-top: 35px;
@@ -541,8 +571,8 @@ body{
   }
   .f_white_text{
     color: white;
-    font-size: 20px;
-    margin: 0px 0px 15px 0px ;
+    font-size: 19px !important;
+    margin: 0px 0px 20px 0px !important;
   }
   .f_grey_box{
     width: 100%;
@@ -567,8 +597,8 @@ body{
   .Icons_box{
     width: 49%;
     height: auto;
-    border: 2px solid aqua;
-    margin-top: 25px;
+    /* border: 2px solid aqua; */
+    margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -595,10 +625,127 @@ body{
   }
   .Email_box{
     width: 100%;
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
     height: auto;
     display: flex;
     flex-direction: column;
     color: white;
   }
-  
+  .Email_box input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 0px 10px 20px;
+    border-bottom: 2px solid #a4a4a4 ;;
+    color: #a4a4a4 ;
+  }
+  .Email_box input::placeholder{
+    color: #a4a4a4;
+    font-size: 18px;
+  }
+  .Email_box div{
+    width: 100%;
+    color: #a4a4a4;
+    font-weight: 400;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+  }
+  .Email_box div input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    outline: none;
+    border: 1.5px solid #a4a4a4;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.Email_box div input[type="checkbox"]:checked {
+    background-color: #a4a4a4;
+}
+.Email_box div input[type="checkbox"]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.Email_box div span{
+    width: 90%;
+    font-size: 18px;
+}
+.Email_box div span a{
+    color: #a4a4a4;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .2s ease-in-out;
+    margin: 0px 5px;
+}
+.Email_box div span a:hover{
+    text-decoration: none;
+}
+.Email_box button{
+    width: 25%;
+    height: 45px;
+    color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+.Email_box button:hover{
+    background-color: #a4a4a4;
+    color: #303030;
+}
+.footer_right{
+    width: 70%;
+    height: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_right_child{
+    width: 33%;
+    min-width: 300px;
+    /* border: 2px solid forestgreen; */
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.footer_right_child span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #a4a4a4;
+    margin-bottom: 35px;
+}
+
+.Footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid #a4a4a4;
+    margin-top: 50px;
+    color: #a4a4a4;
+    font-weight: 400;
+}
+.Footer_bottom span{
+    font-size: 18px;
+}
+.Footer_bottom a{
+    color: white;
+    font-size: 18px;
+    margin-left: 5px;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+.Footer_bottom a:hover{
+    text-decoration: underline;
+}

@@ -3,6 +3,7 @@ import japan from "../Assets/40b396321a69.jpg"
 import partnership from "../Assets/download.jpg"
 import team from "../Assets/7ea5fe56831c.jpg"
 import It_bilim from "../Assets/b6d6df6722ad.png"
+import IT_bilim_logo from "../Assets/logo1_uz.svg"
 
 
 
@@ -13,7 +14,8 @@ function Introduction() {
 
     return ( 
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="700">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="650">
+                <img src={IT_bilim_logo} alt="IT bilim logo" className="Logo" />
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src={partnership}  alt="..."/>
@@ -111,7 +113,7 @@ function Introduction() {
                     <button>Maqsadli qarz</button>
                     <button>Hamkorlar</button>
                     <button>Bilgi.uz</button>
-                    <button>IT bilim akademyasi</button>
+                    <button>IT bilim JAPAN</button>
                 </div>
 
                 
