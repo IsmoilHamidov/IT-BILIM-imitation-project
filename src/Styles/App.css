@@ -334,28 +334,23 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 2px solid red;
+    row-gap: 25px;
 }
 
 .Course_cards{
-    width: 33%;
-    height: 650px;
+    width: 32%;
+    height: auto;
     background-color: white;
     border-radius: 15px;  
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
-    display: inline-block;
     text-decoration: none;
     color: black;
     outline: none;
 }
 .Course_cards:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     color: black;
-}
-.Course_cards p{
-    margin: 0px;
 }
 
 .Course_cards img{
@@ -365,49 +360,63 @@ body{
     border-radius: 15px;
 }
 .Line_holder{
-    height: 333px;
+    height: auto;
     display: grid;
-    padding: 20px;
+    padding: 30px;
 }
 .first_line_text{
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     font-size: 30px;
-    margin-bottom: 10px;
 }
 .first_line_text p{
+    width: auto;
+    height: auto;
     font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.first_line_text p:nth-child(2){    
+    text-align: end;
+    margin-left: 15px;
 }
 
 .grey_text{
+    height: 40px;
     color: #a4a4a4;
-    font-size: 21px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .second_line_text{
     width: 100%;
-    height: auto;
+    height: 140px;
     display: flex;
     justify-content: space-between;   
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
 .second_line_text div{
-    font-size: 18px;
+    width: auto;
     display: flex;
     flex-direction: column;
     margin: 0px 7px 10px 0px;
 }
 .second_line_text div p{
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
 }
 .second_line_text div h5{
-    font-size: 17.5px;
+    font-size: 19px;
     font-weight: 600;
 }
+
+/* .Line_holder span{
+    height: 50px;
+} */
 
 .Data_numbers_box{
     height: auto;

@@ -2,8 +2,9 @@
 .Projects_Swiper h2{
     margin-bottom: 50px;
 }
+
 .swiper_slide{
-    width: 90% !important;
+    width: 70% !important;
     height: 140px;
     background-color: white;
     padding: 10px;
@@ -17,8 +18,8 @@
 }
 .slider-container {
     width: 100%;
-    margin-top: 25px;
-}
+    margin-top: 25px; 
+}   
 
 .slick-slide {
     transition: transform 0s linear;
