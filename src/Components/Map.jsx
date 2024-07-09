@@ -19,7 +19,7 @@ const MapComponent = () => {
   useEffect(() => {
     const handleWheel = (e) => {
       if (!e.get('domEvent').shiftKey) {
-        e.preventDefault(); // Prevent zooming if Shift key is not held down
+        e.preventDefault();
       }
     };
 

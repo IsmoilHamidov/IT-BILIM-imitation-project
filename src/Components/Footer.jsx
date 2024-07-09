@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import IT_bilim_logo from "../Assets/logo_white_uz.svg"
 
+
+
 function Footer() {
+   
+    const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(true);
+  const [tooltipMessage, setTooltipMessage] = useState('');
+
+  const handleEmailChange = (event) => {
+    const { value } = event.target;
+    setEmail(value);
+
+    const isValid = validateEmail(value);
+    setIsValidEmail(isValid);
+
+    if (!isValid) {
+      setTooltipMessage("Elektron pochtani to'g'ri kiriting");
+    } else {
+      setTooltipMessage('');
+    }
+  };
+
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  const handleBlur = () => {
+    if (!isValidEmail && email.trim().length === 0) {
+      setTooltipMessage("To'ldirish uchub majburiydir");
+    }
+  };
+        
+
     return ( 
     <>
         <div className="Footer">
@@ -43,8 +76,26 @@ function Footer() {
                             </div>
                         </div>
                         <form className="Email_box">
-                            <p className="f_white_text">Bizni kuzatib boring    </p>
-                            <input type="email" placeholder="Email" required/>
+                                <p className="f_white_text">Bizni kuzatib boring</p>
+                                <input
+                                type="email"
+                                className={`form-control ${(!isValidEmail || tooltipMessage) ? 'is-invalid' : ''}`}
+                                id="email"
+                                placeholder="Enter email"
+                                value={email}
+                                style={{backgroundColor:"transparent"}}
+                                onChange={handleEmailChange}
+                                onBlur={handleBlur}
+                                required
+                                />
+                                {!isValidEmail && (
+                                <span className="invalid-feedback"></span>
+                                )}
+                                {tooltipMessage && (
+                                <span className="invalid-feedback">{tooltipMessage}</span>
+                                )}
+
+
                             <div> 
                                 <input class="form-check-input me-3" type="checkbox"/>
                                 <span> Men<a href="https://it-bilim.uz/maxfiylik-siyosati/">

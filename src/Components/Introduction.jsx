@@ -8,6 +8,7 @@ import IT_bilim_logo from "../Assets/logo1_uz.svg"
 
 
 
+
 function Introduction() {
 
 
@@ -87,19 +88,19 @@ function Introduction() {
                             <ul class="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Biz haqimizda</a>
+                                    <a class="nav-link clip-path" aria-current="page" href="#">Biz haqimizda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navItem_Link" href="#">Loyhalar </a>
+                                    <a class="nav-link clip-path" href="#">Loyhalar </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navItem_Link" href="#">Kurslar </a>
+                                    <a class="nav-link " href="#">Kurslar </a>
                                 </li>
                                 <li class="nav-item">     
-                                    <a class="nav-link navItem_Link" href="#">Hamkorlar </a>
+                                    <a class="nav-link " href="#">Hamkorlar </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navItem_Link" href="#">Kontaktlar </a>
+                                    <a class="nav-link " href="#">Kontaktlar </a>
                                 </li>
 
                             </ul>
@@ -117,7 +118,9 @@ function Introduction() {
                 </div>
 
                 
+           
             </div>
+
         </div>
      );
 }
