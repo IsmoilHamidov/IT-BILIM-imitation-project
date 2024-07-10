@@ -4,6 +4,7 @@ import Info_Project from './Components/Info_about_project';
 import Introduction from './Components/Introduction';
 import './Styles/App.css';
 import "./Styles/Slider.css";
+import './Styles/Responsive.css';
 import SwiperSlider from './Components/Swiper';
 import Top_courses from './Components/Top_Courses';
 import Data_Numbes from './Components/Data_numbers';
@@ -29,16 +30,16 @@ function App() {
     <div className="App">
           <Introduction/>
           <Info_Project/>
-          <Carusel_ads/>
-          <SwiperSlider/>
-          <Top_courses/>
+          {/* <Carusel_ads/> */}
+          {/* <SwiperSlider/> */}
+          {/* <Top_courses/>
           <Data_Numbes/>
           <Partnership/>
           <IT_Bilim/>
           <Video_Card/>
           <Video_ads/>
           <MapComponent/>
-          <Footer/>
+          <Footer/> */}
     </div>
   );
 }

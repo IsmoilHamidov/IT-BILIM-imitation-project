@@ -2,7 +2,8 @@ import React from "react";
 import japan from "../Assets/40b396321a69.jpg"
 import partnership from "../Assets/download.jpg"
 import team from "../Assets/7ea5fe56831c.jpg"
-import It_bilim from "../Assets/b6d6df6722ad.png"
+// import It_bilim from "../Assets/b6d6df6722ad.png"
+import bilgi from "../Assets/bilgi_img.jpg"
 import IT_bilim_logo from "../Assets/logo1_uz.svg"
 
 
@@ -28,7 +29,7 @@ function Introduction() {
                         <img src={team}  alt="..."/>
                     </div>
                     <div class="carousel-item">
-                        <img src={It_bilim}  alt="..."/>
+                        <img src={bilgi}  alt="..."/>
                     </div>
                     <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg">
                         <g clip-path="url(#clip0_645_123)">
@@ -80,18 +81,58 @@ function Introduction() {
                         <a class="navbar-brand" href="#">
                             {/* <img src="https://it-bilim.uz/themes/assets/images/icons/logo/logo_uz.svg"/> */}
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler">
+                            <div class="burger"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <div className="w-50"></div>
+                                <div className="w-75"></div>
+                                <div className="w-25"></div>         
+                            </div>
                         </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header d-flex align-items-start">
+                                    <img src={IT_bilim_logo} alt="" className="canvas_img" />
+                                    <i class="fa-solid fa-xmark text-white h-auto" data-bs-dismiss="offcanvas" aria-label="Close" style={{fontSize: "30px"}}></i>
+                                </div>
+                                <div class="offcanvas-body">
+                                   <div className="canvas_navs">
+                                    <a  aria-current="page" href="#">Biz haqimizda</a>
+                                    <a  href="#">Loyhalar </a>
+                                    <a  href="#">Kurslar </a>
+                                    <a  href="#">Hamkorlar </a>
+                                    <a  href="#">Kontaktlar </a>
+                                   </div>
+
+                                   <a href="https://it-bilim.uz/tel:+998993301199" target="_"  className="offcanvas_apply">
+                                        <span ><i class="fa-solid fa-phone"></i></span>
+                                        +998 (99) 330 11 99
+                                   </a>
+                                   <a href="mailto:info@it-bilim.uz" target="_" className="offcanvas_apply">
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                        info@it-bilim.uz
+                                   </a>
+
+                                   <a href="mailto:info@it-bilim.uz" target="_" className="offcanvas_apply mt-4">
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/tg.svg" alt="telegram" /></span>
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/inst.svg" alt="instagram" /></span>
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/facebook.svg" alt="facebook"/> </span>
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/youtube.svg" alt="youtube"/></span>
+                                   </a>
+                                   
+                                </div>
+                            </div>
+                           
+
+
                         <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
 
                             <ul class="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link clip-path" aria-current="page" href="#">Biz haqimizda</a>
+                                    <a class="nav-link " aria-current="page" href="#">Biz haqimizda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link clip-path" href="#">Loyhalar </a>
+                                    <a class="nav-link" href="#">Loyhalar </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="#">Kurslar </a>
@@ -110,7 +151,7 @@ function Introduction() {
                 </nav>
 
 
-                <div className="bottom_box">
+                <div className="bottom_box d-none d-lg-flex">
                     <button>Maqsadli qarz</button>
                     <button>Hamkorlar</button>
                     <button>Bilgi.uz</button>
