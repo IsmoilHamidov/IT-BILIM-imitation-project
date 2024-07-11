@@ -41,10 +41,8 @@ const MapComponent = () => {
     <div className='container-fluid Map_container'>
       <h2>Bizni qanday topish mumkin</h2>
       <YMaps query={{ lang: 'en_RU', load: 'package.full' }}>
-        <Map
+        <Map className='Map_size'
           defaultState={mapData}
-          width="100%"
-          height="500px"
           options={mapOptions}
           instanceRef={(map) => {
             mapRef.current = map;

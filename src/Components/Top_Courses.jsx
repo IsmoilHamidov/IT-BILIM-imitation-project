@@ -102,8 +102,8 @@ function TopCourses() {
                   <h5>{info.price2}</h5>
                 </div>
               </div>
-              <span style={{ fontSize: "18px", fontWeight: "600" }}>
-                <i className="fa-regular fa-clock me-2" style={{ color: "#7eb649", fontSize: "19px" }}></i>{info.duration}
+              <span style={{fontWeight: "600" }}>
+                <i className="fa-regular fa-clock me-2" style={{ color: "#7eb649"}}></i>{info.duration}
               </span>
             </div>
           </a>

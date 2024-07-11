@@ -19,7 +19,7 @@ function Carusel_ads() {
                         <source src={ThisVideo} type="video/mp4"/>
                     </video>
                     
-                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg">
+                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg d-none d-md-block">
                         <g clip-path="url(#clip0_645_123)">
                             <path d="M50 0H0C38.8 1.2 49.5 33.8333 50 50V0Z" fill="white"></path>
                         </g>
@@ -31,7 +31,7 @@ function Carusel_ads() {
                     </svg>
                     
               
-                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg2">
+                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg2 d-none d-md-block">
                         <g clip-path="url(#clip0_645_123)">
                             <path d="M50 0H0C38.8 1.2 49.5 33.8333 50 50V0Z" fill="white"></path>
                         </g>
@@ -45,7 +45,7 @@ function Carusel_ads() {
            
 
               
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-flex">
                     <div class="container-fluid p-0 ps-4">
                         <a class="navbar-brand" href="#">
                             {/* <img src="https://it-bilim.uz/themes/assets/images/icons/logo/logo_uz.svg"/> */}

@@ -30,16 +30,16 @@ function App() {
     <div className="App">
           <Introduction/>
           <Info_Project/>
-          {/* <Carusel_ads/> */}
-          {/* <SwiperSlider/> */}
-          {/* <Top_courses/>
+          <Carusel_ads/>
+          <SwiperSlider/>
+          <Top_courses/>
           <Data_Numbes/>
           <Partnership/>
           <IT_Bilim/>
           <Video_Card/>
           <Video_ads/>
           <MapComponent/>
-          <Footer/> */}
+          <Footer/>
     </div>
   );
 }

@@ -31,7 +31,7 @@ body{
     top: 3%;
     position: absolute;
     object-fit: contain;
-    z-index: 15;
+    z-index: 5;
     filter: contrast(120%); ;
 }
 
@@ -53,6 +53,7 @@ body{
     justify-content: start;
     align-items: start;
     padding: 0px !important;
+    overflow: hidden;
     background-color: transparent !important;
 }
 
@@ -65,7 +66,14 @@ body{
     justify-content: center;
     column-gap: 13px;
 }
-
+.navbar-toggler{
+    height: 55px;
+    width: 39%;
+    background-color: white;
+    border-radius: 0px 0px 0px 32px;
+    z-index: 8;
+    border: none !important;
+}
 .navbar-brand img{
     width: 180px;
     object-fit: contain;
@@ -140,7 +148,7 @@ body{
 }
 .burger div{
     width: 5%;
-    height: 3.2px;
+    height: 3.3px;
     background-color: #303030;
     border-radius: 5px;
 }
@@ -158,7 +166,8 @@ body{
     height: auto;
     display: flex;
     flex-direction: column; 
-    row-gap: 17px;
+    align-items: start;
+    row-gap: 25px;
     margin-top: 30px;
     margin-bottom: 90px;
 }
@@ -198,10 +207,6 @@ body{
     object-fit: contain;
     filter: invert(57%) sepia(24%) saturate(872%) hue-rotate(48deg) brightness(108%) contrast(95%);
 }
-
-
-
-
 
 .svg{
     position: absolute;
@@ -261,6 +266,7 @@ body{
     color: white;
 }
 
+
 .info_Project_box{
     height: auto;
     display: flex;
@@ -271,6 +277,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 13px;
+    padding: 0px !important;
 }
 .info_Project_box h2{
     font-size: 38px;
@@ -288,7 +295,6 @@ body{
     height: 600px;
     object-fit: fill;
     position: relative;
-    /* border: 2px solid red; */
     border-radius: 25px;
 }
 .media::-webkit-media-controls,
@@ -298,102 +304,6 @@ body{
 .media::-webkit-media-controls-start-playback-button {
   display: none !important;
 }
-
-/* Swiper */
-.Projects_Swiper{
-    overflow: hidden;
-    padding: 70px 20px;
-}
-.swiper_top {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.Projects_Swiper h2 {
-    font-size: 40px;
-    font-weight: 500;
-}
-.swiper_btn_group {
-    width: 7.5%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.swiper_btn_group button {
-    width: 45px;
-    height: 45px;
-    background-color: #7eb649;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    text-align: center;
-}
-
-.swiper_btn_group button i {
-    font-size: 18px;
-}
-.swiper_bottom {
-    width: 100%;
-    height: auto;
-    margin: 35px 0px 0px 0px;
-}
-.swiper_bottom_inner {
-    display: flex;
-    column-gap: 25px;
-    transition: transform 0.5s ease; 
-}
-.swiper_bottom_Card {
-    min-width: 49%;
-    height: 570px;
-    background-color: #7eb649;
-    padding: 30px;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-weight: 400;
-    box-sizing: border-box;
-}
-.swiper_bottom_Card img {
-    width: 100%;
-    height: 62%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-.swiper_card_Images {
-    width: 100%;
-    height: 64%;
-    border-radius: 15px;
-    box-shadow: 20 50 22px rgba(0, 0, 0, 0.807) inset;
-}
-.swiper_card_Images img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-.swiper_bottom_Card h2{
-    font-size: 35px;
-    font-weight: 400;
-}
-.swiper_bottom_Card p {
-    font-size: 16px;
-    margin: 0px 0px 15px 0px;
-    line-height: 23px;
-}
-.swiper_bottom_Card a {
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-}
-.swiper_bottom_Card a i {
-    transition: transform 0.3s ease;
-}
-.swiper_bottom_Card a:hover i {
-    transform: translateX(8px);
-}
-
 
 
 .Courses_card_box{
@@ -648,6 +558,7 @@ body{
     height: 100%;
   }
  
+
   .Map_container{
     height: auto;
     padding: 70px 0px 0px 0px;
@@ -658,17 +569,21 @@ body{
     font-weight: 500;
     margin: 0px 0px 40px 250px;
   }
-
+  .Map_size{
+    width: 100%;
+    height: 500px;
+  }
   .Footer{
     width: 100%;
     height: auto;
-    padding: 30px 25px 0px 25px;
+    padding: 30px 25px 30px 25px;
     background-color: #303030;
   }
-    .footer_top{
-        height: auto;
-        display: flex;
-    }
+  .footer_top{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
   .footer_left{
     height: auto;
     width: 30%;
@@ -721,7 +636,7 @@ body{
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
-    justify-content: space-between;
+    column-gap: 10px;
   }
   .Icons_box div{
     width: 40px;
@@ -773,7 +688,6 @@ body{
     height: auto;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     margin: 25px 0px;
   }
   .Email_box div input[type="checkbox"] {
@@ -823,10 +737,10 @@ body{
     background-color: #a4a4a4;
     color: #303030;
 }
+
 .footer_right{
     width: 70%;
     height: auto;
-    /* border: 2px solid blue; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -851,14 +765,16 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 120px;
+    height: auto;
     border-top: 1px solid #a4a4a4;
     margin-top: 50px;
     color: #a4a4a4;
     font-weight: 400;
+    padding: 30px 0px
 }
 .Footer_bottom span{
     font-size: 18px;
+    margin-bottom: 17px;
 }
 .Footer_bottom a{
     color: white;

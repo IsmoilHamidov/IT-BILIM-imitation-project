@@ -81,14 +81,13 @@ function Introduction() {
                         <a class="navbar-brand" href="#">
                             {/* <img src="https://it-bilim.uz/themes/assets/images/icons/logo/logo_uz.svg"/> */}
                         </a>
-                        <button class="navbar-toggler">
+                        <button class="navbar-toggler" style={{outline:"none"}}>
                             <div class="burger"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <div className="w-50"></div>
                                 <div className="w-75"></div>
                                 <div className="w-25"></div>         
                             </div>
-                        </button>
-
+                            
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header d-flex align-items-start">
                                     <img src={IT_bilim_logo} alt="" className="canvas_img" />
@@ -121,6 +120,8 @@ function Introduction() {
                                    
                                 </div>
                             </div>
+                        </button>
+
                            
 
 

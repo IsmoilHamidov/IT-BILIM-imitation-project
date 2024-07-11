@@ -81,7 +81,7 @@ function Footer() {
                                 type="email"
                                 className={`form-control ${(!isValidEmail || tooltipMessage) ? 'is-invalid' : ''}`}
                                 id="email"
-                                placeholder="Enter email"
+                                placeholder="Email"
                                 value={email}
                                 style={{backgroundColor:"transparent"}}
                                 onChange={handleEmailChange}
