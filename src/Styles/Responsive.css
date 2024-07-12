@@ -421,7 +421,7 @@
     }
     .navbar-toggler{
         height: 55px;
-        width: 22%;
+        width: 16%;
         background-color: white;
         border-radius: 0px 0px 0px 32px;
         z-index: 8;
@@ -430,7 +430,7 @@
     .svg{
         position: absolute;
         top: 0px;
-        left: 76.1%;
+        left: 81.8%;
         z-index: 7;
         /* border: 1px solid red; */
     }
@@ -488,10 +488,9 @@
         margin-top: 10px;
     }
     .swiper_bottom_Card{
-        min-width: 50%;
+        min-width: 48%;
         height: 400px;
         padding: 20px;
-        row-gap: 15px;
     }
     .swiper_bottom_Card img{
         width: 100%;
@@ -588,7 +587,7 @@
         height: auto;
     }
     .numbers h3{
-        font-size: 34px;
+        font-size: 38px;
         font-weight: 400;
         margin: 0px;
     }
@@ -635,13 +634,13 @@
     }
  
     .card {
-        width: 100%;
-        height: 315px;
+        width: 50%;
+        height: 335px;
         position: relative;
       }
     .card img{
         width: 100%;
-        height: 50%;
+        height: 57%;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
         z-index: 5;
@@ -650,7 +649,7 @@
       }
     .black_box{
         width: 100%;
-        height: 170px;
+        height: 150px;
         max-height: 500px;
         font-size: 18px;
         overflow: hidden; 
@@ -746,7 +745,7 @@
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 42%;
+        width: 28%;
         font-size: 16px;
     }
     .footer_right{

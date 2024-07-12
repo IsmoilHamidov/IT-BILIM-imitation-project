@@ -8,8 +8,10 @@ import pearson from "../Assets/pearson_img.png";
 
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
-  const totalCards = 3;
-  const cardWidth = 100; // Each card takes 100% of the container width
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  const totalCards = 6;
+  const cardWidth = isMobile ? 110 : 40.33; // Each card takes 100% on mobile, 33.33% on larger screens
 
   const handleScroll = (event) => {
     event.preventDefault(); // Prevent the default scroll behavior
@@ -25,8 +27,15 @@ function SwiperSlider() {
     const swiperBottom = document.querySelector(".swiper_bottom");
     swiperBottom.addEventListener("wheel", handleScroll, { passive: false });
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
       swiperBottom.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
