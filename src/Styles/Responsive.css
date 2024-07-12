@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 576px){
     /* Introduction */
     .Carsuel_box{
         height: auto;
@@ -29,7 +29,7 @@
     .svg{
         position: absolute;
         top: 0px;
-        left: 58.1%;
+        left: 67.5%;
         z-index: 7;
         /* border: 1px solid red; */
     }
@@ -43,6 +43,14 @@
         display: none;
     }
 
+    .navbar-toggler{
+        height: 55px;
+        width: 30%;
+        background-color: white;
+        border-radius: 0px 0px 0px 32px;
+        z-index: 8;
+        border: none !important;
+    }
 
     .info_Project_box{
         width: 100%;
@@ -79,7 +87,7 @@
     .Projects_Swiper h2 {
         font-size: 22px;
         font-weight: 500;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
     .swiper_btn_group{
         width: 100px;
@@ -87,26 +95,28 @@
     }
     .swiper_bottom_Card{
         min-width: 100%;
-        height: 340px;
+        height: 400px;
         padding: 20px;
+        row-gap: 15px;
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 35%;
+        height: 50%;
+        object-fit: cover;
     }
     .swiper_bottom_Card h2{
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 400;
     }
     .swiper_bottom_Card p{
         margin: 0px;
-        font-size: 15px;
+        font-size: 16px;
     }
     .swiper_bottom_Card a {
-        font-size: 15px;
+        font-size: 16px;
     }
     .swiper_bottom_Card a i {
-       font-size: 17px;
+       font-size: 19px;
     }
 
     .Courses_card_box{
@@ -172,11 +182,13 @@
     .Data_numbers_box{
         display: flex;
         flex-direction: column;
-        padding: 60px 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 40px;
         row-gap: 10px;
     }
     .numbers{
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     .numbers h3{
@@ -208,7 +220,7 @@
     }
     .IT_bilim_holder div{
         padding: 60px 20px;
-        height: 290px;
+        height: 270px;
         max-height: 400px;
         display: flex;
         flex-direction: column;
@@ -224,6 +236,401 @@
     }
     .IT_bilim_holder a{
         font-size: 24px;
+        font-weight: 300;
+    }
+ 
+    .card {
+        width: 100%;
+        height: 315px;
+        position: relative;
+      }
+    .card img{
+        width: 100%;
+
+        min-height: 170px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+        z-index: 5;
+        position: absolute;
+        top: 0px;
+      }
+    .black_box{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        min-height: 150px;
+        font-size: 18px;
+        overflow: hidden; 
+      }
+    .Green_player{
+        width: 75px;
+        height: 75px;
+        top: 15%;
+        left: 52%;
+        transform: translate(-50%);
+    }
+    .Green_player i{
+        font-size: 30px;
+    }
+    .modal-content {
+        border: none;
+        width: 95%; 
+        height: 30%;
+        position: relative;
+        text-align: center;
+    }
+
+      .Map_container{
+        width: 100%;
+        padding: 10px;
+    }
+      .Map_container h2{
+        font-size: 22px;
+        font-weight: 400;
+        margin: 30px 40px;
+    }
+        .Map_size{
+            width: 100%;
+            height: 400px;
+        }
+      .Footer{
+        /* border: 2px solid red; */
+    }
+      .footer_top{
+        flex-direction: column;
+    }
+      .footer_left{
+        width: 100%;
+    }
+      .footer_left img{
+        width: 170px;
+        height: 65px;
+        object-fit: contain;
+    }
+      .f_white_text{
+        margin: 0px 0px 10px 0px !important;
+    }
+      .f_grey_box p{
+        font-size: 16px;
+    }
+      .f_grey_box a{
+        font-size: 16px;
+    }
+      .Icons_box{
+        width: 90%;
+    }
+      .Icons_box div{
+        width: 35px;
+        height: 35px;
+    }
+      .Icons_box div img{
+        width: 17px;
+        height: 17px;
+    }
+      .Email_box input::placeholder{
+        color: #a4a4a4;
+        font-size: 16px;
+    }
+    .Email_box div{
+        width: 100%;
+        color: #a4a4a4;
+        font-weight: 400;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+    }
+      .Email_box div span{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .Email_box div span a{
+        color: #a4a4a4;
+        font-size: 16px;
+        font-weight: 400;
+        transition: .2s ease-in-out;
+        margin: 0px 5px;
+    }
+    .Email_box button{
+        width: 42%;
+        font-size: 16px;
+    }
+    .footer_right{
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+        row-gap: 25px;
+    }
+    .footer_right_child{
+        width: 100%;
+        min-width: 0px;
+
+        max-height: 470px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+    .footer_right_child span{
+        font-size: 16px;
+        font-weight: 400;
+        color: #a4a4a4;
+        margin-bottom: 10px;
+    }
+    .Footer_bottom{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Footer_bottom span{
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+    .Footer_bottom a{
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (min-width: 576px){
+      /* Introduction */
+      .Carsuel_box{
+        height: auto;
+        padding: 60px 20px;
+    }
+    .slide{
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+    }
+    .Logo{
+        width: 130px;
+        height: 60px;
+        object-fit: contain;
+        left: 5%;
+        top: 3%;
+        position: absolute;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+        border-radius: 25px !important;
+    }
+    .navbar-toggler{
+        height: 55px;
+        width: 22%;
+        background-color: white;
+        border-radius: 0px 0px 0px 32px;
+        z-index: 8;
+        border: none !important;
+    }  
+    .svg{
+        position: absolute;
+        top: 0px;
+        left: 76.1%;
+        z-index: 7;
+        /* border: 1px solid red; */
+    }
+    .svg2{
+        top: 8.2%;
+    }
+    .svg3{
+        display: none;
+    }
+    .svg4{
+        display: none;
+    }
+
+
+    .info_Project_box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .info_Project_box h2{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .info_Project_box div p{
+        width: 100%;
+        font-size: 15px; 
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .media{
+        width: 100%;
+        height: 12%;
+        border-radius: 17px;
+    }
+
+    /* Swiper */
+    .Projects_Swiper{
+        padding: 50px 20px;
+    }
+    .swiper_top{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    .Projects_Swiper h2 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .swiper_btn_group{
+        width: 100px;
+        margin-top: 10px;
+    }
+    .swiper_bottom_Card{
+        min-width: 50%;
+        height: 400px;
+        padding: 20px;
+        row-gap: 15px;
+    }
+    .swiper_bottom_Card img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+    .swiper_bottom_Card h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .swiper_bottom_Card p{
+        margin: 0px;
+        font-size: 15px;
+    }
+    .swiper_bottom_Card a {
+        font-size: 15px;
+    }
+    .swiper_bottom_Card a i {
+       font-size: 17px;
+    }
+
+
+
+    .Courses_card_box{
+        display: flex;
+        flex-direction: row;
+    }
+    .Course_cards{
+        width: 45%;
+    }
+    .Course_cards img{
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+    }
+    .Line_holder{
+        padding: 20px;
+    }
+    .first_line_text{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        row-gap: 3px;
+    }
+    .first_line_text p{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        font-weight: bolder;
+        font-weight: 400;
+        margin: 0px;
+    }
+    .first_line_text p:nth-child(2){    
+        text-align: start;
+        margin-left: 0px;
+    }
+    .grey_text{
+        height: auto;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 10px 0px;
+    }
+    .second_line_text{
+        width: 100%;
+        height: auto;
+    }
+    .second_line_text div{
+        width: auto;
+        margin: 0px 7px 10px 0px;
+    }
+    .second_line_text div p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .second_line_text div h5{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .Line_holder span{
+        font-size: 16px;
+    }
+    .Data_numbers_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 40px;
+        row-gap: 15px;
+    }
+    .numbers{
+        width: 60%;
+        height: auto;
+    }
+    .numbers h3{
+        font-size: 34px;
+        font-weight: 400;
+        margin: 0px;
+    }
+    .numbers p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    /* swiper 2 */
+    .slider-container {
+        width: 100%;
+        margin-top: 25px; 
+    }   
+    .slick-slide{
+        width: 180px !important;
+        /* border: 2px solid blue; */
+    }
+    .swiper_slide{
+        width: 90% !important;
+        height: 125px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(48, 48, 48, 0.1);
+    }
+    .IT_bilim_holder div{
+        padding: 60px 20px;
+        height: 270px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
+    .IT_bilim_holder h2{
+        width: 100%;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .IT_bilim_holder a{
+        font-size: 27px;
         font-weight: 300;
     }
  
@@ -375,13 +782,6 @@
     .Footer_bottom a{
         font-size: 16px;
     }
-}
-
-
-
-
-@media screen and (max-width: 576px){
- 
 }
 
 

@@ -45,14 +45,13 @@
 }
 .swiper_bottom_Card {
     min-width: 49%;
-    height: 570px;
+    /* height: 570px; */
     background-color: #7eb649;
     padding: 30px;
     border-radius: 10px;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-weight: 400;
     box-sizing: border-box;
 }
