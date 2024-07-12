@@ -9,7 +9,7 @@ import pearson from "../Assets/pearson_img.png";
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
   const totalCards = 3;
-  const cardWidth = 102; // Each card takes 100% of the container width
+  const cardWidth = 100; // Each card takes 100% of the container width
 
   const handleScroll = (event) => {
     event.preventDefault(); // Prevent the default scroll behavior

@@ -12,7 +12,7 @@ body{
     font-weight: 300;
 }
 .Carsuel_box{
-    padding: 60px 20px;
+    padding: 60px 30px;
     /* border: 2px solid red; */
     height: 750px;
 }
@@ -270,7 +270,7 @@ body{
 .info_Project_box{
     height: auto;
     display: flex;
-    padding: 60px 20px;
+    padding: 60px 30px;
 }
 .info_Project_box div{
     height: auto;
@@ -407,8 +407,8 @@ body{
     background-color: #7065f0;
 }
 .numbers{
-    width: 30%;
-    height: 170px;
+    width: 25%;
+    height: 190px;
     max-height: 210px;
     color: white;
     display: grid;
@@ -430,7 +430,7 @@ body{
     height: auto;
 }
 .IT_bilim_holder div{
-    padding: 60px 20px;
+    padding: 60px 30px;
     height: 330px;
     max-height: 400px;
     display: flex;
@@ -576,7 +576,7 @@ body{
   .Footer{
     width: 100%;
     height: auto;
-    padding: 30px 25px 30px 25px;
+    padding: 30px;
     background-color: #303030;
   }
   .footer_top{

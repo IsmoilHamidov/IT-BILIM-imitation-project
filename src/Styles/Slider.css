@@ -2,10 +2,10 @@
 /* Swiper */
 .Projects_Swiper{
     overflow: hidden;
-    padding: 70px 20px;
+    padding: 70px 30px;
 }
 .swiper_top {
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -14,10 +14,11 @@
     font-weight: 500;
 }
 .swiper_btn_group {
-    width: 7.5%;
+    width: 20%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    column-gap: 15px;
 }
 .swiper_btn_group button {
     width: 45px;
@@ -40,7 +41,7 @@
 .swiper_bottom_inner {
     display: flex;
     column-gap: 25px;
-    transition: transform 0.6s ease; 
+    transition: transform 0.6s ease-in-out; 
 }
 .swiper_bottom_Card {
     min-width: 49%;
@@ -88,7 +89,7 @@
     color: white;
 }
 .swiper_bottom_Card a i {
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease-in;
 }
 .swiper_bottom_Card a:hover i {
     transform: translateX(8px);
@@ -117,7 +118,7 @@
 }
 
 .slick-slide {
-    transition: transform 0.4s linear;
+    transition: transform 0.6s linear;
 }
 
 .slick-list {
