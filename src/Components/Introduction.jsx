@@ -152,7 +152,7 @@ function Introduction() {
                 </nav>
 
 
-                <div className="bottom_box d-none d-lg-flex">
+                <div className="bottom_box d-none d-md-flex">
                     <button>Maqsadli qarz</button>
                     <button>Hamkorlar</button>
                     <button>Bilgi.uz</button>
