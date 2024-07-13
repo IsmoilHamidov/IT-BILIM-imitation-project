@@ -74,8 +74,6 @@ function Introduction() {
                     
                 </div>
            
-
-              
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid p-0 ps-4">
                         <a class="navbar-brand" href="#">
@@ -150,13 +148,15 @@ function Introduction() {
                     </div>
 
                 </nav>
+              
+         
 
 
-                <div className="bottom_box d-none d-md-flex">
-                    <button>Maqsadli qarz</button>
-                    <button>Hamkorlar</button>
-                    <button>Bilgi.uz</button>
-                    <button>IT bilim JAPAN</button>
+                <div className="bottom_box d-none d-sm-flex">
+                    <button id="part">Hamkorlar</button>
+                    <button id="team">Bandlik</button>
+                    <button id="Bilgi">Bilgi.uz</button>
+                    <button id="Japan">IT bilim JAPAN</button>
                 </div>
 
                 

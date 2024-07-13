@@ -18,7 +18,7 @@
     height: 100%;
     display: flex;
     justify-content: end;
-    column-gap: 15px;
+    column-gap: 10px;
 }
 .swiper_btn_group button {
     width: 45px;
