@@ -87,7 +87,7 @@
     .Projects_Swiper h2 {
         font-size: 22px;
         font-weight: 500;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .swiper_btn_group{  
         width: 100px;
@@ -96,20 +96,20 @@
     .swiper_bottom_Card{
         min-width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 20px 30px;
         row-gap: 15px;
-        justify-content: space-between;
+        justify-content: flex-start;
     
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 200px; 
+        height: 160px; 
         overflow: hidden;
         object-fit: cover;
     }
     .swiper_bottom_card_holder{
         width: 100%;
-        height: 55%; 
+        height: 60%; 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -287,7 +287,7 @@
         width: 75px;
         height: 75px;
         top: 15%;
-        left: 52%;
+        left: 50%;
         transform: translate(-50%);
     }
     .Green_player i{
@@ -308,7 +308,7 @@
       .Map_container h2{
         font-size: 22px;
         font-weight: 400;
-        margin: 30px 40px;
+        margin: 30px 20px;
     }
         .Map_size{
             width: 100%;
@@ -329,13 +329,14 @@
         object-fit: contain;
     }
       .f_white_text{
-        margin: 0px 0px 10px 0px !important;
+        margin: 0px 0px 20px 0px !important;
+        font-size: 18px !important;
     }
       .f_grey_box p{
-        font-size: 16px;
+        font-size: 15px;
     }
       .f_grey_box a{
-        font-size: 16px;
+        font-size: 15px;
     }
       .Icons_box{
         width: 90%;
@@ -363,36 +364,36 @@
     }
       .Email_box div span{
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .Email_box div span a{
         color: #a4a4a4;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         transition: .2s ease-in-out;
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 42%;
-        font-size: 16px;
+        width: 40%;
+        font-size: 14px;
+        font-weight: 400;
     }
     .footer_right{
         width: 100%;
-        padding: 30px 0px 0px 0px;
+        padding: 40px 0px 0px 0px;
         row-gap: 25px;
     }
     .footer_right_child{
         width: 100%;
         min-width: 0px;
-
         max-height: 470px;
         display: flex;
         flex-direction: column;
         row-gap: 0px;
     }
     .footer_right_child span{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         color: #a4a4a4;
         margin-bottom: 10px;
@@ -404,11 +405,11 @@
         align-items: flex-start;
     }
     .Footer_bottom span{
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 17px;
     }
     .Footer_bottom a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -458,13 +459,13 @@
         top: 8.2%;
     }
      .svg3{
-        right: 32.85%;
-        display: block;
+        /* right: 32.85%; */
+        display: none;
         /* border: 2px solid red; */
     }
     .svg4{
-        display: block;
-        bottom: 50px;
+        display: none;
+        /* bottom: 50px; */
     }
     .bottom_box{
         position: absolute;
@@ -539,22 +540,29 @@
     .swiper_bottom_Card{
         min-width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 20px 30px;
         row-gap: 15px;
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 220px; 
+        height: 250px; 
         overflow: hidden;
         object-fit: cover;
     }
     .swiper_bottom_card_holder{
         width: 100%;
-        height: 180px; 
+        height: 45%; 
         display: grid;
         align-content: space-between;
         row-gap: 15px;
         border: 2px solid orange;
+    }
+    .swiper_bottom_card_holder_top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
     }
     .swiper_bottom_card_holder_top h2{
         font-size: 25px;
@@ -693,13 +701,13 @@
     }
  
     .card {
-        width: 50%;
-        height: 335px;
+        width: 100%;
+        height: 405px;
         position: relative;
       }
     .card img{
         width: 100%;
-        height: 57%;
+        height: 67%;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
         z-index: 5;
@@ -708,16 +716,16 @@
       }
     .black_box{
         width: 100%;
-        height: 150px;
+        height: 140px;
         max-height: 500px;
         font-size: 18px;
         overflow: hidden; 
       }
     .Green_player{
-        width: 75px;
-        height: 75px;
-        top: 15%;
-        left: 52%;
+        width: 85px;
+        height: 85px;
+        top: 20%;
+        left: 50%;
         transform: translate(-50%);
     }
     .Green_player i{
@@ -736,9 +744,9 @@
         padding: 10px;
     }
       .Map_container h2{
-        font-size: 22px;
+        font-size: 23px;
         font-weight: 400;
-        margin: 30px 40px;
+        margin: 30px 20px;
     }
         .Map_size{
             width: 100%;
@@ -758,14 +766,15 @@
         height: 65px;
         object-fit: contain;
     }
-      .f_white_text{
-        margin: 0px 0px 10px 0px !important;
+    .f_white_text{
+        margin: 0px 0px 20px 0px !important;
+        font-size: 18px !important;
     }
       .f_grey_box p{
-        font-size: 16px;
+        font-size: 15px;
     }
       .f_grey_box a{
-        font-size: 16px;
+        font-size: 15px;
     }
       .Icons_box{
         width: 90%;
@@ -793,19 +802,20 @@
     }
       .Email_box div span{
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .Email_box div span a{
         color: #a4a4a4;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         transition: .2s ease-in-out;
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 28%;
-        font-size: 16px;
+        width: 30%;
+        font-size: 15px;
+        font-weight: 400;
     }
     .footer_right{
         width: 100%;
@@ -815,14 +825,13 @@
     .footer_right_child{
         width: 100%;
         min-width: 0px;
-
         max-height: 470px;
         display: flex;
         flex-direction: column;
         row-gap: 0px;
     }
     .footer_right_child span{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         color: #a4a4a4;
         margin-bottom: 10px;
@@ -834,11 +843,11 @@
         align-items: flex-start;
     }
     .Footer_bottom span{
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 17px;
     }
     .Footer_bottom a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -961,7 +970,7 @@
         margin-bottom: 10px;
     }
     .Projects_Swiper h2 {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 500;
         margin-bottom: 0px;
     }
@@ -970,23 +979,41 @@
         margin-top: 10px;
         border: 2px solid red;
     }
+    
+    
     .swiper_bottom_Card{
         min-width: 48%;
-        height: 400px;
-        padding: 20px;
+        height: auto;
+        padding: 20px 30px;
+        justify-content: flex-start;
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 45%;
+        height: 140px;
         object-fit: cover;
     }
+    .swiper_bottom_card_holder{
+        width: 100%;
+        height:  59%; 
+        display: grid;
+        align-content: space-between;
+        row-gap: 15px;
+    }
+    .swiper_bottom_card_holder_top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
     .swiper_bottom_card_holder_top h2{
-        font-size: 24px;
+        font-size: 23px;
         font-weight: 400;
+        margin-bottom: 20px;
     }
     .swiper_bottom_card_holder_top p{
         margin: 0px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .swiper_bottom_card_holder a {
         font-size: 15px;
@@ -1078,10 +1105,10 @@
         justify-content: center;
         align-items: center;
         padding: 60px 40px;
-        row-gap: 15px;
+        row-gap: 25px;
     }
     .numbers{
-        width: 60%;
+        width: 50%;
         height: auto;
     }
     .numbers h3{
@@ -1099,17 +1126,18 @@
         margin-top: 25px; 
     }   
     .slick-slide{
-        width: 180px !important;
+        width: 160px !important;
         /* border: 2px solid blue; */
     }
     .swiper_slide{
-        width: 90% !important;
-        height: 125px;
+        width: 85% !important;
+        height: 130px;
         background-color: white;
         padding: 10px;
         border-radius: 15px;
         box-shadow: 0 6px 10px rgba(48, 48, 48, 0.1);
     }
+    
     .IT_bilim_holder div{
         padding: 60px 20px;
         height: 270px;
@@ -1122,19 +1150,20 @@
     }
     .IT_bilim_holder h2{
         width: 100%;
-        font-size: 27px;
+        font-size: 29px;
         font-weight: 400;
         line-height: 30px;
     }
     .IT_bilim_holder a{
-        font-size: 27px;
+        font-size: 29px;
         font-weight: 300;
     }
  
     .card {
-        width: 50%;
+        width: 60%;
         height: 335px;
         position: relative;
+        margin-top: 25px;
       }
     .card img{
         width: 100%;
@@ -1156,7 +1185,7 @@
         width: 75px;
         height: 75px;
         top: 15%;
-        left: 52%;
+        left: 50%;
         transform: translate(-50%);
     }
     .Green_player i{
@@ -1175,9 +1204,9 @@
         padding: 10px;
     }
       .Map_container h2{
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 400;
-        margin: 30px 40px;
+        margin: 30px 20px;
     }
         .Map_size{
             width: 100%;
@@ -1197,14 +1226,15 @@
         height: 65px;
         object-fit: contain;
     }
-      .f_white_text{
-        margin: 0px 0px 10px 0px !important;
+    .f_white_text{
+        margin: 0px 0px 20px 0px !important;
+        font-size: 18px !important;
     }
       .f_grey_box p{
-        font-size: 16px;
+        font-size: 15px;
     }
       .f_grey_box a{
-        font-size: 16px;
+        font-size: 15px;
     }
       .Icons_box{
         width: 90%;
@@ -1212,6 +1242,7 @@
       .Icons_box div{
         width: 35px;
         height: 35px;
+        display: flex;
     }
       .Icons_box div img{
         width: 17px;
@@ -1232,52 +1263,59 @@
     }
       .Email_box div span{
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .Email_box div span a{
         color: #a4a4a4;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         transition: .2s ease-in-out;
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 28%;
-        font-size: 16px;
+        width: 24%;
+        font-size: 15px;
+        font-weight: 400;
     }
     .footer_right{
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         padding: 30px 0px 0px 0px;
         row-gap: 25px;
+        /* border: 2px solid red; */
     }
     .footer_right_child{
-        width: 100%;
+        width: 47%;
         min-width: 0px;
-
+        /* border: 2px solid blue; */
         max-height: 470px;
         display: flex;
         flex-direction: column;
         row-gap: 0px;
     }
     .footer_right_child span{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         color: #a4a4a4;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
     .Footer_bottom{
         height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        justify-content: space-between;
     }
     .Footer_bottom span{
-        font-size: 16px;
-        margin-bottom: 17px;
+        width: 45%;
+        font-size: 15px;
+        margin-bottom: 0px;
+        line-height: 25px;
     }
     .Footer_bottom a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
