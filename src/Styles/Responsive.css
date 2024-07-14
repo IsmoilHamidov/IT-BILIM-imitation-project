@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 450px){
     /* Introduction */
     .Carsuel_box{
         height: auto;
@@ -89,7 +89,7 @@
         font-weight: 500;
         margin-bottom: 10px;
     }
-    .swiper_btn_group{
+    .swiper_btn_group{  
         width: 100px;
         margin-top: 10px;
     }
@@ -98,31 +98,45 @@
         height: auto;
         padding: 20px;
         row-gap: 15px;
+        justify-content: space-between;
+    
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 50%;
+        height: 200px; 
+        overflow: hidden;
         object-fit: cover;
     }
     .swiper_bottom_card_holder{
         width: 100%;
-        height: 50%;
-        display: grid;
+        height: 55%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 15px;
         border: 2px solid orange;
     }
-    .swiper_bottom_card_holder h2{
-        font-size: 23px;
-        font-weight: 400;
+    .swiper_bottom_card_holder_top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
     }
-    .swiper_bottom_card_holder p{
+    .swiper_bottom_card_holder_top h2{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0px 0px 20px 0px;
+    }
+    .swiper_bottom_card_holder_top p{
         margin: 0px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .swiper_bottom_card_holder a {
-        font-size: 16px;
+        font-size: 15px;
     }
     .swiper_bottom_card_holder a i {
-       font-size: 19px;
+       font-size: 18px;
     }
 
     .Courses_card_box{
@@ -134,7 +148,7 @@
     }
     .Course_cards img{
         width: 100%;
-        height: 30%;
+        height: 270px;
         object-fit: cover;
     }
     .Line_holder{
@@ -400,7 +414,7 @@
 
 
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 450px){
       /* Introduction */
       .Carsuel_box{
         height: auto;
@@ -523,62 +537,62 @@
         margin-top: 10px;
     }
     .swiper_bottom_Card{
-        min-width: 48%;
-        height: 400px;
+        min-width: 100%;
+        height: auto;
         padding: 20px;
+        row-gap: 15px;
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 50%;
+        height: 220px; 
+        overflow: hidden;
         object-fit: cover;
     }
-    .swiper_bottom_card_holder h2{
-        font-size: 20px;
+    .swiper_bottom_card_holder{
+        width: 100%;
+        height: 180px; 
+        display: grid;
+        align-content: space-between;
+        row-gap: 15px;
+        border: 2px solid orange;
+    }
+    .swiper_bottom_card_holder_top h2{
+        font-size: 25px;
         font-weight: 400;
     }
-    .swiper_bottom_card_holder p{
+    .swiper_bottom_card_holder_top p{
         margin: 0px;
-        font-size: 15px;
+        font-size: 17px;
     }
     .swiper_bottom_card_holder a {
-        font-size: 15px;
+        font-size: 17px;
     }
     .swiper_bottom_card_holder a i {
-       font-size: 17px;
+       font-size: 19px;
     }
-
-
 
     .Courses_card_box{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .Course_cards{
-        width: 47%;
-        height: 570px;
-        border: 2px solid darkblue;
+        width: 100%;
     }
     .Course_cards img{
         width: 100%;
-        height: 30%;
+        height: 250px;
         object-fit: cover;
     }
     .Line_holder{
-        padding: 10px 20px;
-        height: 380px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 2px solid aqua;
+        padding: 20px;
     }
     .first_line_text{
         width: 100%;
-        height: 85px;
+        height: auto;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: flex-end;
+        justify-content: space-between;
         row-gap: 3px;
-        border: 2px solid red;
     }
     .first_line_text p{
         width: auto;
@@ -593,16 +607,14 @@
         margin-left: 0px;
     }
     .grey_text{
-        height: 60px;
+        height: auto;
         font-size: 18px;
         font-weight: 400;
-        margin: 0px;
-        border: 2px solid blue;
+        margin: 10px 0px;
     }
     .second_line_text{
         width: 100%;
-        height: 150px;
-        border: 2px solid black;
+        height: auto;
     }
     .second_line_text div{
         width: auto;
@@ -617,10 +629,10 @@
         font-weight: 600;
     }
     .Line_holder span{
-        height: 30px;
         font-size: 16px;
-        border: 1px solid blueviolet;
     }
+
+    
     .Data_numbers_box{
         display: flex;
         flex-direction: column;
@@ -833,7 +845,7 @@
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 620px){
       /* Introduction */
       .Carsuel_box{
         height: auto;
@@ -968,11 +980,11 @@
         height: 45%;
         object-fit: cover;
     }
-    .swiper_bottom_card_holder h2{
+    .swiper_bottom_card_holder_top h2{
         font-size: 24px;
         font-weight: 400;
     }
-    .swiper_bottom_card_holder p{
+    .swiper_bottom_card_holder_top p{
         margin: 0px;
         font-size: 16px;
     }
@@ -1000,7 +1012,6 @@
     .Course_cards{
         width: 47%;
         height: 570px;
-        border: 2px solid darkblue;
     }
     .Course_cards img{
         width: 100%;
@@ -1022,7 +1033,6 @@
         flex-direction: column-reverse;
         justify-content: flex-end;
         row-gap: 3px;
-        border: 2px solid red;
     }
     .first_line_text p{
         width: auto;
@@ -1041,12 +1051,10 @@
         font-size: 18px;
         font-weight: 400;
         margin: 0px;
-        border: 2px solid blue;
     }
     .second_line_text{
         width: 100%;
         height: 150px;
-        border: 2px solid black;
     }
     .second_line_text div{
         width: auto;
@@ -1063,7 +1071,6 @@
     .Line_holder span{
         height: 30px;
         font-size: 16px;
-        border: 1px solid blueviolet;
     }
     .Data_numbers_box{
         display: flex;

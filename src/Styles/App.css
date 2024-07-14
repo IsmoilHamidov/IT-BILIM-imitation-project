@@ -326,6 +326,7 @@ body{
     text-decoration: none;
     color: black;
     outline: none;
+    border: 2px solid darkblue;
 }
 .Course_cards:hover{
     transform: scale(1.02);
@@ -343,6 +344,7 @@ body{
     height: auto;
     display: grid;
     padding: 30px;
+    border: 2px solid aqua;
 }
 .first_line_text{
     width: 100%;
@@ -350,6 +352,7 @@ body{
     display: flex;
     justify-content: space-between;
     font-size: 30px;
+    border: 2px solid red;
 }
 .first_line_text p{
     width: auto;
@@ -369,6 +372,7 @@ body{
     color: #a4a4a4;
     font-size: 20px;
     font-weight: 500;
+    border: 2px solid blue;
 }
 
 .second_line_text{
@@ -378,6 +382,7 @@ body{
     justify-content: space-between;   
     flex-wrap: wrap;
     margin-bottom: 15px;
+    border: 2px solid black;
 }
 .second_line_text div{
     width: auto;
@@ -394,9 +399,10 @@ body{
     font-weight: 600;
 }
 
-/* .Line_holder span{
-    height: 50px;
-} */
+.Line_holder span{
+    /* height: 50px; */
+    border: 1px solid blueviolet;
+}
 
 .Data_numbers_box{
     height: auto;

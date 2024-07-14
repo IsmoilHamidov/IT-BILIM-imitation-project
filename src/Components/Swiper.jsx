@@ -100,11 +100,13 @@ function SwiperSlider() {
           <div className="swiper_bottom_Card">
             <img src={pearson} alt="" />
             <div className="swiper_bottom_card_holder">
-                <h2 className="m-0">Xalqaro Test Markazi</h2>
-                <p>
-                  IT-Bilimlarini rivojlanritish markazi Pearson VUE xalqaro test
-                  markazi bilan hamkorlikni yo`lga qo`ydi.
-                </p>
+              <div className="swiper_bottom_card_holder_top">
+                  <h2>Xalqaro Test Markazi</h2>
+                  <p>
+                    IT-Bilimlarini rivojlanritish markazi Pearson VUE xalqaro test
+                    markazi bilan hamkorlikni yo`lga qo`ydi.
+                  </p>
+              </div>
                 <a href="#">
                   Batafsil{" "}
                   <i
@@ -117,11 +119,13 @@ function SwiperSlider() {
           <div className="swiper_bottom_Card">
             <img src={japan} alt="" />
             <div className="swiper_bottom_card_holder">
-                <h2 className="m-0">IT BILIM JAPAN</h2>
-                <p>
-                  Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni
-                  o'qitish va tayyorlash loyihasi
-                </p>
+              <div className="swiper_bottom_card_holder_top">
+                  <h2>IT BILIM JAPAN</h2>
+                  <p>
+                    Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni
+                    o'qitish va tayyorlash loyihasi
+                  </p>
+              </div>
                 <a href="https://japan.it-bilim.uz/">
                   Batafsil{" "}
                   <i
@@ -135,8 +139,10 @@ function SwiperSlider() {
           <div className="swiper_bottom_Card">
             <img src={team} alt="" />
             <div className="swiper_bottom_card_holder">
-                <h2 className="m-0">Maqsadli qarz</h2>
-                <p>IT sohasida biznesni rivojlantirish va kengaytirish uchun</p>
+              <div className="swiper_bottom_card_holder_top">
+                  <h2>Maqsadli qarz</h2>
+                  <p>IT sohasida biznesni rivojlantirish va kengaytirish uchun</p>
+              </div>
                 <a href="#">
                   Batafsil{" "}
                   <i
@@ -150,10 +156,12 @@ function SwiperSlider() {
           <div className="swiper_bottom_Card">
             <img src={bilgi} alt="" />
             <div className="swiper_bottom_card_holder">
-                <h2 className="m-0">Bilgi.uz ta`lim marketpleysi</h2>
-                <p>
-                  imtiyozli muddatli to`lov evaziga IT kurslarning katta tanlovi
-                </p>
+              <div className="swiper_bottom_card_holder_top">
+                  <h2>Bilgi.uz ta`lim marketpleysi</h2>
+                  <p>
+                    imtiyozli muddatli to`lov evaziga IT kurslarning katta tanlovi
+                  </p>
+              </div>
                 <a href="https://bilgi.uz/uz/">
                   Batafsil{" "}
                   <i
@@ -167,8 +175,10 @@ function SwiperSlider() {
           <div className="swiper_bottom_Card">
             <img src={group} alt="" />
             <div className="swiper_bottom_card_holder">
-                <h2 className="m-0">IT BILIM Academy</h2>
-                <p>innovatsion ta’lim muassasasi </p>
+              <div className="swiper_bottom_card_holder_top">
+                  <h2>IT BILIM Academy</h2>
+                  <p>innovatsion ta’lim muassasasi </p>
+              </div>
                 <a href="https://academy.it-bilim.uz/">
                   Batafsil{" "}
                   <i
@@ -182,10 +192,13 @@ function SwiperSlider() {
           <div className="swiper_bottom_Card">
             <img src={coders} alt="" />
             <div className="swiper_bottom_card_holder">
-                  <h2 className="m-0">Ish bilan ta’minlash loyihasi</h2>
-                  <p>
-                    yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
-                  </p>
+                <div className="swiper_bottom_card_holder_top">
+                    <h2>Ish bilan ta’minlash loyihasi</h2>
+                    <p>
+                      yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
+                    </p>
+                </div>
+
                   <a href="#">
                     Batafsil{" "}
                     <i

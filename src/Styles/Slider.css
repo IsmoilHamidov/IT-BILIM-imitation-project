@@ -52,7 +52,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-weight: 400;
     box-sizing: border-box;
 }
@@ -74,16 +74,17 @@
     object-fit: cover;
     border-radius: 15px;
 }
-.swiper_bottom_Card h2{
+.swiper_bottom_card_holder_top h2{
     font-size: 35px;
     font-weight: 400;
 }
-.swiper_bottom_Card p {
+.swiper_bottom_card_holder_top p {
     font-size: 16px;
     margin: 0px 0px 15px 0px;
     line-height: 23px;
 }
 .swiper_bottom_Card a {
+    display: inline-block;
     font-size: 16px;
     text-decoration: none;
     color: white;
