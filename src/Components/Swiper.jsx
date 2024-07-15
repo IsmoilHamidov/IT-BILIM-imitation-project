@@ -131,7 +131,7 @@ function SwiperSlider() {
                   Batafsil{" "}
                   <i
                     className="fa-solid fa-arrow-right"
-                    style={{ fontSize: "22px", marginLeft: "8px" }}
+                    style={{ marginLeft: "8px" }}
                   ></i>
                 </a>
             </div>    
@@ -148,7 +148,7 @@ function SwiperSlider() {
                   Batafsil{" "}
                   <i
                     className="fa-solid fa-arrow-right"
-                    style={{ fontSize: "22px", marginLeft: "8px" }}
+                    style={{marginLeft: "8px" }}
                   ></i>
                 </a>
             </div>
@@ -167,7 +167,7 @@ function SwiperSlider() {
                   Batafsil{" "}
                   <i
                     className="fa-solid fa-arrow-right"
-                    style={{ fontSize: "22px", marginLeft: "8px" }}
+                    style={{marginLeft: "8px" }}
                   ></i>
                 </a>
             </div>
@@ -184,7 +184,7 @@ function SwiperSlider() {
                   Batafsil{" "}
                   <i
                     className="fa-solid fa-arrow-right"
-                    style={{ fontSize: "22px", marginLeft: "8px" }}
+                    style={{marginLeft: "8px" }}
                   ></i>
                 </a>
             </div>
@@ -204,7 +204,7 @@ function SwiperSlider() {
                     Batafsil{" "}
                     <i
                       className="fa-solid fa-arrow-right"
-                      style={{ fontSize: "22px", marginLeft: "8px" }}
+                      style={{marginLeft: "8px" }}
                     ></i>
                   </a>
             </div>
