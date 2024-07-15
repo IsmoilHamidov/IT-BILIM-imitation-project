@@ -6,6 +6,7 @@ import group from "../Assets/b582c776c9f5.jpg";
 import coders from "../Assets/ed84f4ef2f2e.jpg";
 import pearson from "../Assets/pearson_img.png";
 
+
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

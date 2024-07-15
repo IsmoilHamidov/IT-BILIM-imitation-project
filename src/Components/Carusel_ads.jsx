@@ -19,7 +19,7 @@ function Carusel_ads() {
                         <source src={ThisVideo} type="video/mp4"/>
                     </video>
                     
-                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg d-none d-md-block">
+                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg5 d-none d-md-block">
                         <g clip-path="url(#clip0_645_123)">
                             <path d="M50 0H0C38.8 1.2 49.5 33.8333 50 50V0Z" fill="white"></path>
                         </g>
@@ -31,7 +31,7 @@ function Carusel_ads() {
                     </svg>
                     
               
-                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg2 d-none d-md-block">
+                    <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg6 d-none d-md-block">
                         <g clip-path="url(#clip0_645_123)">
                             <path d="M50 0H0C38.8 1.2 49.5 33.8333 50 50V0Z" fill="white"></path>
                         </g>
@@ -50,8 +50,8 @@ function Carusel_ads() {
                         <a class="navbar-brand" href="#">
                             {/* <img src="https://it-bilim.uz/themes/assets/images/icons/logo/logo_uz.svg"/> */}
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler w-50"  type="button">
+            
                         </button>
                         <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
 

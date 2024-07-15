@@ -21,7 +21,7 @@
     }
     .carousel-item img{
         width: 100%;
-        height: 650px;
+        height: 620px;
         object-fit: cover;
         border-radius: 25px !important;
     }
@@ -34,7 +34,7 @@
         /* border: 1px solid red; */
     }
     .svg2{
-        top: 8.2%;
+        top: 8.8%;
     }
     .svg3{
         display: none;
@@ -50,8 +50,10 @@
         border-radius: 0px 0px 0px 32px;
         z-index: 8;
         border: none !important;
+        box-shadow: none !important;
     }
 
+  
     .info_Project_box{
         width: 100%;
         display: flex;
@@ -96,7 +98,7 @@
     .swiper_bottom_Card{
         min-width: 100%;
         height: auto;
-        padding: 20px 30px;
+        padding: 30px 30px;
         row-gap: 15px;
         justify-content: flex-start;
     
@@ -217,8 +219,8 @@
         margin: 0px;
     }
     .numbers p{
-        font-size: 16px;
-        font-weight: 300;
+        font-size: 14px;
+        font-weight: 400;
     }
     /* swiper 2 */
     .slider-container {
@@ -266,7 +268,6 @@
       }
     .card img{
         width: 100%;
-
         min-height: 170px;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
@@ -436,7 +437,7 @@
     }
     .carousel-item img{
         width: 100%;
-        height: 650px;
+        height: 620px;
         object-fit: cover;
         border-radius: 25px !important;
     }
@@ -456,7 +457,7 @@
         /* border: 1px solid red; */
     }
     .svg2{
-        top: 8.2%;
+        top: 8.8%;
     }
      .svg3{
         /* right: 32.85%; */
@@ -540,7 +541,7 @@
     .swiper_bottom_Card{
         min-width: 100%;
         height: auto;
-        padding: 20px 30px;
+        padding: 30px 30px;
         row-gap: 15px;
     }
     .swiper_bottom_Card img{
@@ -659,8 +660,8 @@
         margin: 0px;
     }
     .numbers p{
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
     }
     /* swiper 2 */
     .slider-container {
@@ -823,7 +824,7 @@
         row-gap: 25px;
     }
     .footer_right_child{
-        width: 100%;
+        width: 60%;
         min-width: 0px;
         max-height: 470px;
         display: flex;
@@ -875,7 +876,7 @@
     }
     .carousel-item img{
         width: 100%;
-        height: 650px;
+        height: 620px;
         object-fit: cover;
         border-radius: 25px !important;
     }
@@ -894,10 +895,10 @@
         z-index: 7;
     }
     .svg2{
-        top: 8.2%;
+        top: 8.8%;
     }
     .svg3{
-        right: 32.85%;
+        right: 22.2%;
         display: block;
         /* border: 2px solid red; */
     }
@@ -905,11 +906,18 @@
         display: block;
         bottom: 50px;
     }
-
+    .svg5{  
+        right: 0px;
+        top: 12.2%;
+    }
+    .svg6{  
+        top: 0%;
+        left: 49%;
+    }
     .bottom_box{
         position: absolute;
         background-color: white;
-        width: 65%;
+        width: 75%;
         bottom: 0px;
         height: 50px;
         /* border: 2px solid rgb(0, 255, 157); */
@@ -921,7 +929,7 @@
         overflow: hidden;
     }
     .bottom_box button{
-        width: 32%;
+        width: 25%;
         height: 82%;
         border: 1px solid #303030;
         color: #303030;
@@ -984,17 +992,17 @@
     .swiper_bottom_Card{
         min-width: 48%;
         height: auto;
-        padding: 20px 30px;
+        padding: 30px 30px;
         justify-content: flex-start;
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 140px;
+        height: 150px;
         object-fit: cover;
     }
     .swiper_bottom_card_holder{
         width: 100%;
-        height:  59%; 
+        height:  56%; 
         display: grid;
         align-content: space-between;
         row-gap: 15px;
@@ -1007,7 +1015,7 @@
         margin-bottom: 0px;
     }
     .swiper_bottom_card_holder_top h2{
-        font-size: 23px;
+        font-size: 24px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -1101,15 +1109,17 @@
     }
     .Data_numbers_box{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
         padding: 60px 40px;
         row-gap: 25px;
+        /* border: 2px solid red; */
     }
     .numbers{
         width: 50%;
-        height: auto;
+        height: auto;      
     }
     .numbers h3{
         font-size: 38px;
@@ -1117,8 +1127,8 @@
         margin: 0px;
     }
     .numbers p{
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
     }
     /* swiper 2 */
     .slider-container {
@@ -1160,14 +1170,14 @@
     }
  
     .card {
-        width: 60%;
-        height: 335px;
+        width: 50%;
+        height: 345px;
         position: relative;
         margin-top: 25px;
       }
     .card img{
         width: 100%;
-        height: 57%;
+        height: 60%;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
         z-index: 5;
@@ -1176,7 +1186,7 @@
       }
     .black_box{
         width: 100%;
-        height: 150px;
+        height: 140px;
         max-height: 500px;
         font-size: 18px;
         overflow: hidden; 

@@ -16,6 +16,7 @@ import MapComponent from './Components/Map';
 import Footer from './Components/Footer';
 import Int from './Components/Particles';
 import Intsdcscego from './Components/Particles';
+import Example from './Components/Particles';
 
 
 

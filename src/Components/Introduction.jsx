@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import japan from "../Assets/40b396321a69.jpg"
 import partnership from "../Assets/download.jpg"
 import team from "../Assets/7ea5fe56831c.jpg"
@@ -16,7 +16,7 @@ function Introduction() {
 
     return ( 
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="650">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="680">
                 <img src={IT_bilim_logo} alt="IT bilim logo" className="Logo" />
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -74,7 +74,7 @@ function Introduction() {
                     
                 </div>
            
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-xl navbar-light bg-light">
                     <div class="container-fluid p-0 ps-4">
                         <a class="navbar-brand" href="#">
                             {/* <img src="https://it-bilim.uz/themes/assets/images/icons/logo/logo_uz.svg"/> */}
@@ -150,8 +150,6 @@ function Introduction() {
                 </nav>
               
          
-
-
                 <div className="bottom_box d-none d-sm-flex">
                     <button id="part">Hamkorlar</button>
                     <button id="team">Bandlik</button>
@@ -159,8 +157,6 @@ function Introduction() {
                     <button id="Japan">IT bilim JAPAN</button>
                 </div>
 
-                
-           
             </div>
 
         </div>
