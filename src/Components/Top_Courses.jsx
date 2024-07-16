@@ -19,7 +19,8 @@ function TopCourses() {
         grey_text: "IT Bilim Academy",
         price1: "10 750 000 so’mdan",
         price2: "680 556 so’mdan / oyga",
-        duration: "3 oy"
+        duration: "3 oy",
+        link: "https://bilgi.uz/uz/courses/marketing/it-recruitment/"
       },
       {
         id: 2,
@@ -29,7 +30,8 @@ function TopCourses() {
         grey_text: "Uacademy",
         price1: "5 912 500 so’mdan",
         price2: "374 306 so’mdan / oyga",
-        duration: "2 oy"
+        duration: "2 oy",
+        link: "https://bilgi.uz/uz/courses/Project%20manager-/project-manager/Backend-Lead-online/"
       },
       {
         id: 3,
@@ -39,7 +41,8 @@ function TopCourses() {
         grey_text: "PROWEB",
         price1: "12 900 000 so’mdan",
         price2: "816 667 so’mdan / oyiga",
-        duration: "8 oy"
+        duration: "8 oy",
+        link: "https://bilgi.uz/uz/courses/programmirovanie/mobilnaya-razrabotka/android-ios-razrabotka-/"
       },
       {
         id: 4,
@@ -49,7 +52,8 @@ function TopCourses() {
         grey_text: "HAAD LC",
         price1: "11 825 000 so’mdan",
         price2: "748 611 so’mdan / oyiga",
-        duration: "5 oy"
+        duration: "5 oy",
+        link: "https://bilgi.uz/uz/courses/programmirovanie/php-razrabotka/net-/net-backend/"
       },
       {
         id: 5,
@@ -59,7 +63,8 @@ function TopCourses() {
         grey_text: "Coursera",
         price1: "6 020 000 so'mdan",
         price2: "381 111 so'mdan / oyiga",
-        duration: "4 oy"
+        duration: "4 oy",
+        link: "https://bilgi.uz/courses/programmirovanie/frontend-razrabotka/"
       },
       {
         id: 6,
@@ -69,7 +74,8 @@ function TopCourses() {
         grey_text: "IT PARK UNIVERSITY UpSkill",
         price1: "9 836 250 so'mdan",
         price2: "622 708 so'mdan / oyiga",
-        duration: "12 oy"
+        duration: "12 oy",
+        link: "https://bilgi.uz/courses/programmirovanie/php-razrabotka/java/java-razrabotchik-s/"
       }
     ];
 
@@ -83,7 +89,7 @@ function TopCourses() {
       <h2>TOP Kurslar</h2>
       <div className="Courses_card_box">
         {cards.map((info) => (
-          <a key={info.id} className="Course_cards" href="https://bilgi.uz/uz/courses/marketing/it-recruitment/">
+          <a key={info.id} className="Course_cards" href={info.link} target="_">
             <img src={info.image} alt={`Course ${info.id}`} />
 
             <div className="Line_holder">
