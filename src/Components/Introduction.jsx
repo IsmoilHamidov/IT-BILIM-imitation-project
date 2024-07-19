@@ -5,6 +5,8 @@ import team from "../Assets/7ea5fe56831c.jpg"
 // import It_bilim from "../Assets/b6d6df6722ad.png"
 import bilgi from "../Assets/bilgi_img.jpg"
 import IT_bilim_logo from "../Assets/logo1_uz.svg"
+;
+
 
 
 
@@ -41,7 +43,7 @@ function Introduction() {
                             </clipPath>
                         </defs>
                     </svg>
-                    
+                
               
                     <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg2">
                         <g clip-path="url(#clip0_645_123)">
@@ -156,7 +158,6 @@ function Introduction() {
                     <button id="Bilgi">Bilgi.uz</button>
                     <button id="Japan">IT bilim JAPAN</button>
                 </div>
-
             </div>
 
         </div>

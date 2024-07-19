@@ -15,6 +15,7 @@ body{
     padding: 60px 30px;
     /* border: 2px solid red; */
     height: 750px;
+    position: relative;
 }
 
 .slide{
@@ -44,6 +45,18 @@ body{
     filter: brightness(70%);
 }
 
+
+  
+  .particles canvas{
+    z-index: -1;
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+
 .navbar{
     position: absolute;
     width: 100%;
@@ -71,7 +84,7 @@ body{
     width: 39%;
     background-color: white;
     border-radius: 0px 0px 0px 32px;
-    z-index: 8;
+    z-index: 3;
 }
 
 
@@ -87,7 +100,6 @@ body{
     width: 180px;
     object-fit: contain;
 }
-
 
 .nav-item{
     height: 100%;
@@ -148,7 +160,7 @@ body{
 
 /* ---*/
 .burger{
-    width: 65%;
+    width: 60%;
     height: 85%;
     margin: 0 auto;
     display: flex;
@@ -159,7 +171,7 @@ body{
     width: 5%;
     height: 3.4px;
     background-color: #303030;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .offcanvas{
@@ -186,13 +198,13 @@ body{
     text-decoration: none;
 }
 .canvas_navs a{
-    font-size: 23px;
+    font-size: 19px;
 }
 .offcanvas_apply{
     display: flex;
     height: auto;
     align-items: center;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     margin-top: 15px;
 }
@@ -210,7 +222,7 @@ body{
 }
 .offcanvas_apply span i{
     color: #7eb649;
-    font-size: 19px;
+    font-size: 18px;
 }
 .offcanvas_apply span img{
     object-fit: contain;
@@ -818,29 +830,3 @@ body{
 
 
 
-
- .carousel-container {
-    position: relative;
-  }
-  
-  .bottom_box {
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: add a background to the button container */
-  }
-  
-  .slider {
-    display: flex;
-    white-space: nowrap;
-    transition: transform 1s ease;
-  }
-  
-  .slider button {
-    flex: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    white-space: nowrap;
-  }
-  
