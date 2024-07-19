@@ -56,11 +56,13 @@
     font-weight: 400;
     box-sizing: border-box;
 }
+
 .swiper_bottom_Card img {
     width: 100%;
     height: 62%;
     object-fit: cover;
     border-radius: 15px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.3) inset;
 }
 .swiper_card_Images {
     width: 100%;
@@ -106,7 +108,7 @@
 }   
 .swiper_slide{
     width: 70% ;
-    height: 140px;
+    height: 135px;
     background-color: white;
     padding: 10px;
     border-radius: 15px;

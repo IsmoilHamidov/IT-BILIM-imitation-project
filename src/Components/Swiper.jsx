@@ -99,7 +99,7 @@ function SwiperSlider() {
           }}
         >
           <div className="swiper_bottom_Card">
-            <img src={pearson} alt="" />
+                <img src={pearson} alt="" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                   <h2>Xalqaro Test Markazi</h2>

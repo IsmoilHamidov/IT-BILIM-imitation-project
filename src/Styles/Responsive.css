@@ -15,7 +15,7 @@
         width: 130px;
         height: 60px;
         object-fit: contain;
-        left: 5%;
+        left: 4%;
         top: 3%;
         position: absolute;
     }
@@ -134,7 +134,7 @@
     .swiper_bottom_card_holder_top h2{
         font-size: 20px;
         font-weight: 400;
-        margin-bottom: 15px;
+        margin: 5px 0px 15px 0px;
     }
     .swiper_bottom_card_holder_top p{
         margin: 0px;
@@ -437,9 +437,9 @@
     }
     .Logo{
         width: 180px;
-        height: 60px;
+        height: 80px;
         object-fit: contain;
-        left: 5%;
+        left: 4%;
         top: 3%;
         position: absolute;
     }
@@ -576,7 +576,7 @@
     .swiper_bottom_card_holder_top h2{
         font-size: 25px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin: 5px 0px 20px 0px;
     }
     .swiper_bottom_card_holder_top p{
         margin: 0px;
@@ -880,9 +880,9 @@
     }
     .Logo{
         width: 180px;
-        height: 60px;
+        height: 80px;
         object-fit: contain;
-        left: 5%;
+        left: 4%;
         top: 3%;
         position: absolute;
     }
@@ -1017,8 +1017,7 @@
     }
     .swiper_btn_group{
         width: 130px;
-        margin-top: 10px;
-        border: 2px solid red;
+        margin-top: 0px;
     }
     
     
@@ -1050,7 +1049,7 @@
     .swiper_bottom_card_holder_top h2{
         font-size: 24px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin: 5px 0px 20px 0px;
     }
     .swiper_bottom_card_holder_top p{
         margin: 0px;
@@ -1083,7 +1082,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 2px solid aqua;
     }
     .first_line_text{
         width: 100%;
@@ -1376,9 +1374,9 @@
     }
     .Logo{
         width: 180px;
-        height: 60px;
+        height: 80px;
         object-fit: contain;
-        left: 5%;
+        left: 4%;
         top: 3%;
         position: absolute;
     }
@@ -1499,8 +1497,6 @@
     }
     .swiper_btn_group{
         width: 130px;
-        margin-top: 10px;
-        border: 2px solid red;
     }
     
     
@@ -1532,7 +1528,7 @@
     .swiper_bottom_card_holder_top h2{
         font-size: 26px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin: 5px 0px 20px 0px;
     }
     .swiper_bottom_card_holder_top p{
         margin: 0px;
@@ -1564,7 +1560,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 2px solid aqua;
     }
     .first_line_text{
         width: 100%;
@@ -1844,483 +1839,958 @@
 
 
 @media screen and (min-width: 1050px){
-    .navbar-expand-lg .navbar-nav{
-        flex-direction: column
+.navbar-expand-lg .navbar-nav{
+    flex-direction: column
+}
+    /* Introduction */
+    .Carsuel_box{
+        height: auto;
+        padding: 60px 20px;
     }
-        /* Introduction */
-        .Carsuel_box{
-            height: auto;
-            padding: 60px 20px;
-        }
-        .slide{
-            position: relative;
-            z-index: 10;
-            overflow: hidden;
-        }
-        .Logo{
-            width: 200px;
-            height: 80px;
-            object-fit: contain;
-            left: 5%;
-            top: 3%;
-            position: absolute;
-        }
-        .carousel-item img{
-            width: 100%;
-            height: 620px;
-            object-fit: cover;
-            border-radius: 25px !important;
-        }
-        .navbar-toggler{
-            height: 55px;
-            width: 13%;
-            background-color: white;
-            border-radius: 0px 0px 0px 32px;
-            z-index: 8;
-            border: none !important;
-        }  
-        .svg{
-            position: absolute;
-            top: 0px;
-            left: 85.52%;
-            z-index: 7;
-            /* border: 2px solid red; */
-        }
-        .svg2{
-            position: absolute;
-            top: 8.8%;
-        }
-        .svg3{
-            position: absolute;
-            right: 22.2%;
-            display: block;
-            /* border: 2px solid red; */
-        }
-        .svg4{
-            position: absolute;
-            display: block;
-            bottom: 50px;
-        }
-        .svg5{  
-            position: absolute;
-            right: 0px;
-            top: 8.55%;
-            /* border: 2px solid red; */
-        }
-        .svg6{  
-            position: absolute;
-            top: 0%;
-            left: 47.99%;
-            /* border: 2px solid red; */
+    .slide{
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+    }
+    .Logo{
+        width: 180px;
+        height: 80px;
+        object-fit: contain;
+        left: 4%;
+        top: 3%;
+        position: absolute;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+        border-radius: 25px !important;
+    }
+    .navbar-toggler{
+        height: 55px;
+        width: 13%;
+        background-color: white;
+        border-radius: 0px 0px 0px 32px;
+        z-index: 8;
+        border: none !important;
+    }  
+    .svg{
+        position: absolute;
+        top: 0px;
+        left: 85.52%;
+        z-index: 7;
+        /* border: 2px solid red; */
+    }
+    .svg2{
+        position: absolute;
+        top: 8.8%;
+    }
+    .svg3{
+        position: absolute;
+        right: 22.2%;
+        display: block;
+        /* border: 2px solid red; */
+    }
+    .svg4{
+        position: absolute;
+        display: block;
+        bottom: 50px;
+    }
+    .svg5{  
+        position: absolute;
+        right: 0px;
+        top: 8.55%;
+        /* border: 2px solid red; */
+    }
+    .svg6{  
+        position: absolute;
+        top: 0%;
+        left: 47.99%;
+        /* border: 2px solid red; */
 
-        }
-        .bottom_box{
-            position: absolute;
-            background-color: white;
-            width: 85%;
-            bottom: 0px;
-            height: 50px;
-            /* border: 2px solid rgb(0, 255, 157); */
-            border-top-right-radius: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: end;
-            column-gap: 14px;
-            overflow: hidden;
-        }
-        .bottom_box button{
-            width: 25%;
-            height: 82%;
-            border: 1px solid #303030;
-            color: #303030;
-            padding: 2px;
-            font-size: 16px;
-            font-weight: 500;
-            border-radius: 12px;
-            outline: none;
-            background-color: white;
-            transition: .3s ease-in
-        }
-        
-        .info_Project_box{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            padding: 40px 20px;
-            justify-content: space-between;
-        }
-        .info_Project_box h2{
-            font-size: 27px;
-            font-weight: 500;
-        }
+    }
+    .bottom_box{
+        position: absolute;
+        background-color: white;
+        width: 85%;
+        bottom: 0px;
+        height: 50px;
+        /* border: 2px solid rgb(0, 255, 157); */
+        border-top-right-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        column-gap: 14px;
+        overflow: hidden;
+    }
+    .bottom_box button{
+        width: 25%;
+        height: 82%;
+        border: 1px solid #303030;
+        color: #303030;
+        padding: 2px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 12px;
+        outline: none;
+        background-color: white;
+        transition: .3s ease-in
+    }
     
-        .info_Project_box div p{
-            width: 100%;
-            font-size: 16px; 
-            font-weight: 400;
-            line-height: 25px;
-        }
+    .info_Project_box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 40px 20px;
+        justify-content: space-between;
+    }
+    .info_Project_box h2{
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    .info_Project_box div p{
+        width: 100%;
+        font-size: 16px; 
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .media{
+        width: 100%;
+        height: 550px;
+        border-radius: 17px;
+        object-fit: cover;
+    }
+
+    /* Swiper */
+    .Projects_Swiper{
+        padding: 60px 20px;
+    }
+    .swiper_top{
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .Projects_Swiper h2 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+    .swiper_btn_group{
+        width: 130px;
+    }
     
-        .media{
-            width: 100%;
-            height: 550px;
-            border-radius: 17px;
-            object-fit: cover;
-        }
     
-        /* Swiper */
-        .Projects_Swiper{
-            padding: 60px 20px;
-        }
-        .swiper_top{
-            display: flex;
-            height: auto;
-            flex-direction: row;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .Projects_Swiper h2 {
-            font-size: 32px;
-            font-weight: 500;
-            margin-bottom: 0px;
-        }
-        .swiper_btn_group{
-            width: 130px;
-            margin-top: 10px;
-            border: 2px solid red;
-        }
-        
-        
-        .swiper_bottom_Card{
-            min-width: 49%;
-            height: auto;
-            padding: 30px 30px;
-            justify-content: flex-start;
-        }
-        .swiper_bottom_Card img{
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-        }
-        .swiper_bottom_card_holder{
-            width: 100%;
-            height:  40%; 
-            display: grid;
-            align-content: space-between;
-            row-gap: 15px;
-        }
-        .swiper_bottom_card_holder_top{
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 0px;
-        }
-        .swiper_bottom_card_holder_top h2{
-            font-size: 26px;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-        .swiper_bottom_card_holder_top p{
-            margin: 0px;
-            font-size: 16px;
-        }
-        .swiper_bottom_card_holder a {
-            font-size: 16px;
-        }
-        .swiper_bottom_card_holder a i {
-           font-size: 20px;
-        }
+    .swiper_bottom_Card{
+        min-width: 49%;
+        height: auto;
+        padding: 30px 30px;
+        justify-content: flex-start;
+    }
+    .swiper_bottom_Card img{
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+    .swiper_bottom_card_holder{
+        width: 100%;
+        height:  40%; 
+        display: grid;
+        align-content: space-between;
+        row-gap: 15px;
+    }
+    .swiper_bottom_card_holder_top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .swiper_bottom_card_holder_top h2{
+        font-size: 26px;
+        font-weight: 400;
+        margin: 5px 0px 20px 0px;
+    }
+    .swiper_bottom_card_holder_top p{
+        margin: 0px;
+        font-size: 16px;
+    }
+    .swiper_bottom_card_holder a {
+        font-size: 16px;
+    }
+    .swiper_bottom_card_holder a i {
+        font-size: 20px;
+    }
+
+    .Courses_card_box{
+        display: flex;
+        flex-direction: row;
+    }
+    .Course_cards{
+        width: 49%;
+        height: auto;
+    }
+    .Course_cards img{
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+    }
+    .Line_holder{
+        padding: 10px 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .first_line_text{
+        width: 100%;
+        height: 42px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 3px;
+    }
+    .first_line_text p{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0px;
+    }
+    .first_line_text p:nth-child(2){    
+        text-align: start;
+        margin-left: 0px;
+    }
+    .grey_text{
+        height: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 5px 0px;
+    }
+    .second_line_text{
+        width: 100%;
+        height: 80px;
+    }
+    .second_line_text div{
+        width: auto;
+        margin: 0px 7px 10px 0px;
+    }
+    .second_line_text div p{
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .second_line_text div h5{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .Line_holder span{
+        height: 35px;
+        font-size: 16px;
+    }
+    .Line_holder span i{
+        font-size: 18px;
+    }
+    .Data_numbers_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 40px;
+        column-gap: 10px;
+        row-gap: 25px;
+        /* border: 2px solid red; */
+    }
+    .numbers{
+        width: 32%;
+        height: auto;      
+    }
+    .numbers h3{
+        font-size: 47px;
+        font-weight: 400;
+        margin: 0px;
+    }
+    .numbers p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    /* swiper 2 */
+    .slider-container {
+        width: 100%;
+        margin-top: 25px; 
+    }   
+    .slick-slide{
+        width: 225px !important;
+        /* border: 2px solid blue; */
+    }
+    .swiper_slide{
+        width: 90% !important;
+        height: 135px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(48, 48, 48, 0.1);
+    }
     
-        .Courses_card_box{
-            display: flex;
-            flex-direction: row;
-        }
-        .Course_cards{
-            width: 49%;
-            height: auto;
-        }
-        .Course_cards img{
-            width: 100%;
-            height: 340px;
-            object-fit: cover;
-        }
-        .Line_holder{
-            padding: 10px 20px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border: 2px solid aqua;
-        }
-        .first_line_text{
-            width: 100%;
-            height: 42px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            row-gap: 3px;
-        }
-        .first_line_text p{
-            width: auto;
-            height: auto;
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0px;
-        }
-        .first_line_text p:nth-child(2){    
-            text-align: start;
-            margin-left: 0px;
-        }
-        .grey_text{
-            height: 50px;
-            font-size: 18px;
-            font-weight: 500;
-            margin: 5px 0px;
-        }
-        .second_line_text{
-            width: 100%;
-            height: 80px;
-        }
-        .second_line_text div{
-            width: auto;
-            margin: 0px 7px 10px 0px;
-        }
-        .second_line_text div p{
-            font-weight: 400;
-            font-size: 17px;
-        }
-        .second_line_text div h5{
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .Line_holder span{
-            height: 35px;
-            font-size: 16px;
-        }
-        .Line_holder span i{
-            font-size: 18px;
-        }
-        .Data_numbers_box{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 60px 40px;
-            column-gap: 10px;
-            row-gap: 25px;
-            /* border: 2px solid red; */
-        }
-        .numbers{
-            width: 32%;
-            height: auto;      
-        }
-        .numbers h3{
-            font-size: 47px;
-            font-weight: 400;
-            margin: 0px;
-        }
-        .numbers p{
-            font-size: 16px;
-            font-weight: 400;
-        }
-        /* swiper 2 */
-        .slider-container {
-            width: 100%;
-            margin-top: 25px; 
-        }   
-        .slick-slide{
-            width: 225px !important;
-            /* border: 2px solid blue; */
-        }
-        .swiper_slide{
-            width: 90% !important;
-            height: 135px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 15px;
-            box-shadow: 0 6px 10px rgba(48, 48, 48, 0.1);
-        }
-        
-        .IT_bilim_holder div{
-            padding: 60px 20px;
-            height: 280px;
-            max-height: 400px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            row-gap: 20px;
-            align-items: center;
-        }
-        .IT_bilim_holder h2{
-            width: 50%;
-            font-size: 33px;
-            font-weight: 400;
-            line-height: 43px;
-        }
-        .IT_bilim_holder a{
-            font-size: 35px;
-            font-weight: 400;
-        }
-     
-        .card {
-            width: 41%;
-            height: 405px;
-            position: relative;
-            margin-top: 25px;
-          }
-        .card img{
-            width: 100%;
-            height: 68%;
-            border-radius: 15px 15px 0px 0px;
-            object-fit: cover;
-            z-index: 5;
-            position: absolute;
-            top: 0px;
-          }
-        .black_box{
-            width: 100%;
-            height: 140px;
-            max-height: 500px;
-            font-size: 19px;
-            overflow: hidden; 
-          }
-        .Green_player{
-            width: 85px;
-            height: 85px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -120%);
-        }
-        .Green_player i{
-            font-size: 30px;
-        }
-        .modal-content {
-            border: none;
-            width: 80%; 
-            height: 75%;
-            position: relative;
-            text-align: center;
-        }
+    .IT_bilim_holder div{
+        padding: 60px 20px;
+        height: 280px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .IT_bilim_holder h2{
+        width: 50%;
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 43px;
+    }
+    .IT_bilim_holder a{
+        font-size: 35px;
+        font-weight: 400;
+    }
     
-          .Map_container{
-            width: 100%;
-            padding: 20px 0px 0px;
+    .card {
+        width: 41%;
+        height: 405px;
+        position: relative;
+        margin-top: 25px;
         }
-          .Map_container h2{
-            font-size: 26px;
-            font-weight: 500;
-            margin: 30px 20px;
+    .card img{
+        width: 100%;
+        height: 68%;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+        z-index: 5;
+        position: absolute;
+        top: 0px;
         }
-        .Map_size{
-            width: 100%;
-            height: 500px;
+    .black_box{
+        width: 100%;
+        height: 140px;
+        max-height: 500px;
+        font-size: 19px;
+        overflow: hidden; 
         }
+    .Green_player{
+        width: 85px;
+        height: 85px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -120%);
+    }
+    .Green_player i{
+        font-size: 30px;
+    }
+    .modal-content {
+        border: none;
+        width: 80%; 
+        height: 75%;
+        position: relative;
+        text-align: center;
+    }
+
+        .Map_container{
+        width: 100%;
+        padding: 20px 0px 0px;
+    }
+        .Map_container h2{
+        font-size: 26px;
+        font-weight: 500;
+        margin: 30px 20px;
+    }
+    .Map_size{
+        width: 100%;
+        height: 500px;
+    }
+
+        .Footer{
+        /* border: 2px solid red; */
+    }
+        .footer_top{
+        flex-direction: column;
+    }
+        .footer_left{
+        width: 100%;
+    }
+        .footer_left img{
+        width: 170px;
+        height: 65px;
+        object-fit: contain;
+    }
+    .f_white_text{
+        margin: 0px 0px 20px 0px !important;
+        font-weight: 400;
+        font-size: 18px !important;
+    }
+        .f_grey_box p{
+        font-size: 16px;
+    }
+        .Icons_box{
+        width: 90%;
+    }
+        .Icons_box div{
+        width: 35px;
+        height: 35px;
+        display: flex;
+    }
+        .Icons_box div img{
+        width: 17px;
+        height: 17px;
+    }
+        .Email_box input::placeholder{
+        color: #a4a4a4;
+        font-size: 16px;
+    }
+    .Email_box div{
+        width: 100%;
+        color: #a4a4a4;
+        font-weight: 400;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+    }
+        .Email_box div span{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .Email_box div span a{
+        color: #a4a4a4;
+        font-size: 16px;
+        font-weight: 400;
+        transition: .2s ease-in-out;
+        margin: 0px 5px;
+    }
+    .Email_box button{
+        width: 100px;
+        height: 45px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .footer_right{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 35px 0px 0px 0px;
+        row-gap: 25px;
+        /* border: 2px solid red; */
+    }
+    .footer_right_child{
+        width: 20%;
+        min-width: 0px;
+        /* border: 2px solid blue; */
+        max-height: 470px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+    .footer_right_child span{
+        font-size: 16px;
+        font-weight: 400;
+        color: #a4a4a4;
+        margin-bottom: 25px;
+    }
+    .Footer_bottom{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .Footer_bottom span{
+        width: auto;
+        font-size: 17px;
+        margin-bottom: 0px;
+        line-height: 25px;
+
+    }
+    .Footer_bottom a{
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+
+    /* Introduction */
+    .Carsuel_box{
+        height: auto;
+        padding: 60px 50px;
+    }
+    .slide{
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+    }
+    .Logo{
+        width: 180px;
+        height: 80px;
+        object-fit: contain;
+        left: 4%;
+        top: 3%;
+        position: absolute;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+        border-radius: 25px !important;
+    }
     
-          .Footer{
-            /* border: 2px solid red; */
-        }
-          .footer_top{
-            flex-direction: column;
-        }
-          .footer_left{
-            width: 100%;
-        }
-          .footer_left img{
-            width: 170px;
-            height: 65px;
-            object-fit: contain;
-        }
-        .f_white_text{
-            margin: 0px 0px 20px 0px !important;
-            font-weight: 400;
-            font-size: 18px !important;
-        }
-          .f_grey_box p{
-            font-size: 16px;
-        }
-          .Icons_box{
-            width: 90%;
-        }
-          .Icons_box div{
-            width: 35px;
-            height: 35px;
-            display: flex;
-        }
-          .Icons_box div img{
-            width: 17px;
-            height: 17px;
-        }
-          .Email_box input::placeholder{
-            color: #a4a4a4;
-            font-size: 16px;
-        }
-        .Email_box div{
-            width: 100%;
-            color: #a4a4a4;
-            font-weight: 400;
-            height: auto;
-            display: flex;
-            align-items: center;
-            margin: 25px 0px;
-        }
-          .Email_box div span{
-            width: 100%;
-            font-size: 16px;
-        }
+    .svg{
+        position: absolute;
+        top: 0px;
+        left: 46.1%;
+        z-index: 7;
+        /* border: 2px solid red; */
+    }
+    .svg2{
+        position: absolute;
+        top: 7.2%;
+    }
+    .svg3{
+        position: absolute;
+        right: 43.6%;
+        display: block;
+    }
+    .svg4{
+        position: absolute;
+        display: block;
+        bottom: 50px;
+    }
+    .svg5{  
+        position: absolute;
+        right: 0px;
+        top: 7.8%;
+    }
+    .svg6{  
+        position: absolute;
+        top: 0%;
+        left: 46.1%;
+        /* border: 2px solid red; */
+    }
+    .bottom_box{
+        position: absolute;
+        background-color: white;
+        width: 55%;
+        bottom: 0px;
+        height: 50px;
+        /* border: 2px solid rgb(0, 255, 157); */
+        border-top-right-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        column-gap: 14px;
+        overflow: hidden;
+    }
+    .bottom_box button{
+        width: 22%;
+        height: 82%;
+        border: 1px solid #303030;
+        color: #303030;
+        padding: 2px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 12px;
+        outline: none;
+        background-color: white;
+        transition: .3s ease-in
+    }
     
-        .Email_box div span a{
-            color: #a4a4a4;
-            font-size: 16px;
-            font-weight: 400;
-            transition: .2s ease-in-out;
-            margin: 0px 5px;
-        }
-        .Email_box button{
-            width: 100px;
-            height: 45px;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        .footer_right{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 35px 0px 0px 0px;
-            row-gap: 25px;
-            /* border: 2px solid red; */
-        }
-        .footer_right_child{
-            width: 20%;
-            min-width: 0px;
-            /* border: 2px solid blue; */
-            max-height: 470px;
-            display: flex;
-            flex-direction: column;
-            row-gap: 0px;
-        }
-        .footer_right_child span{
-            font-size: 16px;
-            font-weight: 400;
-            color: #a4a4a4;
-            margin-bottom: 25px;
-        }
-        .Footer_bottom{
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
-        }
-        .Footer_bottom span{
-            width: auto;
-            font-size: 17px;
-            margin-bottom: 0px;
-            line-height: 25px;
+    .info_Project_box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 60px 50px;
+        justify-content: space-between;
+    }
+    .info_Project_box h2{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .info_Project_box div p{
+        width: 100%;
+        font-size: 16px; 
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .media{
+        width: 100%;
+        height: 600px;
+        border-radius: 17px;
+        object-fit: cover;
+    }
+
+    /* Swiper */
+    .Projects_Swiper{
+        padding: 60px 50px;
+    }
+    .swiper_top{
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .Projects_Swiper h2 {
+        font-size: 37px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+    .swiper_btn_group{
+        width: 130px;
+        margin-top: 0px;
+    }
     
+    .swiper_bottom_Card{
+        min-width: 47%;
+        height: auto;
+        padding: 30px 30px;
+        justify-content: flex-start;
+    }
+    
+    .swiper_bottom_Card img{
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        padding: 0px;
+        display: block;
+    }
+    .swiper_bottom_card_holder{
+        width: 100%;
+        height:  35%; 
+        display: grid;
+        align-content: space-between;
+        row-gap: 15px;
+    }
+    .swiper_bottom_card_holder_top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .swiper_bottom_card_holder_top h2{
+        font-size: 28px;
+        font-weight: 500;
+        margin: 5px 0px 20px 0px;
+    }
+    .swiper_bottom_card_holder_top p{
+        margin: 0px;
+        font-size: 16px;
+    }
+    .swiper_bottom_card_holder a {
+        font-size: 16px;
+    }
+    .swiper_bottom_card_holder a i {
+        font-size: 20px;
+    }
+
+    .Courses_card_box{
+        display: flex;
+        flex-direction: row;
+    }
+    .Course_cards{
+        width: 32%;
+        height: auto;
+    }
+    .Course_cards img{
+        width: 100%;
+        height: 309px;
+        object-fit: cover;
+    }
+    .Line_holder{
+        padding: 20px 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .first_line_text{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 3px;
+    }
+    .first_line_text p{
+        width: auto;
+        height: auto;
+        font-size: 19px;
+        font-weight: 500;
+        margin: 0px;
+    }
+    .first_line_text p:nth-child(2){    
+        text-align: start;
+        margin-left: 0px;
+    }
+    .grey_text{
+        height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0px;
+    }
+    .second_line_text{
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        flex-wrap: wrap;
+        /* border: 2px solid black; */
+        column-gap: 10px;
+    }
+    .second_line_text div{
+        width: auto;
+        margin: 0px 0px 5px 0px;
+    }
+    .second_line_text div p{
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .second_line_text div h5{
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .Line_holder span{
+        height: 35px;
+        font-size: 16px;
+    }
+    .Line_holder span i{
+        font-size: 18px;
+    }
+    .Data_numbers_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 50px;
+        column-gap: 10px;
+        row-gap: 25px;
+        /* border: 2px solid red; */
+    }
+    .numbers{
+        width: 24%;
+        height: 190px;      
+    }
+    .numbers h3{
+        font-size: 55px;
+        font-weight: 400;
+        margin: 0px;
+    }
+    .numbers p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    /* swiper 2 */
+    .slider-container {
+        width: 100%;
+        margin-top: 25px; 
+    }   
+    .slick-slide{
+        width: 255px !important;
+        /* border: 2px solid blue; */
+    }
+    .swiper_slide{
+        width: 92% !important;
+        height: 135px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(48, 48, 48, 0.1);
+    }
+    
+    .IT_bilim_holder div{
+        padding: 60px 20px;
+        height: 280px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .IT_bilim_holder h2{
+        width: 50%;
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 43px;
+    }
+    .IT_bilim_holder a{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    
+    .card {
+        width: 41%;
+        height: 405px;
+        position: relative;
+        margin-top: 25px;
         }
-        .Footer_bottom a{
-            font-size: 17px;
+    .card img{
+        width: 100%;
+        height: 68%;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+        z-index: 5;
+        position: absolute;
+        top: 0px;
         }
+    .black_box{
+        width: 100%;
+        height: 140px;
+        max-height: 500px;
+        font-size: 19px;
+        overflow: hidden; 
+        }
+    .Green_player{
+        width: 85px;
+        height: 85px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -120%);
+    }
+    .Green_player i{
+        font-size: 30px;
+    }
+    .modal-content {
+        border: none;
+        width: 80%; 
+        height: 75%;
+        position: relative;
+        text-align: center;
+    }
+
+        .Map_container{
+        width: 100%;
+        padding: 20px 0px 0px;
+    }
+        .Map_container h2{
+        font-size: 26px;
+        font-weight: 500;
+        margin: 30px 20px;
+    }
+    .Map_size{
+        width: 100%;
+        height: 500px;
+    }
+
+        .Footer{
+        /* border: 2px solid red; */
+    }
+        .footer_top{
+        flex-direction: column;
+    }
+        .footer_left{
+        width: 100%;
+    }
+        .footer_left img{
+        width: 170px;
+        height: 65px;
+        object-fit: contain;
+    }
+    .f_white_text{
+        margin: 0px 0px 20px 0px !important;
+        font-weight: 400;
+        font-size: 18px !important;
+    }
+        .f_grey_box p{
+        font-size: 16px;
+    }
+        .Icons_box{
+        width: 90%;
+    }
+        .Icons_box div{
+        width: 35px;
+        height: 35px;
+        display: flex;
+    }
+        .Icons_box div img{
+        width: 17px;
+        height: 17px;
+    }
+        .Email_box input::placeholder{
+        color: #a4a4a4;
+        font-size: 16px;
+    }
+    .Email_box div{
+        width: 100%;
+        color: #a4a4a4;
+        font-weight: 400;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+    }
+        .Email_box div span{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .Email_box div span a{
+        color: #a4a4a4;
+        font-size: 16px;
+        font-weight: 400;
+        transition: .2s ease-in-out;
+        margin: 0px 5px;
+    }
+    .Email_box button{
+        width: 100px;
+        height: 45px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .footer_right{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 35px 0px 0px 0px;
+        row-gap: 25px;
+        /* border: 2px solid red; */
+    }
+    .footer_right_child{
+        width: 20%;
+        min-width: 0px;
+        /* border: 2px solid blue; */
+        max-height: 470px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+    .footer_right_child span{
+        font-size: 16px;
+        font-weight: 400;
+        color: #a4a4a4;
+        margin-bottom: 25px;
+    }
+    .Footer_bottom{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .Footer_bottom span{
+        width: auto;
+        font-size: 17px;
+        margin-bottom: 0px;
+        line-height: 25px;
+
+    }
+    .Footer_bottom a{
+        font-size: 17px;
+    }
 }
