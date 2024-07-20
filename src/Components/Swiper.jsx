@@ -61,7 +61,7 @@ function SwiperSlider() {
   }, [offset]);
 
   return (
-    <div className="container-fluid h-auto Projects_Swiper">
+    <div className="container-fluid h-auto Projects_Swiper" id="Projects">
       <div className="swiper_top">
         <h2>Loyihalar</h2>
         <div className="swiper_btn_group">

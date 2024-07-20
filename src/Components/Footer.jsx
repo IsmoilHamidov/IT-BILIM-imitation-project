@@ -30,7 +30,7 @@ function Footer() {
 
   const handleBlur = () => {
     if (!isValidEmail && email.trim().length === 0) {
-      setTooltipMessage("To'ldirish uchub majburiydir");
+      setTooltipMessage("To'ldirish uchun majburiydir");
     }
   };
         
@@ -97,7 +97,7 @@ function Footer() {
 
 
                             <div> 
-                                <input class="form-check-input me-3" type="checkbox" checked/>
+                                <input class="form-check-input me-3" type="checkbox"/>
                                 <span> Men<a href="https://it-bilim.uz/maxfiylik-siyosati/">
                                 shaxsiy ma'lumotlarni</a> qayta ishlashga rozilik beraman</span>
                             </div>

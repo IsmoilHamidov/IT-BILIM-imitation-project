@@ -110,7 +110,7 @@ function Partnership() {
     };
 
     return (
-        <div className="Projects_Swiper" style={{ backgroundColor: "#F3F3F3" }}>
+        <div className="Projects_Swiper" id="Partners" style={{ backgroundColor: "#F3F3F3" }}>
             <h2>Hamkorlar</h2>
             <div className="slider-container">
                 <Slider {...settingsLeft}>

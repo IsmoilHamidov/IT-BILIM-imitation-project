@@ -18,20 +18,24 @@ function Introduction() {
 
     return ( 
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="680">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="610">
                 <img src={IT_bilim_logo} alt="IT bilim logo" className="Logo" />
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={partnership}  alt="..."/>
+                        <img src={partnership}  alt="partnership"/>
+                        <h3 className="Carousel_Img_Text">Hamkorlar - Linux Professional Insitute, CompTIA, openEDG, CISCO, Networking Academy</h3>
                     </div>
                     <div class="carousel-item">
-                        <img src={japan} alt="..."/>
+                        <img src={japan} alt="japan"/>
+                        <h3 className="Carousel_Img_Text">IT BILIM JAPAN - Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni o'qitish va tayyorlash loyihasi</h3>
                     </div>
                     <div class="carousel-item">
-                        <img src={team}  alt="..."/>
+                        <img src={team}  alt="team"/>
+                        <h3 className="Carousel_Img_Text">Maqsadli qarz - IT sohasida biznesni rivojlantirish va kengaytirish uchun</h3>
                     </div>
                     <div class="carousel-item">
-                        <img src={bilgi}  alt="..."/>
+                        <img src={bilgi}  alt="bilgi"/>
+                        <h3 className="Carousel_Img_Text">Bilgi.Uz - IT kurslarining katta tanlovi uchun qulay to'lov rejasi</h3>
                     </div>
                     <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg">
                         <g clip-path="url(#clip0_645_123)">
@@ -95,11 +99,11 @@ function Introduction() {
                                 </div>
                                 <div class="offcanvas-body">
                                    <div className="canvas_navs">
-                                    <a  aria-current="page" href="#">Biz haqimizda</a>
-                                    <a  href="#">Loyhalar </a>
-                                    <a  href="#">Kurslar </a>
-                                    <a  href="#">Hamkorlar </a>
-                                    <a  href="#">Kontaktlar </a>
+                                    <a  aria-current="page" href="#About_us">Biz haqimizda</a>
+                                    <a  href="#Projects">Loyhalar </a>
+                                    <a  href="#Courses">Kurslar </a>
+                                    <a  href="#Partners">Hamkorlar </a>
+                                    <a  href="#Contacts">Kontaktlar </a>
                                    </div>
 
                                    <a href="https://it-bilim.uz/tel:+998993301199" target="_"  className="offcanvas_apply">
@@ -130,19 +134,19 @@ function Introduction() {
                             <ul class="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">Biz haqimizda</a>
+                                    <a class="nav-link " aria-current="page" href="#About_us">Biz haqimizda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Loyhalar </a>
+                                    <a class="nav-link" href="#Projects">Loyhalar </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Kurslar </a>
+                                    <a class="nav-link " href="#Courses">Kurslar </a>
                                 </li>
                                 <li class="nav-item">     
-                                    <a class="nav-link " href="#">Hamkorlar </a>
+                                    <a class="nav-link " href="#Partners">Hamkorlar </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Kontaktlar </a>
+                                    <a class="nav-link " href="#Contacts">Kontaktlar </a>
                                 </li>
 
                             </ul>

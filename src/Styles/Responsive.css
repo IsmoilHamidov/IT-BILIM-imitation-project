@@ -25,7 +25,17 @@
         object-fit: cover;
         border-radius: 25px !important;
     }
- 
+    .Carousel_Img_Text{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+    }
+    
     .svg{
         position: absolute;
         top: 0px;
@@ -122,7 +132,6 @@
         flex-direction: column;
         justify-content: space-between;
         row-gap: 10px;
-        border: 2px solid orange;
     }
     .swiper_bottom_card_holder_top{
         width: 100%;
@@ -448,6 +457,16 @@
         height: 620px;
         object-fit: cover;
         border-radius: 25px !important;
+    }
+    .Carousel_Img_Text{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
     }
     .navbar-toggler{
         height: 55px;
@@ -891,6 +910,16 @@
         height: 620px;
         object-fit: cover;
         border-radius: 25px !important;
+    }
+    .Carousel_Img_Text{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 45px;
+        text-align: center;
     }
     .navbar-toggler{
         height: 55px;
@@ -1386,6 +1415,7 @@
         object-fit: cover;
         border-radius: 25px !important;
     }
+    
     .navbar-toggler{
         height: 55px;
         width: 14%;
@@ -1866,6 +1896,16 @@
         object-fit: cover;
         border-radius: 25px !important;
     }
+    .Carousel_Img_Text{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+    }
     .navbar-toggler{
         height: 55px;
         width: 13%;
@@ -2345,7 +2385,16 @@
         object-fit: cover;
         border-radius: 25px !important;
     }
-    
+    .Carousel_Img_Text{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 68px;
+        text-align: center;
+    }
     .svg{
         position: absolute;
         top: 0px;
@@ -2680,8 +2729,8 @@
         padding: 70px 0px 0px;
     }
     .Map_container h2{
-        font-size: 37px;
-        font-weight: 400;
+        font-size: 36px;
+        font-weight: 500;
         margin: 0px 0px 40px 250px;
     }
     .Map_size{

@@ -85,7 +85,7 @@ function TopCourses() {
   }, []);
 
   return (
-    <div className="container-fluid Projects_Swiper Top_course" style={{ backgroundColor: "#F3F3F3" }}>
+    <div className="container-fluid Projects_Swiper Top_course" id='Courses' style={{ backgroundColor: "#F3F3F3" }}>
       <h2>TOP Kurslar</h2>
       <div className="Courses_card_box">
         {cards.map((info) => (
@@ -115,6 +115,7 @@ function TopCourses() {
           </a>
         ))}
       </div>
+      <a className='Top_course_button' href="https://bilgi.uz/uz/" target="_">To'liq katalog</a>
     </div>
   );
 }
