@@ -97,7 +97,7 @@ function Footer() {
 
 
                             <div> 
-                                <input class="form-check-input me-3" type="checkbox"/>
+                                <input class="form-check-input me-3" type="checkbox" checked/>
                                 <span> Men<a href="https://it-bilim.uz/maxfiylik-siyosati/">
                                 shaxsiy ma'lumotlarni</a> qayta ishlashga rozilik beraman</span>
                             </div>
@@ -140,7 +140,7 @@ function Footer() {
 
             <div className="Footer_bottom">
                 <span>©2021-2024<a href="https://it-bilim.uz/" target="_"> IT bilimlarni rivojlantirish markazi - IT-BILIM</a></span>
-                <span>Veb-sayt yaratish<a href="https://ismoils-portfolio.netlify.app/" target="_">Hamidov I</a></span>
+                <span>Veb-sayt yaratish<a href="https://ismoils-portfolio.netlify.app/" target="_">HAMIDOV I</a></span>
             </div>
         </div>
         </>

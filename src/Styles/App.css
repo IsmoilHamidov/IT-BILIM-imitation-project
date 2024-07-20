@@ -601,12 +601,12 @@ body{
   }
   .Map_size{
     width: 100%;
-    height: 500px;
+    height: 550px;
   }
   .Footer{
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding: 30px 50px 0px 50px;
     background-color: #303030;
   }
   .footer_top{
@@ -729,7 +729,6 @@ body{
     border-radius: 0px;
     padding: 0px;
 }
-
 .Email_box div input[type="checkbox"]:checked {
     background-color: #a4a4a4;
 }
@@ -784,7 +783,7 @@ body{
     row-gap: 3px;
 }
 .footer_right_child span{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: #a4a4a4;
     margin-bottom: 35px;
@@ -800,7 +799,7 @@ body{
     margin-top: 50px;
     color: #a4a4a4;
     font-weight: 400;
-    padding: 30px 0px
+    padding: 40px 0px
 }
 .Footer_bottom span{
     font-size: 18px;

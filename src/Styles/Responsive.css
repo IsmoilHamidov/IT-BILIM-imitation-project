@@ -2370,7 +2370,7 @@
     .svg5{  
         position: absolute;
         right: 0px;
-        top: 7.8%;
+        top: 7.5%;
     }
     .svg6{  
         position: absolute;
@@ -2614,8 +2614,8 @@
     }
     
     .IT_bilim_holder div{
-        padding: 60px 20px;
-        height: 280px;
+        padding: 60px 50px;
+        height: 330px;
         max-height: 400px;
         display: flex;
         flex-direction: row;
@@ -2624,25 +2624,26 @@
         align-items: center;
     }
     .IT_bilim_holder h2{
-        width: 50%;
-        font-size: 33px;
+        width: 40%;
+        font-size: 37px;
         font-weight: 400;
-        line-height: 43px;
+        line-height: 45px;
     }
     .IT_bilim_holder a{
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 400;
     }
     
     .card {
-        width: 41%;
-        height: 405px;
+        width: 33%;
+        height: 390px;
         position: relative;
         margin-top: 25px;
         }
+
     .card img{
         width: 100%;
-        height: 68%;
+        height: 70%;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
         z-index: 5;
@@ -2651,7 +2652,7 @@
         }
     .black_box{
         width: 100%;
-        height: 140px;
+        height: 130px;
         max-height: 500px;
         font-size: 19px;
         overflow: hidden; 
@@ -2668,63 +2669,70 @@
     }
     .modal-content {
         border: none;
-        width: 80%; 
+        width: 70%; 
         height: 75%;
         position: relative;
         text-align: center;
     }
 
-        .Map_container{
+    .Map_container{
         width: 100%;
-        padding: 20px 0px 0px;
+        padding: 70px 0px 0px;
     }
-        .Map_container h2{
-        font-size: 26px;
-        font-weight: 500;
-        margin: 30px 20px;
+    .Map_container h2{
+        font-size: 37px;
+        font-weight: 400;
+        margin: 0px 0px 40px 250px;
     }
     .Map_size{
         width: 100%;
-        height: 500px;
+        height: 550px;
     }
 
-        .Footer{
+    .Footer{
         /* border: 2px solid red; */
     }
-        .footer_top{
-        flex-direction: column;
+    .footer_top{
+        display: flex;
+        flex-direction: row;
     }
-        .footer_left{
-        width: 100%;
+    .footer_left{
+        width: 30%;
     }
-        .footer_left img{
-        width: 170px;
-        height: 65px;
+    .footer_left img{
+        width: 195px;
+        height: 75px;
         object-fit: contain;
     }
     .f_white_text{
         margin: 0px 0px 20px 0px !important;
         font-weight: 400;
-        font-size: 18px !important;
+        font-size: 19px !important;
     }
-        .f_grey_box p{
-        font-size: 16px;
+    .f_grey_box a{
+        font-size: 17px;
     }
-        .Icons_box{
-        width: 90%;
+    .f_grey_box p{
+        font-size: 17px;
     }
-        .Icons_box div{
-        width: 35px;
-        height: 35px;
+    .Icons_box{
+        width: 49%;
+    }
+    .Icons_box div{
+        width: 40px;
+        height: 40px;
         display: flex;
     }
-        .Icons_box div img{
-        width: 17px;
-        height: 17px;
+    .Icons_box div img{
+        width: 20px;
+        height: 20px;
     }
-        .Email_box input::placeholder{
+    .Email_box input{
+        width: 100%;
+    };
+    .Email_box input::placeholder{
         color: #a4a4a4;
-        font-size: 16px;
+        font-size: 18px;
     }
     .Email_box div{
         width: 100%;
@@ -2735,52 +2743,51 @@
         align-items: center;
         margin: 25px 0px;
     }
-        .Email_box div span{
-        width: 100%;
+    .Email_box div span{
+        width: 90%;
         font-size: 16px;
     }
 
     .Email_box div span a{
         color: #a4a4a4;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 400;
         transition: .2s ease-in-out;
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 100px;
+        width: 110px;
         height: 45px;
         font-size: 16px;
         font-weight: 500;
     }
     .footer_right{
+        width: 70%;
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 35px 0px 0px 0px;
+        justify-content: flex-start;
+        padding: 20px 0px 0px 0px;
         row-gap: 25px;
         /* border: 2px solid red; */
     }
     .footer_right_child{
-        width: 20%;
-        min-width: 0px;
-        /* border: 2px solid blue; */
-        max-height: 470px;
+        width: 33%;
+        min-width: 300px;
+        max-height: 450px;
         display: flex;
         flex-direction: column;
-        row-gap: 0px;
+        row-gap: 3px;
     }
     .footer_right_child span{
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 400;
         color: #a4a4a4;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     .Footer_bottom{
         height: auto;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
     }
     .Footer_bottom span{
