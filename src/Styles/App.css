@@ -585,7 +585,7 @@ html{
     border: 1px solid #7eb649;
     color: #7eb649;
  }
-  .modal {
+  .Video_modal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,7 +598,7 @@ html{
     background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
   }
   
-  .modal-content {
+  .Video_madal_content{
     border: none;
     width: 65%; /* Increased width */
     position: relative;
@@ -606,7 +606,7 @@ html{
     height: 550px;
   }
   
-  .close {
+  .Closing {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -616,13 +616,13 @@ html{
     cursor: pointer;
   }
   
-  .close:hover,
-  .close:focus {
+  .Closing:hover,
+  .Closing:focus {
     color: black;
     text-decoration: none;
   }
   
-  .modal-content iframe {
+  .Video_madal_content iframe {
     width: 100%;
     height: 100%;
   }
@@ -860,6 +860,5 @@ html{
     margin-top: 5px;
  }
   
-
 
 

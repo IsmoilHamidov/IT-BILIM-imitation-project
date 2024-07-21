@@ -21,12 +21,10 @@ import ParticlesComponent from './Components/Particles';
 
 
 
-function App() {
+const App = () => {
 
   return (
-    <div className="App">
-
-          
+    <div>
           <Introduction/>
           <Info_Project/>
           <Carusel_ads/>

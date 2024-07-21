@@ -28,9 +28,9 @@ function Video_Card() {
 
 
                 {isModalOpen && (
-                    <div className="modal" onClick={closeModal}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <span className="close" onClick={closeModal}>&times;</span>
+                    <div className="modal Video_modal" onClick={closeModal}>
+                    <div className="modal-content Video_madal_content" onClick={(e) => e.stopPropagation()}>
+                        <span className="close Closing" onClick={closeModal}>&times;</span>
                         <iframe src="https://www.youtube.com/embed/WNzW3xuJELg?si=zQtpUqsnmvUNEzjZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     </div>
