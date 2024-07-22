@@ -40,7 +40,7 @@
 }
 .swiper_bottom_inner {
     display: flex;
-    column-gap: 25px;
+    column-gap: 20px;
     transition: transform 0.6s ease-in-out; 
 }
 .swiper_bottom_Card {
@@ -90,6 +90,7 @@
     font-size: 16px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 .swiper_bottom_Card a i {
     transition: transform 0.6s ease-in;

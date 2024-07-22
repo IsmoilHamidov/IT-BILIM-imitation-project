@@ -1939,13 +1939,12 @@
     .svg5{  
         position: absolute;
         right: 0px;
-        top: 8.55%;
-        /* border: 2px solid red; */
+        top: 8.20%;
     }
     .svg6{  
         position: absolute;
         top: 0%;
-        left: 47.99%;
+        left: 46.05%;
         /* border: 2px solid red; */
 
     }
@@ -2503,7 +2502,7 @@
     }
     
     .swiper_bottom_Card{
-        min-width: 47%;
+        min-width: 48%;
         height: auto;
         padding: 30px 30px;
         justify-content: flex-start;

@@ -5,6 +5,7 @@ import Introduction from './Components/Introduction';
 import './Styles/App.css';
 import "./Styles/Slider.css";
 import './Styles/Responsive.css';
+import './Styles/Modal.css';
 import SwiperSlider from './Components/Swiper';
 import Top_courses from './Components/Top_Courses';
 import Data_Numbes from './Components/Data_numbers';

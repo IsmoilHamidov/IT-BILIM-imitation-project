@@ -1,108 +1,90 @@
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+        {/*  <<< Modals Part >>>  */}        
 
 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen Modal_main">
+                    <div class="modal-content modal_box">
+                        <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                         
+                      <div class="modal-body row d-flex justify-content-between">
+                          <div className="modal_left col-12 col-xxl-5 p-0">
+                           <h2 class="modal-title m-0" id="exampleModalLabel">Xalqaro Test Markazi</h2>
+                            <i>
+                                IT bilimlarini rivojlantirish markazida tashkil etilgan Pearson VUE test markazi sizga IT-texnologiyalari sohasidagi dunyodagi yetakchi tashkilotlarning sertifikatlarini olish uchun o`z bilimlarini sinovdan o'tkazish xizmatlarini taklif etadi. Sinovdan muvaffaqiyatli o'tgan mutaxassislar bilim va malakalarini tasdiqlovchi sertifikatga ega bo`ladilar.
+                            </i>
+                            <i>
+                                Pearson VUE tizimi avtomatlashtirilgan masofaviy imtihon va o'z testlarini ishlab chiqadigan va xalqaro test markazlari tarmog'iga uzatuvchi homiy kompaniyalardan sertifikatlarni olishdir. Bizning Test Markazimiz sizga qulay sharoitlarda va administratorning malakali yordami bilan test sinovlaridan o'tish va kerakli sertifikatni olish imkonini beradi.
+                            </i>
+                            <i>
+                                Endi biz bilan siz quyidagi yoʻnalishlar boʻyicha xalqaro sertifikatlar olish uchun test sinovlaridan oʻtishingiz mumkin: 
+                            </i>
 
-const ParticlesComponent = (props) => {
+                            <ul>
+                                <li>
+                                  <i>axborot texnologiyalari</i>
+                                </li>
+                                <li>
+                                  <i>sog'liqni saqlash</i>
+                                </li>
+                                <li>
+                                  <i>iqtisodiyot</i>
+                                </li>
+                                <li>
+                                  <i>ta'lim</i>
+                                </li>
+                                <li>
+                                  <i>marketing</i>
+                                </li>
+                            </ul>
 
-  const [init, setInit] = useState(false);
-  // this should be run only once per application lifetime
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
-      await loadSlim(engine);
-      //await loadBasic(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
+                            <i>Test markazi dunyoning yetakchi tashkilotlari: LPI-Linux Professional Institute (LPIC-2 va LPIC-3), OpenEDG (Python Institute), Cisco (CCNA, CCNP), CompTIA va boshqa xalqaro sertifikatlarini taqdim etadi.</i>
+                            <i>Xalqaro sertifikat olish martaba o'sishi va ko`proq maosh oluvchi mutaxassisga aylanishingiz uchun yaxshi imkoniyatlar eshigini ochadi. Shuningdek, 
+                              <a href="https://www.it-istedod.uz/index-uz" target="_" className="mx-2" style={{color:"#0066cc", textDecoration:"none"}}> it-istedod.uz</a>
+                              platformasi orqali xalqaro sertifikat olish uchun sarflangan mablag‘ning 50 foizigacha to‘lovni qaytarish uchun noyob imkoniyatga ega bo‘lishingiz mumkin. 
+                            </i>
+                            <b>IT Bilim Test Markazida imtihon topshiring va sertifikatlangan xalqaro mutaxassislarga aylaning!</b>
+                              
+                            <i><u style={{color: "#0066cc"}}>Imtihon ro`yxati</u></i>
+                              
+                            <p>
+                              Kontakt uchun telefon raqam:
+                              <a href="tel:+998555181199" target="_">
+                                <br />+998 55 518 11 99 
+                                <br />+998 99 594 11 99
+                              </a>  
+                            </p>
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+                            <p>Pochta: <a href="https://it-bilim.uz/info@it-bilim.uz" target="_">info@it-bilim.uz</a></p>
+                           
 
+                          </div>
 
-  const options = useMemo(
-    () => ({
-      background: {
-        color: {
-          value: "#1E2F97",
-        },
-      },
-      fpsLimit: 120,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "repulse",
-          },
-          onHover: {
-            enable: true,
-            mode: 'grab',
-          },
-        },
-        modes: {
-          push: {
-            distance: 200,
-            duration: 15,
-          },
-          grab: {
-            distance: 150,
-          },
-        },
-      },
-      particles: {
-        color: {
-          value: "#FFFFFF",
-        },
-        links: {
-          color: "#FFFFFF",
-          distance: 150,
-          enable: true,
-          opacity: 0.3,
-          width: 1,
-        },
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: true,
-          speed: 1,
-          straight: false,
-        },
-        number: {
-          density: {
-            enable: true,
-          },
-          value: 150,
-        },
-        opacity: {
-          value: 1.0,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 0, max: 3 },
-        },
-      },
-      detectRetina: true,
-    }),
-    [],
-  );
-
-
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
-};
-
-export default ParticlesComponent;
+                          <div className="modal_right col-12 col-xxl-6 p-0">
+                              <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
+                              <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
+                              <form action="" className="Modal_form">
+                                <label htmlFor="for1">Ism *</label>
+                                <input type="text" id="for1"/>
+                                <label htmlFor="for2">Telefon *</label>
+                                <input type="number" id="for2"/>
+                                <label htmlFor="for3">Email *</label>
+                                <input type="email" id="for3"/>
+                                <label htmlFor="for4">Tashkilot * </label>
+                                <input type="text" id="for4"/>
+                                <label htmlFor="for5">Izoh qoldiring </label>
+                                <textarea id="for5" class="not-valid" name="feedback[message]" data-empty="To'ldirish uchun majburiydir" tabindex="0"></textarea>
+                                
+                                <div className="d-flex align-items-center my-2">   
+                                  <input class="form-check-input me-3 my-0" type="checkbox" checked/>
+                                  <span>
+                                    Qayta ishlashga rozilik beraman 
+                                    <a  href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" tabindex="0">shaxsiy ma'lumotlar</a>
+                                  </span>
+                                </div>
+                                <button class="btn grey transparent small" type="submit">Yuborish</button>
+                              </form>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+          </div>

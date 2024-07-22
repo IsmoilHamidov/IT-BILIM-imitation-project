@@ -18,7 +18,7 @@ function Introduction() {
 
     return ( 
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="610">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="605">
                 <img src={IT_bilim_logo} alt="IT bilim logo" className="Logo" />
                 <div class="carousel-inner">
                     <div class="carousel-item active">
