@@ -219,7 +219,7 @@ function SwiperSlider() {
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                          
                       <div class="modal-body row d-flex justify-content-between">
-                          <div className="modal_left col-12 col-xxl-5 p-0">
+                          <div className="modal_left col-12 col-xl-5 p-0">
                            <h2 class="modal-title m-0" id="exampleModalLabel">Xalqaro Test Markazi</h2>
                             <i>
                                 IT bilimlarini rivojlantirish markazida tashkil etilgan Pearson VUE test markazi sizga IT-texnologiyalari sohasidagi dunyodagi yetakchi tashkilotlarning sertifikatlarini olish uchun o`z bilimlarini sinovdan o'tkazish xizmatlarini taklif etadi. Sinovdan muvaffaqiyatli o'tgan mutaxassislar bilim va malakalarini tasdiqlovchi sertifikatga ega bo`ladilar.
@@ -271,7 +271,7 @@ function SwiperSlider() {
 
                           </div>
 
-                          <div className="modal_right col-12 col-xxl-6 p-0">
+                          <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
                               <form action="" className="Modal_form">
@@ -314,7 +314,7 @@ function SwiperSlider() {
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                          
                       <div class="modal-body row d-flex justify-content-between">
-                          <div className="modal_left col-12 col-xxl-5 p-0">
+                          <div className="modal_left col-12 col-xl-5 p-0">
                            <h2 class="modal-title m-0" id="exampleModalLabel">IT sohasidagi ta’lim muassasalariga maqsadli qarz berish</h2>
                             <i>
                                 IT Parkning IT-ta’lim yo’nalishida faoliyat olib borayotgan rezident kompaniyalari maqsadli qarz olishlari mumkin. IT sohada ta’lim berishdan tashqari, maqsadli qarz olishning majburiy talablaridan biri bu o’qishni bitirgan talabalarni ish bilan ta’minlashdir. Ta’lim muassasalariga malakali mutaxassislarni tayyorlash sifatini oshirish, biznesni kengaytirish va modernizatsiya qilish uchun maqsadli qarz ajratiladi.
@@ -336,7 +336,7 @@ function SwiperSlider() {
                             
                           </div>
 
-                          <div className="modal_right col-12 col-xxl-6 p-0">
+                          <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
                               <form action="" className="Modal_form">
@@ -375,7 +375,7 @@ function SwiperSlider() {
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                          
                       <div class="modal-body row d-flex justify-content-between">
-                          <div className="modal_left col-12 col-xxl-5 p-0">
+                          <div className="modal_left col-12 col-xl-5 p-0">
                            <h2 class="modal-title m-0" id="exampleModalLabel">Ish bilan ta’minlash loyihasi – yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha</h2>
                             <i>
                               <b>«IT-BILIMLARNI RIVOJLANTIRISH MARKAZI» MChJ tasarrufida yaratilgan “yosh IT mutaxassislarni ish bilan ta’minlash va amaliyot o’tashda ko’maklashish” maqsadida tashkil etilgan loyiha.</b>
@@ -431,7 +431,7 @@ function SwiperSlider() {
                           </div>
 
 
-                          <div className="modal_right col-12 col-xxl-6 p-0">
+                          <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
                               <form action="" className="Modal_form">
