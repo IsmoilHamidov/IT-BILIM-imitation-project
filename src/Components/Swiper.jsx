@@ -5,6 +5,7 @@ import bilgi from "../Assets/bilgi_img.jpg";
 import group from "../Assets/b582c776c9f5.jpg";
 import coders from "../Assets/ed84f4ef2f2e.jpg";
 import pearson from "../Assets/pearson_img.png";
+import ModalForm from "./Modal_Form";
 
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
@@ -274,32 +275,7 @@ function SwiperSlider() {
                           <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
-                              <form action="" className="Modal_form">
-                                <label htmlFor="for1">Ism *</label>
-                                <input type="text" id="for1"/>
-                                <label htmlFor="for2">Telefon *</label>
-                                <input 
-                                type="text"
-                                value={value}
-                                onFocus={handleFocus}
-                                onChange={handleChange} 
-                                 id="for2"/>
-                                <label htmlFor="for3">Email *</label>
-                                <input type="email" id="for3"/>
-                                <label htmlFor="for4">Tashkilot * </label>
-                                <input type="text" id="for4"/>
-                                <label htmlFor="for5">Izoh qoldiring </label>
-                                <textarea id="for5" class="not-valid" name="feedback[message]" data-empty="To'ldirish uchun majburiydir" tabindex="0"></textarea>
-                                
-                                <div className="d-flex align-items-center my-2">   
-                                  <input class="form-check-input me-3 my-0" type="checkbox" defaultChecked/>
-                                  <span>
-                                    Qayta ishlashga rozilik beraman 
-                                    <a  href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" tabindex="0">shaxsiy ma'lumotlar</a>
-                                  </span>
-                                </div>
-                                <button class="btn grey transparent small" type="submit">Yuborish</button>
-                              </form>
+                              <ModalForm/>
                           </div>
                       </div>
                     </div>
@@ -339,27 +315,7 @@ function SwiperSlider() {
                           <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
-                              <form action="" className="Modal_form">
-                                <label htmlFor="for1">Ism *</label>
-                                <input type="text" id="for1"/>
-                                <label htmlFor="for2">Telefon *</label>
-                                <input type="number" id="for2"/>
-                                <label htmlFor="for3">Email *</label>
-                                <input type="email" id="for3"/>
-                                <label htmlFor="for4">Tashkilot * </label>
-                                <input type="text" id="for4"/>
-                                <label htmlFor="for5">Izoh qoldiring </label>
-                                <textarea id="for5" class="not-valid" name="feedback[message]" data-empty="To'ldirish uchun majburiydir" tabindex="0"></textarea>
-                                
-                                <div className="d-flex align-items-center my-2">   
-                                  <input class="form-check-input me-3 my-0" type="checkbox" defaultChecked/>
-                                  <span>
-                                    Qayta ishlashga rozilik beraman 
-                                    <a  href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" tabindex="0">shaxsiy ma'lumotlar</a>
-                                  </span>
-                                </div>
-                                <button class="btn grey transparent small" type="submit">Yuborish</button>
-                              </form>
+                              <ModalForm/>
                           </div>
                       </div>
                     </div>
@@ -434,27 +390,7 @@ function SwiperSlider() {
                           <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
-                              <form action="" className="Modal_form">
-                                <label htmlFor="for1">Ism *</label>
-                                <input type="text" id="for1"/>
-                                <label htmlFor="for2">Telefon *</label>
-                                <input type="number" id="for2"/>
-                                <label htmlFor="for3">Email *</label>
-                                <input type="email" id="for3"/>
-                                <label htmlFor="for4">Tashkilot * </label>
-                                <input type="text" id="for4"/>
-                                <label htmlFor="for5">Izoh qoldiring </label>
-                                <textarea id="for5" class="not-valid" name="feedback[message]" data-empty="To'ldirish uchun majburiydir" tabindex="0"></textarea>
-                                
-                                <div className="d-flex align-items-center my-2">   
-                                  <input class="form-check-input me-3 my-0" type="checkbox" defaultChecked/>
-                                  <span>
-                                    Qayta ishlashga rozilik beraman 
-                                    <a  href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" tabindex="0">shaxsiy ma'lumotlar</a>
-                                  </span>
-                                </div>
-                                <button class="btn grey transparent small" type="submit">Yuborish</button>
-                              </form>
+                              <ModalForm/>
                           </div>
                       </div>
                     </div>
