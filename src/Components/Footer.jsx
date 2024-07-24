@@ -89,7 +89,7 @@ function Footer() {
                                 required
                                 />
                                 {!isValidEmail && (
-                                <span className="invalid-feedback"></span>
+                                <span className="invalid-feedbacks"></span>
                                 )}
                                 {tooltipMessage && (
                                 <span className="invalid-feedback">{tooltipMessage}</span>
@@ -140,7 +140,7 @@ function Footer() {
 
             <div className="Footer_bottom">
                 <span>©2021-2024<a href="https://it-bilim.uz/" target="_"> IT bilimlarni rivojlantirish markazi - IT-BILIM</a></span>
-                <span>IT BILIM Veb-saytdan ilhomlanib taqlid tayyorlandi<a href="https://ismoils-portfolio.netlify.app/" target="_">HAMIDOV I</a></span>
+                <span>IT BILIM Veb-saytdan ilhomlanib taqlid qilib tayyorlandi<a href="https://ismoils-portfolio.netlify.app/" target="_">HAMIDOV I</a></span>
             </div>
         </div>
         </>

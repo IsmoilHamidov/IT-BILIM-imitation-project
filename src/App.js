@@ -15,6 +15,7 @@ import Video_Card from './Components/Video_Card';
 import Video_ads from './Components/Video_ads';
 import MapComponent from './Components/Map';
 import Footer from './Components/Footer';
+import Particle from './Components/Particles';
 
 
 
@@ -25,7 +26,7 @@ const App = () => {
 
   return (
     <div>
-
+         
           <Introduction/>
           <Info_Project/>
           <Carusel_ads/>

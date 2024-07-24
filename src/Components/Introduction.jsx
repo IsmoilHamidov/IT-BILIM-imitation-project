@@ -4,8 +4,8 @@ import partnership from "../Assets/download.jpg"
 import team from "../Assets/7ea5fe56831c.jpg"
 // import It_bilim from "../Assets/b6d6df6722ad.png"
 import bilgi from "../Assets/bilgi_img.jpg"
-import IT_bilim_logo from "../Assets/logo1_uz.svg"
-;
+import IT_bilim_logo from "../Assets/logo1_uz.svg";
+import Particles_Component from "./Particles";
 
 
 
@@ -21,6 +21,7 @@ function Introduction() {
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="605">
                 <img src={IT_bilim_logo} alt="IT bilim logo" className="Logo" />
                 <div class="carousel-inner">
+                    <Particles_Component/>
                     <div class="carousel-item active">
                         <img src={partnership}  alt="partnership"/>
                         <h3 className="Carousel_Img_Text">Hamkorlar - Linux Professional Insitute, CompTIA, openEDG, CISCO, Networking Academy</h3>
