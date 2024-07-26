@@ -27,9 +27,6 @@
     }
     .Carousel_Img_Text{
         width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         font-size: 28px;
         font-weight: 500;
         line-height: 42px;
@@ -488,9 +485,6 @@
     }
     .Carousel_Img_Text{
         width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         font-size: 28px;
         font-weight: 500;
         line-height: 42px;
@@ -944,9 +938,6 @@
     }
     .Carousel_Img_Text{
         width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         font-size: 34px;
         font-weight: 500;
         line-height: 45px;
@@ -1978,9 +1969,6 @@
     }
     .Carousel_Img_Text{
         width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         font-size: 40px;
         font-weight: 500;
         line-height: 48px;
@@ -2498,10 +2486,7 @@
     }
     .Carousel_Img_Text{
         width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 52px;
+        font-size: 54px;
         font-weight: 500;
         line-height: 68px;
         text-align: center;

@@ -49,14 +49,14 @@ html{
     object-fit: cover;
     position: relative;
     border-radius: 25px;
-    filter: brightness(70%);
+    filter: brightness(65%);
 }
 
 .Carousel_Img_Text{
     width: 74%;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     font-size: 54px;
     font-weight: 500;
@@ -64,7 +64,7 @@ html{
     text-align: center;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 1px 2px 2px black;
+    text-shadow: 1px 2px 1px black;
     z-index: 1 !important;
 }
 
