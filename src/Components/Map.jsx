@@ -1,6 +1,7 @@
 import React from 'react';
 
 const MapComponent = () => {
+  
   return (
     <div className='container-fluid Map_container' id='Contacts'>
       <h2>Bizni qanday topish mumkin</h2>

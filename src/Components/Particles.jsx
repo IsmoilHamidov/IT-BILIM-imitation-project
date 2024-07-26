@@ -73,10 +73,10 @@ export default function Particles_Component() {
                   straight: false,
                 },
                 number: {
-                  value: 105,
+                  value: 108,
                   density: {
                     enable: true,
-                    value_area: 130,
+                    value_area: 140,
                   },
                 },
                 opacity: {
@@ -86,7 +86,7 @@ export default function Particles_Component() {
                   type: "circle",
                 },
                 size: {
-                  value: { min: 1, max: 3 },
+                  value: { min: 1, max: 2.2 },
                 },
               },
               detectRetina: true,

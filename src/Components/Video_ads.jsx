@@ -7,7 +7,7 @@ function Video_ads() {
                     
                        
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="1000">
                     <video controls className="media" width="600"
                         autoPlay
                         loop

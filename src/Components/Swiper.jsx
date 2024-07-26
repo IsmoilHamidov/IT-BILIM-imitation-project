@@ -121,7 +121,7 @@ function SwiperSlider() {
           }}
         >
           <div className="swiper_bottom_Card">
-            <img src={pearson} alt="" />
+            <img src={pearson} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                 <h2>Xalqaro Test Markazi</h2>
@@ -136,7 +136,7 @@ function SwiperSlider() {
             </div>
           </div>
           <div className="swiper_bottom_Card">
-            <img src={japan} alt="" />
+            <img src={japan} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                 <h2>IT BILIM JAPAN</h2>
@@ -152,7 +152,7 @@ function SwiperSlider() {
             </div>
           </div>
           <div className="swiper_bottom_Card">
-            <img src={team} alt="" />
+            <img src={team} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                 <h2>Maqsadli qarz</h2>
@@ -164,7 +164,7 @@ function SwiperSlider() {
             </div>
           </div>
           <div className="swiper_bottom_Card">
-            <img src={bilgi} alt="" />
+            <img src={bilgi} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                 <h2>Bilgi.uz ta`lim marketpleysi</h2>
@@ -179,7 +179,7 @@ function SwiperSlider() {
             </div>
           </div>
           <div className="swiper_bottom_Card">
-            <img src={group} alt="" />
+            <img src={group} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                 <h2>IT BILIM Academy</h2>
@@ -192,7 +192,7 @@ function SwiperSlider() {
             </div>
           </div>
           <div className="swiper_bottom_Card">
-            <img src={coders} alt="" />
+            <img src={coders} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
                 <h2>Ish bilan ta’minlash loyihasi</h2>
@@ -215,14 +215,14 @@ function SwiperSlider() {
         {/*  <<< Modals Part >>>  */}
 
           {/* Modal 1 */}
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel first_modal" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen Modal_main">
-                    <div class="modal-content modal_box">
+        <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel first_modal" aria-hidden="true">
+                <div className="modal-dialog modal-fullscreen Modal_main">
+                    <div className="modal-content modal_box">
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                          
-                      <div class="modal-body row d-flex justify-content-between">
+                      <div className="modal-body row d-flex justify-content-between">
                           <div className="modal_left col-12 col-xl-5 p-0">
-                           <h2 class="modal-title m-0" id="exampleModalLabel">Xalqaro Test Markazi</h2>
+                           <h2 className="modal-title m-0" id="exampleModalLabel">Xalqaro Test Markazi</h2>
                             <i>
                                 IT bilimlarini rivojlantirish markazida tashkil etilgan Pearson VUE test markazi sizga IT-texnologiyalari sohasidagi dunyodagi yetakchi tashkilotlarning sertifikatlarini olish uchun o`z bilimlarini sinovdan o'tkazish xizmatlarini taklif etadi. Sinovdan muvaffaqiyatli o'tgan mutaxassislar bilim va malakalarini tasdiqlovchi sertifikatga ega bo`ladilar.
                             </i>
@@ -274,7 +274,7 @@ function SwiperSlider() {
                           </div>
 
                           <div className="modal_right col-12 col-xl-6 p-0">
-                              <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
+                              <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
                               <ModalForm/>
                           </div>
@@ -285,14 +285,14 @@ function SwiperSlider() {
 
 
           {/* Modal 2 */}
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen Modal_main">
-                    <div class="modal-content modal_box">
+        <div className="modal fade" id="exampleModal2" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-fullscreen Modal_main">
+                    <div className="modal-content modal_box">
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                          
-                      <div class="modal-body row d-flex justify-content-between">
+                      <div className="modal-body row d-flex justify-content-between">
                           <div className="modal_left col-12 col-xl-5 p-0">
-                           <h2 class="modal-title m-0" id="exampleModalLabel">IT sohasidagi ta’lim muassasalariga maqsadli qarz berish</h2>
+                           <h2 className="modal-title m-0" id="exampleModalLabel">IT sohasidagi ta’lim muassasalariga maqsadli qarz berish</h2>
                             <i>
                                 IT Parkning IT-ta’lim yo’nalishida faoliyat olib borayotgan rezident kompaniyalari maqsadli qarz olishlari mumkin. IT sohada ta’lim berishdan tashqari, maqsadli qarz olishning majburiy talablaridan biri bu o’qishni bitirgan talabalarni ish bilan ta’minlashdir. Ta’lim muassasalariga malakali mutaxassislarni tayyorlash sifatini oshirish, biznesni kengaytirish va modernizatsiya qilish uchun maqsadli qarz ajratiladi.
                             </i>
@@ -314,7 +314,7 @@ function SwiperSlider() {
                           </div>
 
                           <div className="modal_right col-12 col-xl-6 p-0">
-                              <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
+                              <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
                               <ModalForm/>
                           </div>
@@ -326,14 +326,14 @@ function SwiperSlider() {
 
 
           {/* Modal 3 */}
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen Modal_main">
-                    <div class="modal-content modal_box">
+        <div className="modal fade" id="exampleModal3" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-fullscreen Modal_main">
+                    <div className="modal-content modal_box">
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                          
-                      <div class="modal-body row d-flex justify-content-between">
+                      <div className="modal-body row d-flex justify-content-between">
                           <div className="modal_left col-12 col-xl-5 p-0">
-                           <h2 class="modal-title m-0" id="exampleModalLabel">Ish bilan ta’minlash loyihasi – yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha</h2>
+                           <h2 className="modal-title m-0" id="exampleModalLabel">Ish bilan ta’minlash loyihasi – yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha</h2>
                             <i>
                               <b>«IT-BILIMLARNI RIVOJLANTIRISH MARKAZI» MChJ tasarrufida yaratilgan “yosh IT mutaxassislarni ish bilan ta’minlash va amaliyot o’tashda ko’maklashish” maqsadida tashkil etilgan loyiha.</b>
                             </i>
@@ -389,7 +389,7 @@ function SwiperSlider() {
 
 
                           <div className="modal_right col-12 col-xl-6 p-0">
-                              <h2 class="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
+                              <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
                               <ModalForm/>
                           </div>

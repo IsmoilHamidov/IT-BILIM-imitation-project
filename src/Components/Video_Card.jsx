@@ -22,7 +22,7 @@ function Video_Card() {
                         Bilgi.uz da qanday qilib ro'yxatdan o'tish va ariza qoldirish
                     </div>
                     <div className="Green_player">
-                        <i class="fa-solid fa-play"></i>
+                        <i className="fa-solid fa-play"></i>
                     </div>
                 </div>
 

@@ -97,11 +97,11 @@ function Footer() {
 
 
                             <div> 
-                                <input class="form-check-input me-3" type="checkbox" defaultChecked/>
+                                <input className="form-check-input me-3" type="checkbox" defaultChecked/>
                                 <span> Men<a href="https://it-bilim.uz/maxfiylik-siyosati/">
                                 shaxsiy ma'lumotlarni</a> qayta ishlashga rozilik beraman</span>
                             </div>
-                            <button class="btn grey transparent small" type="submit">Yuborish</button>
+                            <button className="btn grey transparent small" type="submit">Yuborish</button>
                         </form>
                     </div>
                 </div>

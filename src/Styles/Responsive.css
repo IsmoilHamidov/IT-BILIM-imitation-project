@@ -58,7 +58,9 @@
     .svg4{
         display: none;
     }
-
+    .bottom_box{
+        display: none;
+    }
     .navbar-toggler{
         height: 55px;
         width: 30%;
@@ -522,32 +524,9 @@
         /* bottom: 50px; */
     }
     .bottom_box{
-        position: absolute;
-        background-color: white;
-        width: 65%;
-        bottom: 0px;
-        height: 50px;
-        /* border: 2px solid rgb(0, 255, 157); */
-        border-top-right-radius: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        column-gap: 14px;
-        overflow: hidden;
+        display: none;
     }
-    .bottom_box button{
-        width: 32%;
-        height: 82%;
-        border: 1px solid #303030;
-        color: #303030;
-        padding: 2px;
-        font-size: 16px;
-        font-weight: 500;
-        border-radius: 12px;
-        outline: none;
-        background-color: white;
-        transition: .3s ease-in
-    }
+   
 
     .info_Project_box{
         width: 100%;
@@ -1013,12 +992,12 @@
         top: 8.8%;
     }
     .svg3{
-        right: 22.2%;
+        right: 22.8%;
         display: block;
     }
     .svg4{
         display: block;
-        bottom: 50px;
+        bottom: 49px;
     }
     .svg5{  
         right: 0px;
@@ -1043,19 +1022,26 @@
         overflow: hidden;
     }
     .bottom_box button{
-        width: 25%;
-        height: 82%;
+        width: 44%;
+        height: 85%;
         border: 1px solid #303030;
         color: #303030;
         padding: 2px;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
         border-radius: 12px;
         outline: none;
         background-color: white;
         transition: .3s ease-in
     }
-    
+    .bottom_box button:nth-child(n+3)
+    {
+        display: none;
+    }
+
+    .button-carousel-container button:nth-child(-n+4) {
+        display: inline-block;
+    }
     .info_Project_box{
         width: 100%;
         display: flex;
@@ -1520,14 +1506,14 @@
     }
     .svg3{
         position: absolute;
-        right: 22.2%;
+        right: 13.1%;
         display: block;
         /* border: 2px solid red; */
     }
     .svg4{
         position: absolute;
         display: block;
-        bottom: 50px;
+        bottom: 49.2px;
     }
     .svg5{  
         position: absolute;
@@ -1554,19 +1540,26 @@
         overflow: hidden;
     }
     .bottom_box button{
-        width: 25%;
-        height: 82%;
+        width: 30%;
+        height: 85%;
         border: 1px solid #303030;
         color: #303030;
         padding: 2px;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
         border-radius: 12px;
         outline: none;
         background-color: white;
         transition: .3s ease-in
     }
-    
+    .bottom_box button:nth-child(-n+3)
+    {
+        display: none;
+    }
+    .button-carousel-container button:nth-child(-n+4) {
+        display: inline-block;
+    }
+
     .info_Project_box{
         width: 100%;
         display: flex;
@@ -2014,14 +2007,14 @@
     }
     .svg3{
         position: absolute;
-        right: 22.2%;
+        right: 13.4%;
         display: block;
         /* border: 2px solid red; */
     }
     .svg4{
         position: absolute;
         display: block;
-        bottom: 50px;
+        bottom: 49.2px;
     }
     .svg5{  
         position: absolute;
@@ -2050,12 +2043,12 @@
         overflow: hidden;
     }
     .bottom_box button{
-        width: 25%;
-        height: 82%;
+        width: 21%;
+        height: 85%;
         border: 1px solid #303030;
         color: #303030;
         padding: 2px;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
         border-radius: 12px;
         outline: none;
@@ -2516,7 +2509,7 @@
     .svg{
         position: absolute;
         top: 0px;
-        left: 46.1%;
+        left: 46%;
         z-index: 7;
         /* border: 2px solid red; */
     }
@@ -2532,7 +2525,7 @@
     .svg4{
         position: absolute;
         display: block;
-        bottom: 50px;
+        bottom: 53px;
     }
     .svg5{  
         position: absolute;
@@ -2550,7 +2543,7 @@
         background-color: white;
         width: 55%;
         bottom: 0px;
-        height: 50px;
+        height: 54px;
         /* border: 2px solid rgb(0, 255, 157); */
         border-top-right-radius: 25px;
         display: flex;
@@ -2561,12 +2554,13 @@
     }
     .bottom_box button{
         width: 22%;
-        height: 82%;
+        height: 85%;
         border: 1px solid #303030;
         color: #303030;
         padding: 2px;
-        font-size: 16px;
+        font-size: 15.5px;
         font-weight: 500;
+        line-height: 18px;
         border-radius: 12px;
         outline: none;
         background-color: white;

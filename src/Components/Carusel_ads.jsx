@@ -7,7 +7,7 @@ function Carusel_ads() {
                     
                        
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="1000">
 
 
                     <video controls className="media" width="600"
@@ -20,7 +20,7 @@ function Carusel_ads() {
                     </video>
                     
                     <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg5 d-none d-md-block">
-                        <g clip-path="url(#clip0_645_123)">
+                        <g clipPath="url(#clip0_645_123)">
                             <path d="M50 0H0C38.8 1.2 49.5 33.8333 50 50V0Z" fill="white"></path>
                         </g>
                         <defs>
@@ -32,7 +32,7 @@ function Carusel_ads() {
                     
               
                     <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg6 d-none d-md-block">
-                        <g clip-path="url(#clip0_645_123)">
+                        <g clipPath="url(#clip0_645_123)">
                             <path d="M50 0H0C38.8 1.2 49.5 33.8333 50 50V0Z" fill="white"></path>
                         </g>
                         <defs>
@@ -45,17 +45,17 @@ function Carusel_ads() {
            
 
               
-                <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-flex">
-                    <div class="container-fluid p-0 ps-4">
-                        <a class="navbar-brand" href="#">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light d-none d-md-flex">
+                    <div className="container-fluid p-0 ps-4">
+                        <a className="navbar-brand" href="#">
                             {/* <img src="https://it-bilim.uz/themes/assets/images/icons/logo/logo_uz.svg"/> */}
                         </a>
-                        <button class="navbar-toggler w-50"  type="button">
+                        <button className="navbar-toggler w-50"  type="button">
             
                         </button>
-                        <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse position-relative" id="navbarSupportedContent">
 
-                            <ul class="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
+                            <ul className="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
                                 
                             </ul>
                         </div>
