@@ -20,7 +20,6 @@ html{
     padding: 60px 30px;
     /* border: 2px solid red; */
     height: 750px;
-    position: relative;
 }
 
 .slide{
@@ -214,8 +213,8 @@ html{
 .offcanvas{
     background-color: #303030;
     padding: 10px;
-
 }
+
 .canvas_img{
     width: 55%;
     height: 70px;
@@ -572,6 +571,7 @@ html{
     background-color: #fff;
     color: #000;
     position: relative;
+    z-index: 1;
   }
   .card img{
     width: 100%;

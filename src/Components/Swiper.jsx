@@ -99,6 +99,8 @@ function SwiperSlider() {
     };
   }, [cardWidth, offset, isScrolling, modalOpen]);
 
+
+  
   return (
     <div className="container-fluid h-auto Projects_Swiper" id="Projects">
       <div className="swiper_top">

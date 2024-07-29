@@ -15,7 +15,7 @@ import Video_Card from './Components/Video_Card';
 import Video_ads from './Components/Video_ads';
 import MapComponent from './Components/Map';
 import Footer from './Components/Footer';
-import SliderExample from './Components/SwiperExample';
+
 
 
 
@@ -27,12 +27,10 @@ const App = () => {
 
   return (
     <div>
-          {/* <Carousel/> */}
           <Introduction/>
           <Info_Project/>
           <Carusel_ads/>
           <SwiperSlider/>
-          {/* <SliderExample/> */}
           <Top_courses/>
           <Data_Numbes/>
           <Partnership/>

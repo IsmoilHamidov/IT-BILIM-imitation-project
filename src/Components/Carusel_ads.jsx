@@ -7,7 +7,7 @@ function Carusel_ads() {
                     
                        
         <div className="Carsuel_box">
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="1000">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="1000" style={{zIndex:"1"}}>
 
 
                     <video controls className="media" width="600"
