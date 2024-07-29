@@ -41,7 +41,7 @@
 .swiper_bottom_inner {
     display: flex;
     column-gap: 20px;
-    transition: transform 0.6s ease-in-out; 
+    transition: transform 0.9s ease-in-out; 
 }
 .swiper_bottom_Card {
     min-width: 49%;

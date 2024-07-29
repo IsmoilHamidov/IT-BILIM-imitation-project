@@ -7,81 +7,97 @@ import coders from "../Assets/ed84f4ef2f2e.jpg";
 import pearson from "../Assets/pearson_img.png";
 import ModalForm from "./Modal_Form";
 
-
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [cardWidth, setCardWidth] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const totalCards = 6;
-  const cardWidth = isMobile ? 110 : 40.33; 
+  const scrollDuration = 1.7; // Adjusting duration for smoother transitions
+
+  const updateCardWidth = () => {
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth <= 620) {
+      setCardWidth(viewportWidth);  
+    } else if (viewportWidth <= 1200) {
+      setCardWidth(viewportWidth / 5); 
+    } else {
+      setCardWidth((viewportWidth / 2) * 0.9); 
+    }
+  };
+
+  useEffect(() => {
+    updateCardWidth();
+
+    const handleResize = () => {
+      updateCardWidth();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const updateOffset = (direction) => {
+    const viewportWidth = window.innerWidth;
+    let visibleCards = 1; 
+
+    if (viewportWidth > 620 && viewportWidth <= 1200) {
+      visibleCards = 5; 
+    } else if (viewportWidth > 1200) {
+      visibleCards = 2; 
+    }
+
+    const scrollAmount = cardWidth * (direction === 'next' ? 2 : -2);
+    const maxOffset = (totalCards - visibleCards) * cardWidth;
+    let newOffset = offset + scrollAmount;
+
+ 
+    newOffset = Math.min(Math.max(newOffset, 0), maxOffset);
+
+    setOffset(newOffset);
+  };
 
   const handleScroll = (event) => {
-    if (isModalOpen) return;
-
+    if (modalOpen) return; 
     event.preventDefault();
-    const scrollSpeed = 0.3;
-    setOffset((prevOffset) => {
-      const newOffset = prevOffset + event.deltaY * scrollSpeed;
-      const maxOffset = (totalCards - 1) * cardWidth;
-      return Math.min(Math.max(newOffset, 0), maxOffset);
-    });
+    if (isScrolling) return; 
+
+    setIsScrolling(true);
+    const direction = event.deltaY > 0 ? 'next' : 'prev';
+
+    updateOffset(direction);
+
+    
+    setTimeout(() => setIsScrolling(false), scrollDuration * 1000); 
   };
 
   useEffect(() => {
     const swiperBottom = document.querySelector(".swiper_bottom");
     swiperBottom.addEventListener("wheel", handleScroll, { passive: false });
 
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const handleModalShow = () => setModalOpen(true);
+    const handleModalHide = () => setModalOpen(false);
 
-    window.addEventListener("resize", handleResize);
 
-    const handleModalOpen = () => setIsModalOpen(true);
-    const handleModalClose = () => setIsModalOpen(false);
-
+    // Modal opening and closing
     const modals = document.querySelectorAll(".modal");
-
     modals.forEach(modal => {
-      modal.addEventListener("show.bs.modal", handleModalOpen);
-      modal.addEventListener("hidden.bs.modal", handleModalClose);
+      modal.addEventListener('show.bs.modal', handleModalShow);
+      modal.addEventListener('hide.bs.modal', handleModalHide);
     });
 
     return () => {
       swiperBottom.removeEventListener("wheel", handleScroll);
-      window.removeEventListener("resize", handleResize);
-
       modals.forEach(modal => {
-        modal.removeEventListener("show.bs.modal", handleModalOpen);
-        modal.removeEventListener("hidden.bs.modal", handleModalClose);
+        modal.removeEventListener('show.bs.modal', handleModalShow);
+        modal.removeEventListener('hide.bs.modal', handleModalHide);
       });
     };
-  }, [isModalOpen]);
-
-
-  // modal phone
-  const [value, setValue] = useState("");
-
-  const handleFocus = () => {
-    if (!value.startsWith("+998 (")) {
-      setValue("+998 (");
-    }
-  };
-
-  const handleChange = (e) => {
-    const inputValue = e.target.value;
-    const formattedValue = formatPhoneNumber(inputValue);
-    setValue(formattedValue);
-  };
-
-  const formatPhoneNumber = (input) => {
-    // Remove any non-numeric characters except for the starting prefix
-    const cleanedInput = input.replace(/[^0-9]/g, '');
-    // Construct the formatted phone number
-    return cleanedInput ? `+998 (${cleanedInput.slice(0, 3)}) ${cleanedInput.slice(3, 6)}-${cleanedInput.slice(6, 8)}-${cleanedInput.slice(8, 10)}` : '+998 (';
-  };
-  
+  }, [cardWidth, offset, isScrolling, modalOpen]);
 
   return (
     <div className="container-fluid h-auto Projects_Swiper" id="Projects">
@@ -89,7 +105,11 @@ function SwiperSlider() {
         <h2>Loyihalar</h2>
         <div className="swiper_btn_group">
           <button
-            onClick={() => setOffset((prev) => Math.max(prev - cardWidth, 0))}
+            onClick={() => {
+              updateOffset('prev');
+              setIsScrolling(true);
+              setTimeout(() => setIsScrolling(false), scrollDuration * 1000);
+            }}
             style={{
               backgroundColor: offset === 0 ? "#7eb649a3" : "#7eb649",
             }}
@@ -97,14 +117,14 @@ function SwiperSlider() {
             <i className="fa-solid fa-chevron-left text-white"></i>
           </button>
           <button
-            onClick={() =>
-              setOffset((prev) =>
-                Math.min(prev + cardWidth, (totalCards - 1) * cardWidth)
-              )
-            }
+            onClick={() => {
+              updateOffset('next');
+              setIsScrolling(true);
+              setTimeout(() => setIsScrolling(false), scrollDuration * 1000);
+            }}
             style={{
               backgroundColor:
-                offset === (totalCards - 1) * cardWidth
+                offset === (totalCards - 2) * cardWidth
                   ? "#7eb649a3"
                   : "#7eb649",
             }}
@@ -117,7 +137,8 @@ function SwiperSlider() {
         <div
           className="swiper_bottom_inner"
           style={{
-            transform: `translateX(-${offset}%)`,
+            transform: `translateX(-${offset}px)`,
+            transition: `transform ${scrollDuration}s ease`, 
           }}
         >
           <div className="swiper_bottom_Card">
@@ -127,7 +148,7 @@ function SwiperSlider() {
                 <h2>Xalqaro Test Markazi</h2>
                 <p>
                   IT-Bilimlarini rivojlanritish markazi Pearson VUE xalqaro test
-                  markazi bilan hamkorlikni yo`lga qo`ydi.
+                  markazi bilan hamkorlikni yolga qoydi.
                 </p>
               </div>
               <a data-bs-toggle="modal" data-bs-target="#exampleModal1">Batafsil{" "}
@@ -167,9 +188,9 @@ function SwiperSlider() {
             <img src={bilgi} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>Bilgi.uz ta`lim marketpleysi</h2>
+                <h2>Bilgi.uz talim marketpleysi</h2>
                 <p>
-                  imtiyozli muddatli to`lov evaziga IT kurslarning katta tanlovi
+                  imtiyozli muddatli tolov evaziga IT kurslarning katta tanlovi
                 </p>
               </div>
               <a href="https://bilgi.uz/uz/" target="_">
@@ -197,7 +218,7 @@ function SwiperSlider() {
               <div className="swiper_bottom_card_holder_top">
                 <h2>Ish bilan ta’minlash loyihasi</h2>
                 <p>
-                  yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
+                yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
                 </p>
               </div>
               <a data-bs-toggle="modal" data-bs-target="#exampleModal3">Batafsil{" "}
@@ -206,13 +227,11 @@ function SwiperSlider() {
             </div>
           </div>
         </div>
-        
 
 
 
-                 
-                 
-        {/*  <<< Modals Part >>>  */}
+
+                {/*  <<< Modals Part >>>  */}
 
           {/* Modal 1 */}
         <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel first_modal" aria-hidden="true">
