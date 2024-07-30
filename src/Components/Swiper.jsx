@@ -14,7 +14,7 @@ function SwiperSlider() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const totalCards = 6;
-  const scrollDuration = 1.7; // Adjusting duration for smoother transitions
+  const scrollDuration = 2.1; // Adjusting duration for smoother transitions
 
   const updateCardWidth = () => {
     const viewportWidth = window.innerWidth;
