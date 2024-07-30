@@ -14,16 +14,16 @@ function SwiperSlider() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const totalCards = 6;
-  const scrollDuration = 2.1; // Adjusting duration for smoother transitions
+  const scrollDuration = 1.5; // Adjusting duration for smoother transitions
 
   const updateCardWidth = () => {
     const viewportWidth = window.innerWidth;
     if (viewportWidth <= 620) {
-      setCardWidth(viewportWidth);  
+      setCardWidth(viewportWidth);
     } else if (viewportWidth <= 1200) {
-      setCardWidth(viewportWidth / 5); 
+      setCardWidth(viewportWidth / 5); // Adjusting to 5 cards per view
     } else {
-      setCardWidth((viewportWidth / 2) * 0.9); 
+      setCardWidth((viewportWidth / 2) * 0.9);
     }
   };
 
@@ -34,53 +34,54 @@ function SwiperSlider() {
       updateCardWidth();
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   const updateOffset = (direction) => {
     const viewportWidth = window.innerWidth;
-    let visibleCards = 1; 
+    let visibleCards = 1;
 
     if (viewportWidth > 620 && viewportWidth <= 1200) {
-      visibleCards = 5; 
+      visibleCards = 5; // 5 cards visible for 620px - 1200px
     } else if (viewportWidth > 1200) {
-      visibleCards = 2; 
+      visibleCards = 2; // 2 cards visible for > 1200px
     }
 
-    const scrollAmount = cardWidth * (direction === 'next' ? 2 : -2);
+    const scrollAmount = cardWidth * (direction === 'next' ? 1 : -1);
     const maxOffset = (totalCards - visibleCards) * cardWidth;
     let newOffset = offset + scrollAmount;
 
- 
     newOffset = Math.min(Math.max(newOffset, 0), maxOffset);
 
     setOffset(newOffset);
   };
 
   const handleScroll = (event) => {
-    if (modalOpen) return; 
+    if (modalOpen) return;
     event.preventDefault();
-    if (isScrolling) return; 
+    if (isScrolling) return;
 
     setIsScrolling(true);
     const direction = event.deltaY > 0 ? 'next' : 'prev';
 
     updateOffset(direction);
 
-    
-    setTimeout(() => setIsScrolling(false), scrollDuration * 1000); 
+    setTimeout(() => setIsScrolling(false), scrollDuration * 1000);
   };
 
   useEffect(() => {
-    const swiperBottom = document.querySelector(".swiper_bottom");
-    swiperBottom.addEventListener("wheel", handleScroll, { passive: false });
+    const swiperBottom = document.querySelector('.swiper_bottom');
+    swiperBottom.addEventListener('wheel', handleScroll, { passive: false });
 
     const handleModalShow = () => setModalOpen(true);
     const handleModalHide = () => setModalOpen(false);
+
+
+
 
 
     // Modal opening and closing

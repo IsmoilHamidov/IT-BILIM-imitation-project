@@ -1,91 +1,123 @@
-import React, { useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const MapComponent = () => {
-  const [showAttentionMessage, setShowAttentionMessage] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(true);
+  const mapRef = useRef(null);
 
   const mapData = {
-    center: [41.302799, 69.314762], // Coordinates for the specified address in Tashkent
-    zoom: 16, // Increased zoom level to get closer to the location
+    center: [41.302799, 69.314762],
+    zoom: 16,
   };
 
   const mapOptions = {
     suppressMapOpenBlock: true,
     yandexMapDisablePoiInteractivity: true,
-    suppressObsoleteBrowserNotifier: true, // Hides the "your browser is out of date" notice.
-    searchControlProvider: false, // Removes the Yandex Maps searching feature
-    controls: [], // Initial removal of default controls
+    suppressObsoleteBrowserNotifier: true,
+    searchControlProvider: false,
+    controls: ['fullscreenControl'],
   };
 
-  const coordinates = [41.302799, 69.314762]; // Coordinates for the specified address in Tashkent
+  const coordinates = [41.302799, 69.314762];
 
-  const handleMapLoad = (map) => {
-    if (map) {
-      try {
-        // Disable default scroll zoom behavior
-        map.behaviors.disable('scrollZoom');
-
-        // Handle wheel event to show/hide attention message
-        map.events.add('wheel', (e) => {
-          if (e.get('domEvent').shiftKey) {
-            setShowAttentionMessage(true);
-          } else {
-            setShowAttentionMessage(false);
-          }
-        });
-
-        // Enable scroll zoom when Shift key is pressed
-        map.behaviors.enable('scrollZoom', { key: 'shift' });
-      } catch (error) {
-        console.error('Error handling map behavior:', error);
+  useEffect(() => {
+    const handleWheelEvent = (e) => {
+      if (mapRef.current) {
+        if (e.shiftKey) {
+          mapRef.current.behaviors.enable('scrollZoom');
+        } else {
+          mapRef.current.behaviors.disable('scrollZoom');
+        }
       }
-    }
-  };
+    };
 
-  const handleMouseEnter = () => {
-    setShowAttentionMessage(false);
+    document.addEventListener('wheel', handleWheelEvent, { passive: true });
+
+    return () => {
+      document.removeEventListener('wheel', handleWheelEvent);
+    };
+  }, []);
+
+  const handleMapInstance = (instance) => {
+    if (instance) {
+      mapRef.current = instance;
+      instance.behaviors.disable('scrollZoom'); 
+
+      // Remove specific map controls
+      instance.controls.remove('zoomControl');
+      instance.controls.remove('trafficControl');
+      instance.controls.remove('searchControl');
+      instance.controls.remove('typeSelector');
+      instance.controls.remove('geolocationControl');
+      instance.controls.remove('routeButtonControl');
+
+      // Remove traffic layer
+      instance.layers.each((layer) => {
+        if (layer.get('className') === 'traffic') {
+          instance.layers.remove(layer);
+        }
+      });
+    }
   };
 
   return (
     <div className='container-fluid Map_container'>
       <h2>Bizni qanday topish mumkin</h2>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        {showAttentionMessage && (
-          <div
-            className='map__attention'
-            style={{
-              position: 'absolute',
-              top: '10px',
-              left: '10px',
-              backgroundColor: 'rgba(0, 0, 0, 0.7)',
-              color: '#fff',
-              padding: '10px',
-              borderRadius: '5px',
-              zIndex: '100',
-              cursor: 'pointer',
-            }}
-            onMouseEnter={handleMouseEnter}
-          >
-            Use Shift + Scroll to zoom the map
+      <div
+        style={{ position: 'relative', overflow: 'hidden' }}
+        onMouseEnter={() => setShowOverlay(false)}
+        onMouseLeave={() => setShowOverlay(true)}
+      >
+        <div
+          className='map__overlay'
+          style={{ opacity: showOverlay ? 1 : 0, transition: 'opacity 0.5s ease' }}
+        >
+          <div className='map__text'>
+            Для масштабирования карты используйте Shift + Scroll
           </div>
-        )}
+        </div>
         <YMaps query={{ lang: 'en_RU', load: 'package.full' }}>
           <Map
             className='Map_size'
             defaultState={mapData}
             options={mapOptions}
-            onLoad={handleMapLoad}
-            modules={['control.ZoomControl', 'control.FullscreenControl']}
+            instanceRef={handleMapInstance}
+            modules={['control.FullscreenControl']}
             style={{
               borderRadius: '15px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-              filter: 'grayscale(0%)' // Apply grayscale filter
             }}
           >
             <Placemark geometry={coordinates} />
           </Map>
         </YMaps>
       </div>
+      <style jsx>{`
+        .Map_size {
+          transition: filter 0.2s ease;
+        }
+        .map__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 100;
+          pointer-events: none; 
+        }
+        .map__text {
+          color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 26px; 
+          font-weight: 400px;
+        }
+      `}</style>
     </div>
   );
 };
