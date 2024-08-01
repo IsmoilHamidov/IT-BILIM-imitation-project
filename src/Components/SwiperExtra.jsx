@@ -7,22 +7,25 @@ import coders from "../Assets/ed84f4ef2f2e.jpg";
 import pearson from "../Assets/pearson_img.png";
 import ModalForm from "./Modal_Form";
 
+
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const totalCards = 6;
-  const scrollDuration = 1.4; // Adjusting duration for smoother transitions
+  const scrollDuration = 1.5; // Adjusting duration for smoother transitions
 
   const updateCardWidth = () => {
     const viewportWidth = window.innerWidth;
+    console.log(viewportWidth)
     if (viewportWidth <= 620) {
-      setCardWidth(viewportWidth * 0.96); 
+      setCardWidth(viewportWidth);
     } else if (viewportWidth <= 1200) {
-      setCardWidth(viewportWidth / 2); // 
+      setCardWidth(viewportWidth / 5); // Adjusting to 5 cards per view
     } else {
-      setCardWidth((viewportWidth / 2) * 0.903); 
+      setCardWidth((viewportWidth / 2) * 0.9);
     }
   };
 
@@ -45,7 +48,7 @@ function SwiperSlider() {
     let visibleCards = 1;
 
     if (viewportWidth > 620 && viewportWidth <= 1200) {
-      visibleCards = 2; // 2 cards visible for 620px - 1200px
+      visibleCards = 5; // 5 cards visible for 620px - 1200px
     } else if (viewportWidth > 1200) {
       visibleCards = 2; // 2 cards visible for > 1200px
     }
@@ -60,6 +63,7 @@ function SwiperSlider() {
   };
 
   const handleScroll = (event) => {
+    if (modalOpen) return;
     event.preventDefault();
     if (isScrolling) return;
 
@@ -75,11 +79,31 @@ function SwiperSlider() {
     const swiperBottom = document.querySelector('.swiper_bottom');
     swiperBottom.addEventListener('wheel', handleScroll, { passive: false });
 
-    return () => {
-      swiperBottom.removeEventListener('wheel', handleScroll);
-    };
-  }, [cardWidth, offset, isScrolling]);
+    const handleModalShow = () => setModalOpen(true);
+    const handleModalHide = () => setModalOpen(false);
 
+
+
+
+
+    // Modal opening and closing
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+      modal.addEventListener('show.bs.modal', handleModalShow);
+      modal.addEventListener('hide.bs.modal', handleModalHide);
+    });
+
+    return () => {
+      swiperBottom.removeEventListener("wheel", handleScroll);
+      modals.forEach(modal => {
+        modal.removeEventListener('show.bs.modal', handleModalShow);
+        modal.removeEventListener('hide.bs.modal', handleModalHide);
+      });
+    };
+  }, [cardWidth, offset, isScrolling, modalOpen]);
+
+
+  
   return (
     <div className="container-fluid h-auto Projects_Swiper" id="Projects">
       <div className="swiper_top">
@@ -119,7 +143,7 @@ function SwiperSlider() {
           className="swiper_bottom_inner"
           style={{
             transform: `translateX(-${offset}px)`,
-            transition: `transform ${scrollDuration}s ease`,
+            transition: `transform ${scrollDuration}s ease`, 
           }}
         >
           <div className="swiper_bottom_Card">
@@ -208,13 +232,14 @@ function SwiperSlider() {
             </div>
           </div>
         </div>
-      </div>
+
+
 
 
                 {/*  <<< Modals Part >>>  */}
 
           {/* Modal 1 */}
-          <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel first_modal" aria-hidden="true">
+        <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel first_modal" aria-hidden="true">
                 <div className="modal-dialog modal-fullscreen Modal_main">
                     <div className="modal-content modal_box">
                         <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -397,6 +422,7 @@ function SwiperSlider() {
                 </div>
           </div>
 
+      </div>
     </div>
   );
 }
