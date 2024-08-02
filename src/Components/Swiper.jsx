@@ -45,9 +45,9 @@ function SwiperSlider() {
     let visibleCards = 1;
 
     if (viewportWidth > 620 && viewportWidth <= 1200) {
-      visibleCards = 2; // 2 cards visible for 620px - 1200px
+      visibleCards = 2; 
     } else if (viewportWidth > 1200) {
-      visibleCards = 2; // 2 cards visible for > 1200px
+      visibleCards = 2; 
     }
 
     const scrollAmount = cardWidth * (direction === 'next' ? 1 : -1);

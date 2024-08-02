@@ -18,6 +18,8 @@ import img15 from "../Assets/slider_left_img15.png";
 import img16 from "../Assets/slider_left_img16.png";
 import img17 from "../Assets/slider_left_img17.png";
 import img18 from "../Assets/slider_left_img18.png"
+import img19 from "../Assets/slider_left_img19.png"
+import img20 from "../Assets/slider_left_img20.png"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -25,7 +27,7 @@ import "slick-carousel/slick/slick-theme.css";
 function Partnership() {
     const images = [
         img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-        img11, img12, img13, img14, img15, img16, img17, img18
+        img11, img12, img13, img14, img15, img16, img17, img18, img19, img20
     ];
 
     const settingsLeft = {
