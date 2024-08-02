@@ -136,34 +136,36 @@ function Introduction() {
                         </div>
                         
                         <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div className="offcanvas-header d-flex align-items-start">
+                            <div className="offcanvas-header d-flex align-items-start p-none">
                                 <img src={IT_bilim_logo} alt="Logo" className="canvas_img" />
                                 <i className="fa-solid fa-xmark text-white h-auto" data-bs-dismiss="offcanvas" aria-label="Close" style={{fontSize: "30px"}}></i>
                             </div>
                             <div className="offcanvas-body">
                                 <div className="canvas_navs">
-                                <a  aria-current="page" href="#About_us">Biz haqimizda</a>
-                                <a  href="#Projects">Loyhalar </a>
-                                <a  href="#Courses">Kurslar </a>
-                                <a  href="#Partners">Hamkorlar </a>
-                                <a  href="#Contacts">Kontaktlar </a>
+                                  <a  aria-current="page" href="#About_us">Biz haqimizda</a>
+                                  <a  href="#Projects">Loyhalar </a>
+                                  <a  href="#Courses">Kurslar </a>
+                                  <a  href="#Partners">Hamkorlar </a>
+                                  <a  href="#Contacts">Kontaktlar </a>
                                 </div>
 
-                                <a href="https://it-bilim.uz/tel:+998993301199" target="_"  className="offcanvas_apply">
-                                    <span ><i className="fa-solid fa-phone"></i></span>
-                                    +998 (99) 330 11 99
-                                </a>
-                                <a href="mailto:info@it-bilim.uz" target="_" className="offcanvas_apply">
-                                    <span><i className="fa-solid fa-envelope"></i></span>
-                                    info@it-bilim.uz
-                                </a>
+                                <div className='h-auto'>
+                                    <a href="https://it-bilim.uz/tel:+998993301199" target="_"  className="offcanvas_apply">
+                                        <span ><i className="fa-solid fa-phone"></i></span>
+                                        +998 (99) 330 11 99
+                                    </a>
+                                    <a href="mailto:info@it-bilim.uz" target="_" className="offcanvas_apply">
+                                        <span><i className="fa-solid fa-envelope"></i></span>
+                                        info@it-bilim.uz
+                                    </a>
 
-                                <a href="mailto:info@it-bilim.uz" target="_" className="offcanvas_apply mt-4">
-                                    <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/tg.svg" alt="telegram" /></span>
-                                    <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/inst.svg" alt="instagram" /></span>
-                                    <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/facebook.svg" alt="facebook"/> </span>
-                                    <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/youtube.svg" alt="youtube"/></span>
-                                </a>
+                                    <a href="mailto:info@it-bilim.uz" target="_" className="offcanvas_apply mt-4">
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/tg.svg" alt="telegram" /></span>
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/inst.svg" alt="instagram" /></span>
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/facebook.svg" alt="facebook"/> </span>
+                                        <span><img src="https://it-bilim.uz/themes/assets/images/icons/social/youtube.svg" alt="youtube"/></span>
+                                    </a>
+                                </div>
                                 
                             </div>
                         </div>

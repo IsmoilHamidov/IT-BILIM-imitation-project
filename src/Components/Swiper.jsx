@@ -18,7 +18,7 @@ function SwiperSlider() {
   const updateCardWidth = () => {
     const viewportWidth = window.innerWidth;
     if (viewportWidth <= 620) {
-      setCardWidth(viewportWidth * 0.96); 
+      setCardWidth(viewportWidth * 0.95); 
     } else if (viewportWidth <= 1200) {
       setCardWidth(viewportWidth / 2); // 
     } else {

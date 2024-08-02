@@ -57,7 +57,7 @@ export default function Particles_Component() {
                 },
                 links: {
                   color: "rgb(255, 255, 255)",
-                  distance: 180,
+                  distance: 190,
                   enable: true,
                   opacity: 0.7,
                   width: 1.1,
@@ -69,11 +69,11 @@ export default function Particles_Component() {
                     default: "bounce",
                   },
                   random: false,
-                  speed: 1.5,
+                  speed: 1.8,
                   straight: false,
                 },
                 number: {
-                  value: 108,
+                  value: 102,
                   density: {
                     enable: true,
                     value_area: 140,

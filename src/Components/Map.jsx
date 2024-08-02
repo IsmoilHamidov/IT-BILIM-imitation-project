@@ -3,6 +3,7 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const MapComponent = () => {
   const [showOverlay, setShowOverlay] = useState(true);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1200);
   const mapRef = useRef(null);
 
   const mapData = {
@@ -21,9 +22,21 @@ const MapComponent = () => {
   const coordinates = [41.302799, 69.314762];
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 1200);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
     const handleWheelEvent = (e) => {
       if (mapRef.current) {
-        if (e.shiftKey) {
+        if (isLargeScreen && e.shiftKey) {
           mapRef.current.behaviors.enable('scrollZoom');
         } else {
           mapRef.current.behaviors.disable('scrollZoom');
@@ -36,7 +49,7 @@ const MapComponent = () => {
     return () => {
       document.removeEventListener('wheel', handleWheelEvent);
     };
-  }, []);
+  }, [isLargeScreen]);
 
   const handleMapInstance = (instance) => {
     if (instance) {
@@ -68,14 +81,16 @@ const MapComponent = () => {
         onMouseEnter={() => setShowOverlay(false)}
         onMouseLeave={() => setShowOverlay(true)}
       >
-        <div
-          className='map__overlay'
-          style={{ opacity: showOverlay ? 1 : 0, transition: 'opacity 0.5s ease' }}
-        >
-          <div className='map__text'>
-            Для масштабирования карты используйте Shift + Scroll
+        {isLargeScreen && (
+          <div
+            className='map__overlay'
+            style={{ opacity: showOverlay ? 1 : 0, transition: 'opacity 0.5s ease' }}
+          >
+            <div className='map__text'>
+              Для масштабирования карты используйте Shift + Scroll
+            </div>
           </div>
-        </div>
+        )}
         <YMaps query={{ lang: 'en_RU', load: 'package.full' }}>
           <Map
             className='Map_size'
@@ -107,15 +122,23 @@ const MapComponent = () => {
           align-items: center;
           justify-content: center;
           z-index: 100;
-          pointer-events: none; 
+          pointer-events: none;
         }
         .map__text {
           color: #fff;
           padding: 10px;
           border-radius: 5px;
           text-align: center;
-          font-size: 26px; 
-          font-weight: 400px;
+          font-size: 26px;
+          font-weight: 400;
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        @media (max-width: 1200px) {
+          .map__text {
+            display: none;
+          }
         }
       `}</style>
     </div>

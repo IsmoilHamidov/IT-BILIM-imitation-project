@@ -3,7 +3,7 @@ import React from "react";
 
 function Info_Project() {
     return ( 
-        <div className="container-fluid shadow-lg">
+        <div className="container-fluid border shadow-lg">
             <div className="row info_Project_box" id="About_us">
                 <div className="col-12 col-lg-5">
                     <h2>Loyiha muallifi</h2>
