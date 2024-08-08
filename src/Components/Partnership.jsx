@@ -23,23 +23,11 @@ import img20 from "../Assets/slider_left_img20.png";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-
-
 function Partnership() {
     const images = [
         img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
         img11, img12, img13, img14, img15, img16, img17, img18, img19, img20
     ];
-
-    useEffect(() => {
-        const handleResize = () => {
-            window.dispatchEvent(new Event('resize'));
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     const settingsLeft = {
         dots: false,
@@ -48,7 +36,7 @@ function Partnership() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4500,  
+        autoplaySpeed: 0,  // Setting autoplaySpeed to 0 for continuous movement
         cssEase: "linear",
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -59,8 +47,6 @@ function Partnership() {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
                 }
             },
             {
@@ -68,14 +54,13 @@ function Partnership() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]
@@ -88,7 +73,7 @@ function Partnership() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4500, 
+        autoplaySpeed: 0,  // Setting autoplaySpeed to 0 for continuous movement
         cssEase: "linear",
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -100,8 +85,6 @@ function Partnership() {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
                 }
             },
             {
@@ -109,14 +92,13 @@ function Partnership() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]

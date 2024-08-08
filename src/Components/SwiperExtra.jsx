@@ -13,16 +13,16 @@ function SwiperSlider() {
   const [isScrolling, setIsScrolling] = useState(false);
 
   const totalCards = 6;
-  const scrollDuration = 1.4;
+  const scrollDuration = 1.4; // Adjusting duration for smoother transitions
 
   const updateCardWidth = () => {
     const viewportWidth = window.innerWidth;
     if (viewportWidth <= 620) {
-      setCardWidth(viewportWidth * 0.95);
+      setCardWidth(viewportWidth * 0.95); 
     } else if (viewportWidth <= 1200) {
-      setCardWidth(viewportWidth / 2);
+      setCardWidth(viewportWidth / 2); // 
     } else {
-      setCardWidth((viewportWidth / 2) * 0.903);
+      setCardWidth((viewportWidth / 2) * 0.903); 
     }
   };
 
@@ -45,9 +45,9 @@ function SwiperSlider() {
     let visibleCards = 1;
 
     if (viewportWidth > 620 && viewportWidth <= 1200) {
-      visibleCards = 2;
+      visibleCards = 2; 
     } else if (viewportWidth > 1200) {
-      visibleCards = 2;
+      visibleCards = 2; 
     }
 
     const scrollAmount = cardWidth * (direction === 'next' ? 1 : -1);
@@ -80,9 +80,6 @@ function SwiperSlider() {
     };
   }, [cardWidth, offset, isScrolling]);
 
-  const isPrevDisabled = offset === 0;
-  const isNextDisabled = offset >= (totalCards - (window.innerWidth > 620 ? 2 : 1)) * cardWidth;
-
   return (
     <div className="container-fluid h-auto Projects_Swiper" id="Projects">
       <div className="swiper_top">
@@ -95,9 +92,8 @@ function SwiperSlider() {
               setTimeout(() => setIsScrolling(false), scrollDuration * 1000);
             }}
             style={{
-              backgroundColor: isPrevDisabled ? "#7eb649a3" : "#7eb649",
+              backgroundColor: offset === 0 ? "#7eb649a3" : "#7eb649",
             }}
-            disabled={isPrevDisabled}
           >
             <i className="fa-solid fa-chevron-left text-white"></i>
           </button>
@@ -108,9 +104,11 @@ function SwiperSlider() {
               setTimeout(() => setIsScrolling(false), scrollDuration * 1000);
             }}
             style={{
-              backgroundColor: isNextDisabled ? "#7eb649a3" : "#7eb649",
+              backgroundColor:
+                offset === (totalCards - 2) * cardWidth
+                  ? "#7eb649a3"
+                  : "#7eb649",
             }}
-            disabled={isNextDisabled}
           >
             <i className="fa-solid fa-chevron-right text-white"></i>
           </button>
@@ -201,7 +199,7 @@ function SwiperSlider() {
               <div className="swiper_bottom_card_holder_top">
                 <h2>Ish bilan ta’minlash loyihasi</h2>
                 <p>
-                  yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
+                yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
                 </p>
               </div>
               <a data-bs-toggle="modal" data-bs-target="#exampleModal3">Batafsil{" "}
@@ -212,8 +210,9 @@ function SwiperSlider() {
         </div>
       </div>
 
-      {/* Modals Part */}
-          
+
+                {/*  <<< Modals Part >>>  */}
+
           {/* Modal 1 */}
           <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel first_modal" aria-hidden="true">
                 <div className="modal-dialog modal-fullscreen Modal_main">
@@ -397,6 +396,7 @@ function SwiperSlider() {
                     </div>
                 </div>
           </div>
+
     </div>
   );
 }
