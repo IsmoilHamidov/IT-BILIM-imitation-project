@@ -7,6 +7,7 @@ import coders from "../Assets/ed84f4ef2f2e.jpg";
 import pearson from "../Assets/pearson_img.png";
 import ModalForm from "./Modal_Form";
 
+
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);

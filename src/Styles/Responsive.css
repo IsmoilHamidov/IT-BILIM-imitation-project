@@ -337,8 +337,8 @@
     }
     .Video_madal_content{
         border: none;
-        width: 95%; 
-        height: 33%;
+        width: 97%; 
+        height: 20%;
         position: relative;
         text-align: center;
     }
@@ -789,8 +789,8 @@
     }
     .Video_madal_content{
         border: none;
-        width: 95%; 
-        height: 45%;
+        width: 97%; 
+        height: 27%;
         position: relative;
         text-align: center;
     }
@@ -1315,8 +1315,8 @@
     }
     .Video_madal_content{
         border: none;
-        width: 95%; 
-        height: 55%;
+        width: 97%; 
+        height: 35%;
         position: relative;
         text-align: center;
     }
@@ -1807,8 +1807,8 @@
     }
     .Video_madal_content{
         border: none;
-        width: 95%; 
-        height: 65%;
+        width: 97%; 
+        height: 42%;
         position: relative;
         text-align: center;
         object-fit: cover;
@@ -2330,7 +2330,7 @@
     .Video_madal_content{
         border: none;
         width: 80%; 
-        height: 75%;
+        height: 42%;
         position: relative;
         text-align: center;
     }
@@ -2843,8 +2843,8 @@
     }
     .Video_madal_content{
         border: none;
-        width: 70%; 
-        height: 75%;
+        width: 64%; 
+        height: 74%;
         position: relative;
         text-align: center;
     }

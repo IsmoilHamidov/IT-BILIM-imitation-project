@@ -14,12 +14,26 @@ import Video_Card from './Components/Video_Card';
 import Video_ads from './Components/Video_ads';
 import MapComponent from './Components/Map';
 import Footer from './Components/Footer';
-
+import { useEffect, useState } from 'react';
+import axios from "axios";
 
 
 
 const App = () => {
 
+  const fetchAPI = async () => {
+    try {
+      const response = await axios.get("http://127.0.0.1:8080/");
+      console.log(response.data.users);
+    } catch (error) {
+      console.error("There was an error making the request:", error);
+    }
+  };
+  
+  useEffect(() => {
+    fetchAPI();
+  }, []);
+  
 
   return (
     <div>

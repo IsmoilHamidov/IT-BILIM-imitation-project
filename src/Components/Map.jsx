@@ -74,7 +74,7 @@ const MapComponent = () => {
   };
 
   return (
-    <div className='container-fluid Map_container'>
+    <div className='container-fluid Map_container' id='Contacts'>
       <h2>Bizni qanday topish mumkin</h2>
       <div
         style={{ position: 'relative', overflow: 'hidden' }}
