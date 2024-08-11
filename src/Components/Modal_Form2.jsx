@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ModalForm() {
+function ModalForm2() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '+998 ',
@@ -99,7 +99,7 @@ function ModalForm() {
       try {
         const telegramBotId = '6726738927:AAGIYuTh1DBQ2-1kSnnVtlFIlgZ3TcIAkus'; 
         const chatId = '966230102'; 
-        const message = `*Title:* Xalqaro Test Markazi\n\n*👤  Ism:* ${formData.name.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*📞  Telefon:* ${formData.phone.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*📧  Email:* ${formData.email.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*🏢  Tashkilot:* ${formData.organization.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*💬  Izoh:* ${formData.comment.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}`;
+        const message = `*Title:* Maqsadli Qarz\n\n*👤  Ism:* ${formData.name.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*📞  Telefon:* ${formData.phone.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*📧  Email:* ${formData.email.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*🏢  Tashkilot:* ${formData.organization.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*💬  Izoh:* ${formData.comment.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}`;
   
         const response = await fetch(`https://api.telegram.org/bot${telegramBotId}/sendMessage`, {
           method: 'POST',
@@ -212,4 +212,4 @@ function ModalForm() {
   );
 }
 
-export default ModalForm;
+export default ModalForm2;

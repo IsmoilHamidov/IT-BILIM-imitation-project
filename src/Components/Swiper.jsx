@@ -6,6 +6,8 @@ import group from "../Assets/b582c776c9f5.jpg";
 import coders from "../Assets/ed84f4ef2f2e.jpg";
 import pearson from "../Assets/pearson_img.png";
 import ModalForm from "./Modal_Form";
+import ModalForm2 from "./Modal_Form2";
+import ModalForm3 from "./Modal_Form3";
 
 function SwiperSlider() {
   const [offset, setOffset] = useState(0);
@@ -316,7 +318,7 @@ function SwiperSlider() {
                           <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
-                              <ModalForm/>
+                              <ModalForm2/>
                           </div>
                       </div>
                     </div>
@@ -391,7 +393,7 @@ function SwiperSlider() {
                           <div className="modal_right col-12 col-xl-6 p-0">
                               <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
                               <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
-                              <ModalForm/>
+                              <ModalForm3/>
                           </div>
                       </div>
                     </div>

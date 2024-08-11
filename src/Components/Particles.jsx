@@ -46,7 +46,7 @@ export default function Particles_Component() {
                     quantity: 4,
                   },
                   repulse: {
-                    distance: 100,
+                    distance: 110,
                     duration: 0.4,
                   },
                 },
@@ -57,7 +57,7 @@ export default function Particles_Component() {
                 },
                 links: {
                   color: "rgb(255, 255, 255)",
-                  distance: 190,
+                  distance: 160,
                   enable: true,
                   opacity: 0.7,
                   width: 1.1,
@@ -69,7 +69,7 @@ export default function Particles_Component() {
                     default: "bounce",
                   },
                   random: false,
-                  speed: 1.8,
+                  speed: 1.9,
                   straight: false,
                 },
                 number: {
@@ -86,7 +86,7 @@ export default function Particles_Component() {
                   type: "circle",
                 },
                 size: {
-                  value: { min: 1, max: 2.2 },
+                  value: { min: 1, max: 2.3 },
                 },
               },
               detectRetina: true,

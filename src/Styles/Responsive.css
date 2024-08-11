@@ -2556,11 +2556,11 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 60px 50px;
+        padding: 65px 50px;
         justify-content: space-between;
     }
     .info_Project_box h2{
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 500;
     }
 
