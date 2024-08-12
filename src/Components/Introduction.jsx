@@ -8,7 +8,11 @@ import academy from "../Assets/b582c776c9f5.jpg";
 import Bandlik from "../Assets/ed84f4ef2f2e.jpg";
 import Particles_Component from "./Particles";
 
+
+
 function Introduction() {
+
+
   const [imageIndex, setImageIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [pauseForButtonClick, setPauseForButtonClick] = useState(false);
@@ -73,6 +77,7 @@ function Introduction() {
 
   return (
     <div className="Carsuel_box">
+           
       <div 
         id="carouselExampleControls" 
         className="carousel slide" 
@@ -175,23 +180,23 @@ function Introduction() {
 
 
                     <div className="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-
+                        
                       <ul className="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
                             
                             <li className="nav-item">
                                 <a className="nav-link " aria-current="page" href="#About_us">Biz haqimizda</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Projects">Loyhalar </a>
+                                <a className="nav-link" href="#Projects">Loyhalar</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#Courses">Kurslar </a>
+                                <a className="nav-link " href="#Courses">Kurslar</a>
                             </li>
                             <li className="nav-item">     
-                                <a className="nav-link " href="#Partners">Hamkorlar </a>
+                                <a className="nav-link " href="#Partners">Hamkorlar</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#Contacts">Kontaktlar </a>
+                                <a className="nav-link " href="#Contacts">Kontaktlar</a>
                             </li>
 
                         </ul>
@@ -199,8 +204,7 @@ function Introduction() {
                 </div>
 
             </nav>
-
-
+                        
 
             <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg">
                     <g clipPath="url(#clip0_645_123)">
