@@ -14,8 +14,7 @@ import Video_Card from './Components/Video_Card';
 import Video_ads from './Components/Video_ads';
 import MapComponent from './Components/Map';
 import Footer from './Components/Footer';
-import { useEffect, useState } from 'react';
-import axios from "axios";
+
 
 
 
