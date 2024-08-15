@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from "react-i18next";
+
 
 function ModalForm3() {
+  const [t, i18n] = useTranslation("global");
   const [formData, setFormData] = useState({
     name: '',
     phone: '+998 ',
@@ -136,9 +139,9 @@ function ModalForm3() {
   
 
   return (
-    <form className="Modal_form" onSubmit={handleSubmit}>
- 
-      <label htmlFor="name">Ism *</label>
+      <form className="Modal_form" onSubmit={handleSubmit}>
+  
+      <label htmlFor="name">{t("Modal_all.text2")}</label>
       <div className="input-wrapper">
         <input
           type="text"
@@ -150,7 +153,7 @@ function ModalForm3() {
         {errors.name && <div className="invalid-feedback">{errors.name}</div>}
       </div>
 
-      <label htmlFor="phone">Telefon *</label>
+      <label htmlFor="phone">{t("Modal_all.text3")}</label>
       <div className="input-wrapper">
         <input
           type="text"
@@ -164,7 +167,7 @@ function ModalForm3() {
         {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
       </div>
 
-      <label htmlFor="email">Email *</label>
+      <label htmlFor="email">{t("Modal_all.text4")}</label>
       <div className="input-wrapper">
         <input
           type="email"
@@ -177,7 +180,7 @@ function ModalForm3() {
         {tooltipMessage && <div className="invalid-feedback">{tooltipMessage}</div>}
       </div>
 
-      <label htmlFor="organization">Tashkilot *</label>
+      <label htmlFor="organization">{t("Modal_all.text5")}</label>
       <div className="input-wrapper">
         <input
           type="text"
@@ -189,7 +192,7 @@ function ModalForm3() {
         {errors.organization && <div className="invalid-feedback">{errors.organization}</div>}
       </div>
 
-      <label htmlFor="comment">Izoh qoldiring</label>
+      <label htmlFor="comment">{t("Modal_all.text6")}</label>
       <div className="input-wrapper">
         <textarea
           id="comment"
@@ -203,11 +206,11 @@ function ModalForm3() {
       <div className="d-flex align-items-center my-2">
         <input className="form-check-input me-3 my-0" type="checkbox" defaultChecked />
         <span>
-          Qayta ishlashga rozilik beraman
-          <a href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" rel="noopener noreferrer" tabIndex="0">shaxsiy ma'lumotlar</a>
+          {t("Modal_all.text7")}
+          <a href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" rel="noopener noreferrer" tabIndex="0">{t("Modal_all.text8")}</a>
         </span>
       </div>
-      <button className="btn grey transparent small" type="submit">Yuborish</button>
+      <button className="btn grey transparent small" type="submit">{t("Modal_all.text9")}</button>
     </form>
   );
 }

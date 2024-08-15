@@ -1,0 +1,250 @@
+
+{
+    "navbar":{
+        "text1":"Biz haqimizda",
+        "text2":"Loyhalar",
+        "text3":"Kurslar",
+        "text4":"Hamkorlar",
+        "text5":"Kontaktlar"
+    },
+
+    "Carusel":{
+        "text1":"Maqsadli qarz - IT sohasida biznesni rivojlantirish va kengaytirish uchun",
+        "text2":"IT BILIM JAPAN - Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni o'qitish va tayyorlash loyihasi",
+        "text3":"Bilgi.Uz - IT kurslarining katta tanlovi uchun qulay to'lov rejasi",
+        "text4":"IT BILIM akademiyasi - innovatsion ta'lim muassasi",
+        "text5":"Bandlik - yosh IT mutaxassislari uchun ijtimoiy amalyot loyihasi",
+        "text6":" Hamkorlar - Linux Professional Insitute, CompTIA, openEDG, CISCO, Networking Academy"
+    },
+
+    "buttons":{
+        "text1":"Maqsadli qarz",
+        "text2":"IT BILIM JAPAN",
+        "text3":"Bilgi.uz",
+        "text4":"IT Bilim akademiyasi",
+        "text5":"Bandlik",
+        "text6":"Hamkorlar"
+    },
+
+    "Info_Project":{
+        "h_text1":"Loyiha muallifi",
+        "h_text2":"Loyihani yaratishdan maqsad",
+        "text3":"O‘zbekiston Respublikasi Vazirlar Mahkamasining 2021-yil 31-avgustdagi “Axborot texnologiyalari sohasida yosh mutaxassislarni rag‘batlantirishga doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi 556-son qarori ijrosi doirasida “IT bilimlarni rivojlantirish markazi” tashkil etilgan.",
+        "text4":"Markazning asosiy maqsadi ta’lim uchun haq to‘lash uchun eng qulay shart-sharoitlarni yaratish, IT-texnologiyalari sohasida ta’lim va malaka olishni xohlovchilar uchun keng ko‘lamli o‘quv dasturlarini tanlash, shuningdek, ta’lim muassasalarini maqsadli qarz bilan qo‘llab-quvvatlashdan iborat. Markazning ishonchliligini o'qishni tugatgan stipendiyalarga imtiyozli davr taqdim etishda va ularni ishga joylashtirishda yordam berishda namoyon bo'ladi.",
+        "text5":"Loyihalar",
+        "text6":"Loyihalar"
+    },
+    "SwiperCard_h":{
+        "Title":"Loyihalar",
+        "text1":"Xalqaro Test Markazi",
+        "text2":"IT BILIM JAPAN",
+        "text3":"Maqsadli qarz",
+        "text4":"Bilgi.uz talim marketpleysi",
+        "text5":"IT BILIM Academy",
+        "text6":"Ish bilan ta’minlash loyihasi"
+    },
+    "SwiperCard_p":{
+        "text1":"IT-Bilimlarini rivojlanritish markazi Pearson VUE xalqaro test markazi bilan hamkorlikni yolga qoydi.",
+        "text2":"Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni o'qitish va tayyorlash loyihasi",
+        "text3":"IT sohasida biznesni rivojlantirish va kengaytirish uchun",
+        "text4":"imtiyozli muddatli tolov evaziga IT kurslarning katta tanlovi",
+        "text5":"innovatsion ta’lim muassasasi",
+        "text6":"yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha",
+        "batafsil":"Batafsil"
+    },
+    
+    "Modal_all":{
+        "h":"Ariza berish",
+        "text1":"* Bilan belgilangan maydonlar to'ldirilishi shart",
+        "text2":"Ism *",
+        "text3":"Telefon *",
+        "text4":"Email *",
+        "text5":"Tashkilot *",
+        "text6":"Izoh qoldiring",
+        "text7":"Qayta ishlashga rozilik beraman",
+        "text8":"shaxsiy ma'lumotlar",
+        "text9":"Yuborish"
+    },
+    "Modal1":{
+        "h1":"Xalqaro Test Markazi",
+        "text1":"IT bilimlarini rivojlantirish markazida tashkil etilgan Pearson VUE test markazi sizga IT-texnologiyalari sohasidagi dunyodagi yetakchi tashkilotlarning sertifikatlarini olish uchun o`z bilimlarini sinovdan o'tkazish xizmatlarini taklif etadi. Sinovdan muvaffaqiyatli o'tgan mutaxassislar bilim va malakalarini tasdiqlovchi sertifikatga ega bo`ladilar.",
+        "text2":"Pearson VUE tizimi avtomatlashtirilgan masofaviy imtihon va o'z testlarini ishlab chiqadigan va xalqaro test markazlari tarmog'iga uzatuvchi homiy kompaniyalardan sertifikatlarni olishdir. Bizning Test Markazimiz sizga qulay sharoitlarda va administratorning malakali yordami bilan test sinovlaridan o'tish va kerakli sertifikatni olish imkonini beradi.",
+        "text3":"Endi biz bilan siz quyidagi yoʻnalishlar boʻyicha xalqaro sertifikatlar olish uchun test sinovlaridan oʻtishingiz mumkin:",
+        "Li_1":"axborot texnologiyalari",
+        "Li_2":"sog'liqni saqlash",
+        "Li_3":"iqtisodiyot",
+        "Li_4":"ta'lim",
+        "Li_5":"marketing",
+        "text4":"Test markazi dunyoning yetakchi tashkilotlari: LPI-Linux Professional Institute (LPIC-2 va LPIC-3), OpenEDG (Python Institute), Cisco (CCNA, CCNP), CompTIA va boshqa xalqaro sertifikatlarini taqdim etadi.",
+        "text5":"Xalqaro sertifikat olish martaba o'sishi va ko`proq maosh oluvchi mutaxassisga aylanishingiz uchun yaxshi imkoniyatlar eshigini ochadi. Shuningdek",
+        "text5.1":"it-istedod.uz ",
+        "text5.2":"platformasi orqali xalqaro sertifikat olish uchun sarflangan mablag‘ning 50 foizigacha to‘lovni qaytarish uchun noyob imkoniyatga ega bo‘lishingiz mumkin.",
+        "text6":"IT Bilim Test Markazida imtihon topshiring va sertifikatlangan xalqaro mutaxassislarga aylaning!",
+        "text7":"Imtihon ro`yxati",
+        "text8":"Kontakt uchun telefon raqam:",
+        "text_number1":"+998 55 518 11 99",
+        "text_number2":"+998 99 594 11 99",
+        "text9":"Pochta:",
+        "text10":"info@it-bilim.uz"
+    },
+    "Modal2":{
+        "h":"IT sohasidagi ta’lim muassasalariga maqsadli qarz berish",
+        "text1":"IT Parkning IT-ta’lim yo’nalishida faoliyat olib borayotgan rezident kompaniyalari maqsadli qarz olishlari mumkin. IT sohada ta’lim berishdan tashqari, maqsadli qarz olishning majburiy talablaridan biri bu o’qishni bitirgan talabalarni ish bilan ta’minlashdir. Ta’lim muassasalariga malakali mutaxassislarni tayyorlash sifatini oshirish, biznesni kengaytirish va modernizatsiya qilish uchun maqsadli qarz ajratiladi.",
+        "text2":"Shartlari:",
+        "Li_1":"Imtiyozli davr taqdim etilgan holda yillik foiz 10-15% (qayta moliyalashtirish stavkasidan yuqori bo’lmagan holda);",
+        "Li_2":"maqsadli qarz 3 yilga taqdim etiladi.",
+        "text3":"Maqsadli qarz olish uchun so`rovnomani to`ldirib ariza qoldiring."
+    },
+
+    "Modal3":{
+        "h":"Ish bilan ta’minlash loyihasi – yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha",
+        "text1":"«IT-BILIMLARNI RIVOJLANTIRISH MARKAZI» MChJ tasarrufida yaratilgan “yosh IT mutaxassislarni ish bilan ta’minlash va amaliyot o’tashda ko’maklashish” maqsadida tashkil etilgan loyiha.",
+        "text2":"Loyihaning asosiy maqsadi – IT mutaxassislarni o’qitish, bilimlarini baholash, amaliyot o’tashda ko’maklashish orqali yetuk mutaxassis qilib yetishtirish va ishga joylashishda yordam berishdan iborat.",
+        "text3":"Bizning asosiy missiyamiz - O`zbekistonda IT sanoatini yanada rivojlantirish.",
+        "text4":"Ijtimoiy loyihaning imkoniyatlari:",
+        "Li_1":"- Yirik IT-kompaniyalarda amaliyot o’tash.",
+        "Li_2":"- Ishga joylashish imkoniyati.",
+        "Li_3":"- IT-mutaxassislardan amaliy tajriba olish imkoniyati.",
+        "Li_4":"- Rezyume to`ldirishda ko`mak.",
+        "Li_5":"- Suhbatga tayyorlanishda ko`mak.",
+        "text5":"Biz bilan hamkorlikka qiziqish bildirsangiz arizani to’ldiring.",
+        "text6":"Yosh IT-mutaxassislar uchun ariza",
+        "text7":"Kompaniyalar uchun ariza",
+        "text8":"O’quv markazlari uchun ariza"
+    },
+    "Modal_notifications":{
+        "modal_rule":"To'ldirish uchun majburiydir",
+        "modal_email":"Elektron pochtani to'g'ri kiriting",
+        "footer_email1":"Elektron pochtani to'g'ri kiriting",
+        "footer_email2":"To'ldirish uchun majburiydir"
+    },
+    
+    "C_card1":{
+        "Title":"TOP Kurslar",
+        "h":"IT Recruitment",
+        "h2":"HR",
+        "text1":"IT Bilim Academy",
+        "text2":"Narxi",
+        "text3":"To'lov narxi",
+        "text4_price":"10 750 000 so’mdan",
+        "text4_price2":"680 556 so’mdan / oyga",
+        "oy":"3 oy"
+    },
+    "C_card2":{
+        "h":"Backend - Lead",
+        "h2":"PM",
+        "text1":"Uacademy",
+        "text2":"Narxi",
+        "text3":"To'lov narxi",
+        "text4_price":"5 912 500 so’mdan",
+        "text4_price2":"374 306 so’mdan / oyga",
+        "oy":"2 oy"
+    },
+    "C_card3":{
+        "h":"ANDROID & iOS Dasturlash",
+        "h2":"Mobil dasturlash",
+        "text1":"PROWEB",
+        "text2":"Narxi",
+        "text3":"To'lov narxi",
+        "text4_price":"12 900 000 so’mdan",
+        "text4_price2":"816 667 so’mdan / oyiga",
+        "oy":"8 oy"
+    },
+    "C_card4":{
+        "h":".NET backend",
+        "h2":".NET",
+        "text1":"HAAD LC",
+        "text2":"Narxi",
+        "text3":"To'lov narxi",
+        "text4_price":"11 825 000 so’mdan",
+        "text4_price2":"748 611 so’mdan / oyiga",
+        "oy":"5 oy"
+    },
+    "C_card5":{
+        "h":"Frontend ishlab chiquvchi (4 oy)",
+        "h2":"Platinum",
+        "text1":"Coursera",
+        "text2":"Narxi",
+        "text3":"To'lov narxi",
+        "text4_price":"6 020 000 so'mdan",
+        "text4_price2":"381 111 so'mdan / oyiga",
+        "oy":"4 oy"
+    },
+    "C_card6":{
+        "h":"Java ishlab chiquvchi",
+        "h2":"Platinum",
+        "text1":"IT PARK UNIVERSITY UpSkill",
+        "text2":"Narxi",
+        "text3":"To'lov narxi",
+        "text4_price":"9 836 250 so'mdan",
+        "text4_price2":"622 708 so'mdan / oyiga",
+        "oy":"12 oy",
+        "button_text":"To'liq katalog"
+    },
+
+    "Numbers":{
+        "text1_bold":"70+",
+        "text2":"Shartnoma tuzilgan o‘quv markazlari",
+        "text3_bold":"534+",
+        "text4":"Platformadagi o‘quv kurslari soni",
+        "text5_bold":"4000+",
+        "text6":"Topshirilgan arizalar soni",
+        "text7_bold":"661+",
+        "text8":"Bitiruvchilar soni"
+    },
+    "Other_titles":{
+        "h":"Hamkorlar",
+        "h2":"Bizning sharhlarimiz va yangiliklarimiz",
+        "h3":"@ITBILIM",
+        "h4":"Video ko'rsatmalar",
+        "text":"Bilgi.uz da qanday qilib ro'yxatdan o'tish va ariza qoldirish",
+        "h5":"Bizni qanday topish mumkin"
+    },
+
+    "Footer":{
+        "w_text1":"Kontaktlar",
+        "w_text2":"Ish tartibi",
+        "w_text3":"Manzil",
+        "w_text4":"Pochta",
+        "w_text5":"Yo'nalishlar",
+        "w_text6":"Hujjatlar",
+        "w_text7":"Bizning siyosatimiz"
+    },
+
+    "Footer_green":{
+        "text1":"1. Maqsadli qarz",
+        "text2":"2. Bilgi.uz marketpleysi",
+        "text3":"3. IT INTERN",
+        "text4":"4. Recruitment&Consulting",
+        "text5":"5. IT-Bilim Akademiyasi",
+        "text6":"6. IT-Market",
+        "text7":"7. Xalqaro test markazi",
+        "text8":"8. IT BILIM INTERNATIONAL",
+        "text9":"Dushanba-Juma, 9:00 - 18:00",
+        "text10":"Mahtumquli 1A, Toshkent, 100047",
+        "text11":"info@it-bilim.uz",
+        "text12":"Xalqaro Test Markazi",
+        "text13":"IT BILIM JAPAN",
+        "text14":"Maqsadli qarz",
+        "text15":"Bilgi.uz ta`lim marketpleysi",
+        "text16":"IT BILIM Academy",
+        "text17":"Bilgi.uz ta`lim marketpleysi",
+        "text18":"Ish bilan ta’minlash loyihasi",
+        "text19":"Maqsadli qarz berish to'g'risidagi nizom",
+        "text20":"Yosh mutaxassislarni tayyorlash xarajatlarini qoplash to'g'risidagi nizom",
+        "text21":"Maxfiylik siyosati",
+        "text22":"Foydalanish shartlari"
+    },
+    
+    "Footer_bottom":{
+        "text1":"Bizni kuzatib boring",
+        "text2":"Men",
+        "text3":"shaxsiy ma'lumotlarni",
+        "text4":"qayta ishlashga rozilik beraman",
+        "text5":"Yuborish",
+        "text6":"©2021-2024",
+        "text7":"IT bilimlarni rivojlantirish markazi - IT-BILIM",
+        "text8":"IT BILIM Veb-saytdan ilhomlanib tayyorlandi",
+        "text9":"Hamidov Ismoilxo'ja"
+    }
+}

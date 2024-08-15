@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from "react-i18next";
+
 
 function ModalForm2() {
+  const [t, i18n] = useTranslation("global");
   const [formData, setFormData] = useState({
     name: '',
     phone: '+998 ',
@@ -136,79 +139,79 @@ function ModalForm2() {
   
 
   return (
-    <form className="Modal_form" onSubmit={handleSubmit}>
- 
-      <label htmlFor="name">Ism *</label>
-      <div className="input-wrapper">
-        <input
-          type="text"
-          id="name"
-          value={formData.name}
-          onChange={handleChange}
-          className={`form-control ${errors.name ? 'is-invalid' : ''}`}
-        />
-        {errors.name && <div className="invalid-feedback">{errors.name}</div>}
-      </div>
+        <form className="Modal_form" onSubmit={handleSubmit}>
+    
+        <label htmlFor="name">{t("Modal_all.text2")}</label>
+        <div className="input-wrapper">
+          <input
+            type="text"
+            id="name"
+            value={formData.name}
+            onChange={handleChange}
+            className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+          />
+          {errors.name && <div className="invalid-feedback">{errors.name}</div>}
+        </div>
 
-      <label htmlFor="phone">Telefon *</label>
-      <div className="input-wrapper">
-        <input
-          type="text"
-          id="phone"
-          value={formData.phone}
-          onChange={handlePhoneChange}
-          onFocus={handleFocus}
-          className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
-          placeholder="+998 XXXXXXXX"
-        />
-        {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
-      </div>
+        <label htmlFor="phone">{t("Modal_all.text3")}</label>
+        <div className="input-wrapper">
+          <input
+            type="text"
+            id="phone"
+            value={formData.phone}
+            onChange={handlePhoneChange}
+            onFocus={handleFocus}
+            className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
+            placeholder="+998 XXXXXXXX"
+          />
+          {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
+        </div>
 
-      <label htmlFor="email">Email *</label>
-      <div className="input-wrapper">
-        <input
-          type="email"
-          id="email"
-          value={formData.email}
-          onChange={handleEmailChange}
-          className={`form-control ${errors.email ? 'is-invalid' : ''}`}
-        />
-        {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-        {tooltipMessage && <div className="invalid-feedback">{tooltipMessage}</div>}
-      </div>
+        <label htmlFor="email">{t("Modal_all.text4")}</label>
+        <div className="input-wrapper">
+          <input
+            type="email"
+            id="email"
+            value={formData.email}
+            onChange={handleEmailChange}
+            className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+          />
+          {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+          {tooltipMessage && <div className="invalid-feedback">{tooltipMessage}</div>}
+        </div>
 
-      <label htmlFor="organization">Tashkilot *</label>
-      <div className="input-wrapper">
-        <input
-          type="text"
-          id="organization"
-          value={formData.organization}
-          onChange={handleChange}
-          className={`form-control ${errors.organization ? 'is-invalid' : ''}`}
-        />
-        {errors.organization && <div className="invalid-feedback">{errors.organization}</div>}
-      </div>
+        <label htmlFor="organization">{t("Modal_all.text5")}</label>
+        <div className="input-wrapper">
+          <input
+            type="text"
+            id="organization"
+            value={formData.organization}
+            onChange={handleChange}
+            className={`form-control ${errors.organization ? 'is-invalid' : ''}`}
+          />
+          {errors.organization && <div className="invalid-feedback">{errors.organization}</div>}
+        </div>
 
-      <label htmlFor="comment">Izoh qoldiring</label>
-      <div className="input-wrapper">
-        <textarea
-          id="comment"
-          value={formData.comment}
-          onChange={handleChange}
-          className={`form-control ${errors.comment ? 'is-invalid' : ''}`}
-        />
-        {errors.comment && <div className="invalid-feedback">{errors.comment}</div>}
-      </div>
+        <label htmlFor="comment">{t("Modal_all.text6")}</label>
+        <div className="input-wrapper">
+          <textarea
+            id="comment"
+            value={formData.comment}
+            onChange={handleChange}
+            className={`form-control ${errors.comment ? 'is-invalid' : ''}`}
+          />
+          {errors.comment && <div className="invalid-feedback">{errors.comment}</div>}
+        </div>
 
-      <div className="d-flex align-items-center my-2">
-        <input className="form-check-input me-3 my-0" type="checkbox" defaultChecked />
-        <span>
-          Qayta ishlashga rozilik beraman
-          <a href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" rel="noopener noreferrer" tabIndex="0">shaxsiy ma'lumotlar</a>
-        </span>
-      </div>
-      <button className="btn grey transparent small" type="submit">Yuborish</button>
-    </form>
+        <div className="d-flex align-items-center my-2">
+          <input className="form-check-input me-3 my-0" type="checkbox" defaultChecked />
+          <span>
+            {t("Modal_all.text7")}
+            <a href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" rel="noopener noreferrer" tabIndex="0">{t("Modal_all.text8")}</a>
+          </span>
+        </div>
+        <button className="btn grey transparent small" type="submit">{t("Modal_all.text9")}</button>
+      </form>
   );
 }
 

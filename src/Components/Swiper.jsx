@@ -8,8 +8,11 @@ import pearson from "../Assets/pearson_img.png";
 import ModalForm from "./Modal_Form";
 import ModalForm2 from "./Modal_Form2";
 import ModalForm3 from "./Modal_Form3";
+import { useTranslation } from "react-i18next";
+
 
 function SwiperSlider() {
+  const [t, i18n] = useTranslation("global");
   const [offset, setOffset] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -88,7 +91,7 @@ function SwiperSlider() {
   return (
     <div className="container-fluid h-auto Projects_Swiper" id="Projects">
       <div className="swiper_top">
-        <h2>Loyihalar</h2>
+        <h2>{t("SwiperCard_h.Title")}</h2>
         <div className="swiper_btn_group">
           <button
             onClick={() => {
@@ -130,13 +133,12 @@ function SwiperSlider() {
             <img src={pearson} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>Xalqaro Test Markazi</h2>
+                <h2>{t("SwiperCard_h.text1")}</h2>
                 <p>
-                  IT-Bilimlarini rivojlanritish markazi Pearson VUE xalqaro test
-                  markazi bilan hamkorlikni yolga qoydi.
+                    {t("SwiperCard_p.text1")}
                 </p>
               </div>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal1">Batafsil{" "}
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal1">{t("SwiperCard_p.batafsil")}{" "}
                 <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
@@ -145,14 +147,13 @@ function SwiperSlider() {
             <img src={japan} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>IT BILIM JAPAN</h2>
+                <h2>{t("SwiperCard_h.text2")}</h2>
                 <p>
-                  Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni
-                  o'qitish va tayyorlash loyihasi
+                    {t("SwiperCard_p.text2")}
                 </p>
               </div>
               <a href="https://japan.it-bilim.uz/" target="_">
-                Batafsil{" "}
+                {t("SwiperCard_p.batafsil")}{" "}
                 <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
@@ -161,10 +162,12 @@ function SwiperSlider() {
             <img src={team} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>Maqsadli qarz</h2>
-                <p>IT sohasida biznesni rivojlantirish va kengaytirish uchun</p>
+                <h2>{t("SwiperCard_h.text3")}</h2>
+                <p>
+                    {t("SwiperCard_p.text3")}
+                </p>
               </div>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal2">Batafsil{" "}
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal2">{t("SwiperCard_p.batafsil")}{" "}
                 <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
@@ -173,13 +176,13 @@ function SwiperSlider() {
             <img src={bilgi} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>Bilgi.uz talim marketpleysi</h2>
+               <h2>{t("SwiperCard_h.text4")}</h2>
                 <p>
-                  imtiyozli muddatli tolov evaziga IT kurslarning katta tanlovi
+                    {t("SwiperCard_p.text4")}
                 </p>
               </div>
               <a href="https://bilgi.uz/uz/" target="_">
-                Batafsil{" "}
+                {t("SwiperCard_p.batafsil")}{" "}
                 <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
@@ -188,11 +191,13 @@ function SwiperSlider() {
             <img src={group} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>IT BILIM Academy</h2>
-                <p>innovatsion ta’lim muassasasi </p>
+                <h2>{t("SwiperCard_h.text5")}</h2>
+                <p>
+                    {t("SwiperCard_p.text5")}
+                </p>
               </div>
               <a href="https://academy.it-bilim.uz/" target="_">
-                Batafsil{" "}
+                {t("SwiperCard_p.batafsil")}{" "}
                 <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
@@ -201,12 +206,12 @@ function SwiperSlider() {
             <img src={coders} alt="Card_image" />
             <div className="swiper_bottom_card_holder">
               <div className="swiper_bottom_card_holder_top">
-                <h2>Ish bilan ta’minlash loyihasi</h2>
+                <h2>{t("SwiperCard_h.text6")}</h2>
                 <p>
-                  yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha
+                    {t("SwiperCard_p.text6")}
                 </p>
               </div>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal3">Batafsil{" "}
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal3">{t("SwiperCard_p.batafsil")}{" "}
                 <i className="fa-solid fa-arrow-right" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
@@ -224,60 +229,60 @@ function SwiperSlider() {
                          
                       <div className="modal-body row d-flex justify-content-between">
                           <div className="modal_left col-12 col-xl-5 p-0">
-                           <h2 className="modal-title m-0" id="exampleModalLabel">Xalqaro Test Markazi</h2>
+                           <h2 className="modal-title m-0" id="exampleModalLabel">{t("Modal1.h1")}</h2>
                             <i>
-                                IT bilimlarini rivojlantirish markazida tashkil etilgan Pearson VUE test markazi sizga IT-texnologiyalari sohasidagi dunyodagi yetakchi tashkilotlarning sertifikatlarini olish uchun o`z bilimlarini sinovdan o'tkazish xizmatlarini taklif etadi. Sinovdan muvaffaqiyatli o'tgan mutaxassislar bilim va malakalarini tasdiqlovchi sertifikatga ega bo`ladilar.
+                              {t("Modal1.text1")}
                             </i>
                             <i>
-                                Pearson VUE tizimi avtomatlashtirilgan masofaviy imtihon va o'z testlarini ishlab chiqadigan va xalqaro test markazlari tarmog'iga uzatuvchi homiy kompaniyalardan sertifikatlarni olishdir. Bizning Test Markazimiz sizga qulay sharoitlarda va administratorning malakali yordami bilan test sinovlaridan o'tish va kerakli sertifikatni olish imkonini beradi.
+                              {t("Modal1.text2")}
                             </i>
                             <i>
-                                Endi biz bilan siz quyidagi yoʻnalishlar boʻyicha xalqaro sertifikatlar olish uchun test sinovlaridan oʻtishingiz mumkin: 
+                              {t("Modal1.text3")}
                             </i>
 
                             <ul>
                                 <li>
-                                  <i>axborot texnologiyalari</i>
+                                   <i>{t("Modal1.Li_1")}</i>
                                 </li>
                                 <li>
-                                  <i>sog'liqni saqlash</i>
+                                   <i>{t("Modal1.Li_2")}</i>
                                 </li>
                                 <li>
-                                  <i>iqtisodiyot</i>
+                                   <i>{t("Modal1.Li_3")}</i>
                                 </li>
                                 <li>
-                                  <i>ta'lim</i>
+                                   <i>{t("Modal1.Li_4")}</i>
                                 </li>
                                 <li>
-                                  <i>marketing</i>
+                                   <i>{t("Modal1.Li_5")}</i>
                                 </li>
                             </ul>
 
-                            <i>Test markazi dunyoning yetakchi tashkilotlari: LPI-Linux Professional Institute (LPIC-2 va LPIC-3), OpenEDG (Python Institute), Cisco (CCNA, CCNP), CompTIA va boshqa xalqaro sertifikatlarini taqdim etadi.</i>
-                            <i>Xalqaro sertifikat olish martaba o'sishi va ko`proq maosh oluvchi mutaxassisga aylanishingiz uchun yaxshi imkoniyatlar eshigini ochadi. Shuningdek, 
-                              <a href="https://www.it-istedod.uz/index-uz" target="_" className="mx-2" style={{color:"#0066cc", textDecoration:"none"}}> it-istedod.uz</a>
-                              platformasi orqali xalqaro sertifikat olish uchun sarflangan mablag‘ning 50 foizigacha to‘lovni qaytarish uchun noyob imkoniyatga ega bo‘lishingiz mumkin. 
+                            <i>{t("Modal1.text4")}</i>
+                            <i>{t("Modal1.text5")} 
+                              <a href="https://www.it-istedod.uz/index-uz" target="_" className="mx-2" style={{color:"#0066cc", textDecoration:"none"}}>{t("Modal1.text5.1")}</a>
+                                {t("Modal1.text5.2")}
                             </i>
-                            <b>IT Bilim Test Markazida imtihon topshiring va sertifikatlangan xalqaro mutaxassislarga aylaning!</b>
+                            <b>{t("Modal1.text6")}</b>
                               
-                            <i><u style={{color: "#0066cc"}}>Imtihon ro`yxati</u></i>
+                            <i><u style={{color: "#0066cc"}}>{t("Modal1.text7")}</u></i>
                               
                             <p>
-                              Kontakt uchun telefon raqam:
+                              {t("Modal1.text8")}
                               <a href="tel:+998555181199" target="_">
-                                <br />+998 55 518 11 99 
-                                <br />+998 99 594 11 99
+                                <br />{t("Modal1.text_number1")}
+                                <br />{t("Modal1.text_number2")}
                               </a>  
                             </p>
 
-                            <p>Pochta: <a href="https://it-bilim.uz/info@it-bilim.uz" target="_">info@it-bilim.uz</a></p>
+                            <p>{t("Modal1.text9")} <a href="https://it-bilim.uz/info@it-bilim.uz" target="_">{t("Modal1.text10")}</a></p>
                            
 
                           </div>
 
                           <div className="modal_right col-12 col-xl-6 p-0">
-                              <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
-                              <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
+                              <h2 className="modal-title m-0" id="exampleModalLabel">{t("Modal_all.h")}</h2>
+                              <p>{t("Modal_all.text1")}</p>
                               <ModalForm/>
                           </div>
                       </div>
@@ -294,30 +299,30 @@ function SwiperSlider() {
                          
                       <div className="modal-body row d-flex justify-content-between">
                           <div className="modal_left col-12 col-xl-5 p-0">
-                           <h2 className="modal-title m-0" id="exampleModalLabel">IT sohasidagi ta’lim muassasalariga maqsadli qarz berish</h2>
+                           <h2 className="modal-title m-0" id="exampleModalLabel">{t("Modal2.h")}</h2>
                             <i>
-                                IT Parkning IT-ta’lim yo’nalishida faoliyat olib borayotgan rezident kompaniyalari maqsadli qarz olishlari mumkin. IT sohada ta’lim berishdan tashqari, maqsadli qarz olishning majburiy talablaridan biri bu o’qishni bitirgan talabalarni ish bilan ta’minlashdir. Ta’lim muassasalariga malakali mutaxassislarni tayyorlash sifatini oshirish, biznesni kengaytirish va modernizatsiya qilish uchun maqsadli qarz ajratiladi.
+                                {t("Modal2.text1")}
                             </i>
                             <i>
-                               Shartlari:
+                              {t("Modal2.text2")}
                             </i>
                            
                             <ul>
                                 <li>
-                                  <i>imtiyozli davr taqdim etilgan holda yillik foiz 10-15% (qayta moliyalashtirish stavkasidan yuqori bo’lmagan holda);</i>
+                                  <i>{t("Modal2.Li_1")}</i>
                                 </li>
                                 <li>
-                                  <i>maqsadli qarz 3 yilga taqdim etiladi.</i>
+                                  <i>{t("Modal2.Li_2")}</i>
                                 </li>
                             </ul>
 
-                            <b>Maqsadli qarz olish uchun so`rovnomani to`ldirib ariza qoldiring.</b>
+                            <b>{t("Modal2.text3")}</b>
                             
                           </div>
 
                           <div className="modal_right col-12 col-xl-6 p-0">
-                              <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
-                              <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
+                              <h2 className="modal-title m-0" id="exampleModalLabel">{t("Modal_all.h")}</h2>
+                              <p>{t("Modal_all.text1")}</p>
                               <ModalForm2/>
                           </div>
                       </div>
@@ -335,15 +340,15 @@ function SwiperSlider() {
                          
                       <div className="modal-body row d-flex justify-content-between">
                           <div className="modal_left col-12 col-xl-5 p-0">
-                           <h2 className="modal-title m-0" id="exampleModalLabel">Ish bilan ta’minlash loyihasi – yosh IT mutaxassislarini amaliyot o’tashlari uchun ijtimoiy loyiha</h2>
+                           <h2 className="modal-title m-0" id="exampleModalLabel">{t("Modal3.h")}</h2>
                             <i>
-                              <b>«IT-BILIMLARNI RIVOJLANTIRISH MARKAZI» MChJ tasarrufida yaratilgan “yosh IT mutaxassislarni ish bilan ta’minlash va amaliyot o’tashda ko’maklashish” maqsadida tashkil etilgan loyiha.</b>
+                              <b>{t("Modal3.text1")}</b>
                             </i>
                             <i>
-                                Loyihaning asosiy maqsadi – IT mutaxassislarni o’qitish, bilimlarini baholash, amaliyot o’tashda ko’maklashish orqali yetuk mutaxassis qilib yetishtirish va ishga joylashishda yordam berishdan iborat.
+                                {t("Modal3.text2")}
                             </i>
                             <i>
-                                Bizning asosiy missiyamiz - O`zbekistonda IT sanoatini yanada rivojlantirish.
+                                {t("Modal3.text3")}
                             </i>
                            
                         
@@ -351,39 +356,39 @@ function SwiperSlider() {
                                 <li style={{fontSize:"16px", fontWeight:"600"}}>
                                     <i>
                                         <u>
-                                          <b>Ijtimoiy loyihaning imkoniyatlari:</b>
+                                          <b>{t("Modal3.Li_1")}</b>
                                         </u>
                                     </i>
                                 </li>
                                 <li>
-                                  <i>- Yirik IT-kompaniyalarda amaliyot o’tash.</i>
+                                  <i>{t("Modal3.Li_2")}</i>
                                 </li>
                                 <li>
-                                  <i>- Ishga joylashish imkoniyati.</i>
+                                  <i>{t("Modal3.Li_2")}</i>
                                 </li>
                                 <li>
-                                  <i>- IT-mutaxassislardan amaliy tajriba olish imkoniyati.</i>
+                                  <i>{t("Modal3.Li_3")}</i>
                                 </li>
                                 <li>
-                                  <i>- Rezyume to`ldirishda ko`mak.</i>
+                                  <i>{t("Modal3.Li_4")}</i>
                                 </li>
                                 <li>
-                                  <i>- Suhbatga tayyorlanishda ko`mak.</i>
+                                  <i>{t("Modal3.Li_5")}</i>
                                 </li>
                             </ul>
 
-                            <i>Biz bilan hamkorlikka qiziqish bildirsangiz arizani to’ldiring.</i>
+                            <i>{t("Modal3.text5")}</i>
                             <i>
                               <a href="https://docs.google.com/forms/d/13ebv5ooo3i3WDxnV8K1yGooIqTAGRBLbPFv_OPQd4yc" target="_">
-                                  Yosh IT-mutaxassislar uchun ariza
+                                 {t("Modal3.text6")}
                               </a>  
                               <br />
                               <a href="https://forms.gle/Us8b9xSbNpwKzaZF9" target="_">
-                                  Kompaniyalar uchun ariza
+                                 {t("Modal3.text7")}
                               </a>  
                               <br />
                               <a href="https://docs.google.com/forms/d/1EBST-4iNu8vrzWKLGCbECbDwqbVap4M0wBkTx0ycYhA" target="_">
-                                  O’quv markazlari uchun ariza
+                                  {t("Modal3.text8")}
                               </a>  
                             </i>
 
@@ -391,8 +396,8 @@ function SwiperSlider() {
 
 
                           <div className="modal_right col-12 col-xl-6 p-0">
-                              <h2 className="modal-title m-0" id="exampleModalLabel">Ariza berish</h2>
-                              <p>* Bilan belgilangan maydonlar to'ldirilishi shart</p>
+                              <h2 className="modal-title m-0" id="exampleModalLabel">{t("Modal_all.h")}</h2>
+                              <p>{t("Modal_all.text1")}</p>
                               <ModalForm3/>
                           </div>
                       </div>

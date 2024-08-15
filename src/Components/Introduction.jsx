@@ -7,11 +7,16 @@ import IT_bilim_logo from "../Assets/logo1_uz.svg";
 import academy from "../Assets/b582c776c9f5.jpg";
 import Bandlik from "../Assets/ed84f4ef2f2e.jpg";
 import Particles_Component from "./Particles";
-
+import { useTranslation } from "react-i18next";
 
 
 function Introduction() {
+  const [t, i18n] = useTranslation("global");
 
+  const handleChangeLanguage = (lang) => {
+      i18n.changeLanguage(lang);
+  };
+  
 
   const [imageIndex, setImageIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -21,9 +26,14 @@ function Introduction() {
   const activeButtonRef = useRef(null);
 
   const buttons = [
-    'Maqsadli qarz', 'IT BILIM JAPAN', 'Bilgi.uz', 
-    'IT Bilim akademiyasi', 'Bandlik', 'Hamkorlar'
+    t('buttons.text1'),
+    t('buttons.text2'),
+    t('buttons.text3'),
+    t('buttons.text4'),
+    t('buttons.text5'),
+    t('buttons.text6')
   ];
+  
 
   useEffect(() => {
     const updateButtonCount = () => {
@@ -78,6 +88,9 @@ function Introduction() {
   return (
     <div className="Carsuel_box">
            
+           <button style={{width:"50px", marginRight:"10px", backgroundColor:"antiquewhite"}} onClick={()=> handleChangeLanguage("uz")}>uz</button>
+           <button style={{width:"50px",  backgroundColor:"aqua"}} onClick={()=> handleChangeLanguage("ru")}>ru</button>
+
       <div 
         id="carouselExampleControls" 
         className="carousel slide" 
@@ -90,37 +103,37 @@ function Introduction() {
           <div className={`carousel-item ${imageIndex === 0 ? 'active' : ''}`}>
             <img src={team} alt="Slide 0" />
             <h3 className="Carousel_Img_Text">
-              Maqsadli qarz - IT sohasida biznesni rivojlantirish va kengaytirish uchun
+                {t("Carusel.text1")}
             </h3>
           </div>
           <div className={`carousel-item ${imageIndex === 1 ? 'active' : ''}`}>
             <img src={japan} alt="Slide 1" />
             <h3 className="Carousel_Img_Text">
-              IT BILIM JAPAN - Yaponiya kompaniyalarida ish bilan ta'minlash uchun IT xodimlarni o'qitish va tayyorlash loyihasi
+              {t("Carusel.text2")}
             </h3>
           </div>
           <div className={`carousel-item ${imageIndex === 2 ? 'active' : ''}`}>
             <img src={bilgi} alt="Slide 2" />
             <h3 className="Carousel_Img_Text">
-              Bilgi.Uz - IT kurslarining katta tanlovi uchun qulay to'lov rejasi
+              {t("Carusel.text3")}
             </h3>
           </div>
           <div className={`carousel-item ${imageIndex === 3 ? 'active' : ''}`}>
             <img src={academy} alt="Slide 3" />
             <h3 className="Carousel_Img_Text">
-              IT BILIM akademiyasi - innovatsion ta'lim muassasi
+              {t("Carusel.text4")}
             </h3>
           </div>
           <div className={`carousel-item ${imageIndex === 4 ? 'active' : ''}`}>
             <img src={Bandlik} alt="Slide 4" />
             <h3 className="Carousel_Img_Text">
-              Bandlik - yosh IT mutaxassislari uchun ijtimoiy amalyot loyihasi
+              {t("Carusel.text5")}
             </h3>
           </div>
           <div className={`carousel-item ${imageIndex === 5 ? 'active' : ''}`}>
             <img src={partnership} alt="Slide 5" />
             <h3 className="Carousel_Img_Text">
-              Hamkorlar - Linux Professional Insitute, CompTIA, openEDG, CISCO, Networking Academy
+              {t("Carusel.text6")}
             </h3>
           </div>
         </div>
@@ -147,11 +160,11 @@ function Introduction() {
                             </div>
                             <div className="offcanvas-body">
                                 <div className="canvas_navs">
-                                  <a  aria-current="page" href="#About_us">Biz haqimizda</a>
-                                  <a  href="#Projects">Loyhalar </a>
-                                  <a  href="#Courses">Kurslar </a>
-                                  <a  href="#Partners">Hamkorlar </a>
-                                  <a  href="#Contacts">Kontaktlar </a>
+                                  <a  aria-current="page" href="#About_us">{t("navbar.text1")}</a>
+                                  <a  href="#Projects">{t("navbar.text2")} </a>
+                                  <a  href="#Courses">{t("navbar.text3")} </a>
+                                  <a  href="#Partners">{t("navbar.text4")} </a>
+                                  <a  href="#Contacts">{t("navbar.text5")} </a>
                                 </div>
 
                                 <div className='h-auto'>
@@ -180,23 +193,23 @@ function Introduction() {
 
 
                     <div className="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-                        
+
                       <ul className="navbar-nav navbar-right ms-auto mb-2 mb-lg-0 ">
                             
                             <li className="nav-item">
-                                <a className="nav-link " aria-current="page" href="#About_us">Biz haqimizda</a>
+                                <a className="nav-link " aria-current="page" href="#About_us">{t("navbar.text1")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Projects">Loyhalar</a>
+                                <a className="nav-link" href="#Projects">{t("navbar.text2")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#Courses">Kurslar</a>
+                                <a className="nav-link " href="#Courses">{t("navbar.text3")}</a>
                             </li>
                             <li className="nav-item">     
-                                <a className="nav-link " href="#Partners">Hamkorlar</a>
+                                <a className="nav-link " href="#Partners">{t("navbar.text4")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#Contacts">Kontaktlar</a>
+                                <a className="nav-link " href="#Contacts">{t("navbar.text5")}</a>
                             </li>
 
                         </ul>
