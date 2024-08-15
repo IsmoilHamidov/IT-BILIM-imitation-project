@@ -2751,13 +2751,13 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 60px 50px;
+        padding: 70px 70px;
         column-gap: 10px;
         row-gap: 25px;
         /* border: 2px solid red; */
     }
     .numbers{
-        width: 24%;
+        width: 22%;
         height: 190px;      
     }
     .numbers h3{

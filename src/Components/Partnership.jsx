@@ -22,8 +22,11 @@ import img19 from "../Assets/slider_left_img19.png";
 import img20 from "../Assets/slider_left_img20.png";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
+
 
 function Partnership() {
+    const [t, i18n] = useTranslation("global");
     const images = [
         img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
         img11, img12, img13, img14, img15, img16, img17, img18, img19, img20
@@ -106,7 +109,7 @@ function Partnership() {
 
     return (
         <div className="Projects_Swiper" id="Partners" style={{ backgroundColor: "#F3F3F3" }}>
-            <h2>Hamkorlar</h2>
+            <h2>{t("Other_titles.h")}</h2>
             <div className="slider-container">
                 <Slider {...settingsLeft}>
                     {images.map((image, index) => (

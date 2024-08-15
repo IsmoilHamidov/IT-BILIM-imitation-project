@@ -5,88 +5,89 @@ import cardImg3 from '../Assets/card_img3.jpg';
 import cardImg4 from '../Assets/card_img4.png';
 import cardImg5 from '../Assets/card_img5.jpg';
 import cardImg6 from '../Assets/card_img6.jpg';
+import { useTranslation } from "react-i18next";
 
 function TopCourses() {
+  const { t, i18n } = useTranslation("global");
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
     const mockData = [
       {
         id: 1,
-        image: cardImg1,
-        p1: "IT Recruitment",
-        p2: "HR",
-        grey_text: "IT Bilim Academy",
-        price1: "10 750 000 so’mdan",
-        price2: "680 556 so’mdan / oyga",
-        duration: "3 oy",
+        image: cardImg1, 
+        p1: t('C_card1.h'),
+        p2: t('C_card1.h2'),
+        grey_text: t('C_card1.text1'),
+        price1: t('C_card1.text4_price'),
+        price2: t('C_card1.text4_price2'),
+        duration: t('C_card1.oy'),
         link: "https://bilgi.uz/uz/courses/marketing/it-recruitment/"
       },
       {
         id: 2,
-        image: cardImg2,
-        p1: "Backend - Lead",
-        p2: "PM",
-        grey_text: "Uacademy",
-        price1: "5 912 500 so’mdan",
-        price2: "374 306 so’mdan / oyga",
-        duration: "2 oy",
+        image: cardImg2, 
+        p1: t('C_card2.h'),
+        p2: t('C_card2.h2'),
+        grey_text: t('C_card2.text1'),
+        price1: t('C_card2.text4_price'),
+        price2: t('C_card2.text4_price2'),
+        duration: t('C_card2.oy'),
         link: "https://bilgi.uz/uz/courses/Project%20manager-/project-manager/Backend-Lead-online/"
       },
       {
         id: 3,
-        image: cardImg3,
-        p1: "ANDROID & iOS Dasturlash",
-        p2: "Mobil dasturlash",
-        grey_text: "PROWEB",
-        price1: "12 900 000 so’mdan",
-        price2: "816 667 so’mdan / oyiga",
-        duration: "8 oy",
-        link: "https://bilgi.uz/uz/courses/programmirovanie/mobilnaya-razrabotka/android-ios-razrabotka-/"
+        image: cardImg3, 
+        p1: t('C_card3.h'),
+        p2: t('C_card3.h2'),
+        grey_text: t('C_card3.text1'),
+        price1: t('C_card3.text4_price'),
+        price2: t('C_card3.text4_price2'),
+        duration: t('C_card3.oy'),
+        link: "https://example.com/android-ios-dasturlash"
       },
       {
         id: 4,
-        image: cardImg4,
-        p1: ".NET backend",
-        p2: ".NET",
-        grey_text: "HAAD LC",
-        price1: "11 825 000 so’mdan",
-        price2: "748 611 so’mdan / oyiga",
-        duration: "5 oy",
-        link: "https://bilgi.uz/uz/courses/programmirovanie/php-razrabotka/net-/net-backend/"
+        image: cardImg4, 
+        p1: t('C_card4.h'),
+        p2: t('C_card4.h2'),
+        grey_text: t('C_card4.text1'),
+        price1: t('C_card4.text4_price'),
+        price2: t('C_card4.text4_price2'),
+        duration: t('C_card4.oy'),
+        link: "https://example.com/net-backend"
       },
       {
         id: 5,
-        image: cardImg5,
-        p1: "Frontend ishlab chiquvchi (4 месяца)",
-        p2: "Platinum",
-        grey_text: "Coursera",
-        price1: "6 020 000 so'mdan",
-        price2: "381 111 so'mdan / oyiga",
-        duration: "4 oy",
-        link: "https://bilgi.uz/courses/programmirovanie/frontend-razrabotka/"
+        image: cardImg5, 
+        p1: t('C_card5.h'),
+        p2: t('C_card5.h2'),
+        grey_text: t('C_card5.text1'),
+        price1: t('C_card5.text4_price'),
+        price2: t('C_card5.text4_price2'),
+        duration: t('C_card5.oy'),
+        link: "https://example.com/frontend-ishlab-chiqvchi"
       },
       {
         id: 6,
         image: cardImg6,
-        p1: "Java ishlab chiquvchi",
-        p2: "Platinum",
-        grey_text: "IT PARK UNIVERSITY UpSkill",
-        price1: "9 836 250 so'mdan",
-        price2: "622 708 so'mdan / oyiga",
-        duration: "12 oy",
-        link: "https://bilgi.uz/courses/programmirovanie/php-razrabotka/java/java-razrabotchik-s/"
+        p1: t('C_card6.h'),
+        p2: t('C_card6.h2'),
+        grey_text: t('C_card6.text1'),
+        price1: t('C_card6.text4_price'),
+        price2: t('C_card6.text4_price2'),
+        duration: t('C_card6.oy'),
+        link: "https://example.com/java-ishlab-chiqvchi",
+        button_text: t('C_card6.button_text')
       }
     ];
 
-    setTimeout(() => {
-      setCards(mockData);
-    }, 1000); 
-  }, []);
+    setCards(mockData);
+  }, [t]);  // <-- Add 't' as a dependency
 
   return (
     <div className="container-fluid Projects_Swiper Top_course" id='Courses' style={{ backgroundColor: "#F3F3F3" }}>
-      <h2>TOP Kurslar</h2>
+      <h2>{t("TOP Kurslar")}</h2>
       <div className="Courses_card_box">
         {cards.map((info) => (
           <a key={info.id} className="Course_cards" href={info.link} target="_">
@@ -100,11 +101,11 @@ function TopCourses() {
               <p className="grey_text">{info.grey_text}</p>
               <div className="second_line_text">
                 <div>
-                  <p className="mb-2">Narxi</p>
+                  <p className="mb-2">{t("C_card1.text2")}</p>
                   <h5>{info.price1}</h5>
                 </div>
                 <div>
-                  <p className="mb-2">To'lov narxi</p>
+                  <p className="mb-2">{t("C_card1.text3")}</p>
                   <h5>{info.price2}</h5>
                 </div>
               </div>
@@ -115,7 +116,7 @@ function TopCourses() {
           </a>
         ))}
       </div>
-      <a className='Top_course_button' href="https://bilgi.uz/uz/" target="_">To'liq katalog</a>
+      <a className='Top_course_button' href="https://bilgi.uz/uz/" target="_">{t("C_card6.button_text")}</a>
     </div>
   );
 }

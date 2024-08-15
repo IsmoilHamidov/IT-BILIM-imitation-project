@@ -183,14 +183,10 @@
     },
 
     "Numbers":{
-        "text1_bold":"70+",
-        "text2":"Shartnoma tuzilgan o‘quv markazlari",
-        "text3_bold":"534+",
-        "text4":"Platformadagi o‘quv kurslari soni",
-        "text5_bold":"4000+",
-        "text6":"Topshirilgan arizalar soni",
-        "text7_bold":"661+",
-        "text8":"Bitiruvchilar soni"
+        "text1":"Shartnoma tuzilgan o‘quv markazlari",
+        "text2":"Platformadagi o‘quv kurslari soni",
+        "text3":"Topshirilgan arizalar soni",
+        "text4":"Bitiruvchilar soni"
     },
     "Other_titles":{
         "h":"Hamkorlar",

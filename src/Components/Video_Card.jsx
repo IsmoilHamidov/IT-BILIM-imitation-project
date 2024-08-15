@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import close_img from "../Assets/icons8-close.svg"
+import { useTranslation } from "react-i18next";
 
 
 function Video_Card() {
+    const [t, i18n] = useTranslation("global");
     const [isModalOpen, setModalOpen] = useState(false);
 
     const openModal = () => {
@@ -19,11 +21,11 @@ function Video_Card() {
 
     return ( 
         <div className="Video_Card Projects_Swiper" style={{ backgroundColor: "#F3F3F3" }}>
-            <h2>Video ko'rsatmalar</h2>
+            <h2>{t("Other_titles.h4")}</h2>
                 <div className="card" onClick={openModal}>
                     <img src="https://it-bilim.uz/uploads/sliders/adf06ff76464.jpg" alt="Video Thumbnail" />
                     <div className="black_box">
-                        Bilgi.uz da qanday qilib ro'yxatdan o'tish va ariza qoldirish
+                        {t("Other_titles.text")}
                     </div>
                     <div className="Green_player">
                         <i className="fa-solid fa-play"></i>

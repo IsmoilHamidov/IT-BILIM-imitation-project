@@ -1,7 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import { useTranslation } from "react-i18next";
+
 
 const MapComponent = () => {
+  const [t, i18n] = useTranslation("global");
   const [showOverlay, setShowOverlay] = useState(true);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1200);
   const mapRef = useRef(null);
@@ -75,7 +78,7 @@ const MapComponent = () => {
 
   return (
     <div className='container-fluid Map_container' id='Contacts'>
-      <h2>Bizni qanday topish mumkin</h2>
+      <h2>{t("Other_titles.h5")}</h2>
       <div
         style={{ position: 'relative', overflow: 'hidden' }}
         onMouseEnter={() => setShowOverlay(false)}

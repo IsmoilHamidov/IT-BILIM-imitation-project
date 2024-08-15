@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import IT_bilim_logo from "../Assets/logo_white_uz.svg"
-
+import { useTranslation } from "react-i18next";
 
 
 function Footer() {
-   
-    const [email, setEmail] = useState('');
+  const [t, i18n] = useTranslation("global");
+  const [email, setEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [tooltipMessage, setTooltipMessage] = useState('');
 
@@ -42,7 +42,7 @@ function Footer() {
                 <div className="footer_left">
                     <img src={IT_bilim_logo} alt="Logo" />
                     <div className="footer_left_Info">
-                        <p className="f_white_text">Kontaktlar</p>
+                        <p className="f_white_text">{t("Footer.w_text1")}</p>
                         <div className="f_grey_box">
                             <p>1. Maqsadli qarz </p>
                             <a href="tel:+998959521199" target="_">+998 95 952 11 99</a>
@@ -108,15 +108,15 @@ function Footer() {
 
                 <div className="footer_right">
                     <div className="footer_right_child f_grey_box">
-                        <p className="f_white_text">Ish tartibi</p>
+                        <p className="f_white_text">{t("Footer.w_text2")}</p>
                         <span>Dushanba-Juma, 9:00 - 18:00</span>
-                        <p className="f_white_text">Manzil</p>
+                        <p className="f_white_text">{t("Footer.w_text3")}</p>
                         <span>Mahtumquli 1A, Toshkent, 100047</span>
-                        <p className="f_white_text">Pochta</p>
+                        <p className="f_white_text">{t("Footer.w_text4")}</p>
                         <a href="info@it-bilim.uz" target="_">info@it-bilim.uz</a>
                     </div>
                     <div className="footer_right_child f_grey_box">
-                        <p className="f_white_text">Yo'nalishlar</p>
+                        <p className="f_white_text">{t("Footer.w_text5")}</p>
                         <a href="#">Xalqaro Test Markazi</a>
                         <a href="https://japan.it-bilim.uz/" target="_">IT BILIM JAPAN</a>
                         <a href="#">Maqsadli qarz</a>
@@ -125,12 +125,12 @@ function Footer() {
                         <a href="#" >Ish bilan ta’minlash loyihasi</a>
                     </div>
                     <div className="footer_right_child f_grey_box">
-                        <p className="f_white_text">Hujjatlar</p>
+                        <p className="f_white_text">{t("Footer.w_text6")}</p>
                         <a href="https://it-bilim.uz/uploads/docs/Polojenie_o_zaymax.pdf" target="_">Maqsadli qarz berish to'g'risidagi nizom</a>
                         <a href="https://it-bilim.uz/uploads/docs/Polojenie_o_vozmeshenie.pdf" target="_">Yosh mutaxassislarni tayyorlash xarajatlarini qoplash to'g'risidagi nizom</a>
                     </div>
                     <div className="footer_right_child f_grey_box">
-                        <p className="f_white_text">Bizning siyosatimiz</p>
+                        <p className="f_white_text">{t("Footer.w_text7")}</p>
                         <a href="https://it-bilim.uz/maxfiylik-siyosati/" target="_">Maxfiylik siyosati</a>
                         <a href="https://it-bilim.uz/foydalanish-shartlari/" target="_">Foydalanish shartlari</a>
                     </div>

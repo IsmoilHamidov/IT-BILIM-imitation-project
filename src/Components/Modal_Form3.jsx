@@ -60,7 +60,7 @@ function ModalForm3() {
 
     const isValid = validateEmail(value);
     if (!isValid) {
-      setTooltipMessage("Elektron pochtani to'g'ri kiriting");
+      setTooltipMessage(t('Modal_notifications.modal_email'));;
     } else {
       setTooltipMessage('');
     }
@@ -85,13 +85,13 @@ function ModalForm3() {
 
     Object.keys(formData).forEach((key) => {
       if ((key === 'name' || key === 'phone' || key === 'organization') && !formData[key].trim()) {
-        newErrors[key] = "To'ldirish uchun majburiydir";
+        newErrors[key] = [t('Modal_notifications.modal_rule')]
       }  
       if (key === 'phone' && formData.phone === '+998 ') {
-        newErrors[key] = "To'ldirish uchun majburiydir";
+        newErrors[key] = [t('Modal_notifications.modal_rule')]
       }
       if (key === 'email' && formData[key].trim() && !validateEmail(formData[key])) {
-        newErrors[key] = "Elektron pochtani to'g'ri kiriting";
+        newErrors[key] = [t('Modal_notifications.modal_rule')]
       }
     });
   
