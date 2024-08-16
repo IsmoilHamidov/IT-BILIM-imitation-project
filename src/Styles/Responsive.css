@@ -2950,6 +2950,8 @@
         display: flex;
         flex-direction: column;
         row-gap: 3px;
+        padding: 0px 40px 0px 0px;
+        /* border: 2px solid red; */
     }
     .footer_right_child span{
         font-size: 17px;

@@ -114,9 +114,7 @@
     },
     "Modal_notifications":{
         "modal_rule":"To'ldirish uchun majburiydir",
-        "modal_email":"Elektron pochtani to'g'ri kiriting",
-        "footer_email1":"Elektron pochtani to'g'ri kiriting",
-        "footer_email2":"To'ldirish uchun majburiydir"
+        "modal_email":"Elektron pochtani to'g'ri kiriting"
     },
     
     "C_card1":{
