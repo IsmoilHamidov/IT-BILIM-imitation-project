@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
-/* @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap); */
+/* @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
 
 *{
     box-sizing: border-box;
@@ -9,8 +9,8 @@
 }
 
 body{
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-weight: 300;
 }
 html{
@@ -39,6 +39,35 @@ html{
     z-index: 2;
     filter: contrast(120%); ;
 }
+
+
+.text-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.text {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px; 
+}
+  
+.language-button {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #7eb649;
+    color: white;
+    cursor: pointer;
+}
+.language-button:hover{
+    background-color: #303030;
+}
+
+
 .carousel-item{
     position: relative;
 }
@@ -110,7 +139,7 @@ html{
     background-color: white;
     display: flex;
     justify-content: center;
-    column-gap: 13px;
+    column-gap: 12px;
     padding: 0px 15px;
     overflow: hidden;
     /* border: 2px solid red; */
@@ -140,7 +169,7 @@ html{
 
 .nav-item{
     height: 100%;
-    padding: 0px 22px;
+    padding: 0px 24px;
     width: auto;
     background-color: #7eb649;
     border-radius: 22px 22px 0px 0px; 

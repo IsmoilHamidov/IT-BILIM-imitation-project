@@ -87,7 +87,7 @@ function TopCourses() {
 
   return (
     <div className="container-fluid Projects_Swiper Top_course" id='Courses' style={{ backgroundColor: "#F3F3F3" }}>
-      <h2>{t("TOP Kurslar")}</h2>
+      <h2>{t("C_card1.Title")}</h2>
       <div className="Courses_card_box">
         {cards.map((info) => (
           <a key={info.id} className="Course_cards" href={info.link} target="_">

@@ -240,5 +240,10 @@
         "text7":"IT bilimlarni rivojlantirish markazi - IT-BILIM",
         "text8":"IT BILIM Veb-saytdan ilhomlanib tayyorlandi",
         "text9":"Hamidov Ismoilxo'ja"
+    },
+
+    "Videos":{
+        "video1":"/Assets/videos/IT-Bilim_uz.mp4",
+        "video2":"/Assets/videos/aboutus_uz.mp4"
     }
 }

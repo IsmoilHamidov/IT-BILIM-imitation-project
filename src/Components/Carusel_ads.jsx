@@ -1,22 +1,18 @@
 import React from "react";
-import ThisVideo from "../Assets/videos/IT-Bilim Project.mp4"
+import it_bilim from "../Assets/videos/IT-Bilim_uz.mp4"
 
 function Carusel_ads() {
     return ( 
-       <>
-                    
-                       
+       <>                   
         <div className="Carsuel_box">
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="1000" style={{zIndex:"1"}}>
-
-
                     <video controls className="media" width="600"
                         autoPlay
                         loop
                         muted
                         playsInline
                         style={{ display: 'block' }}>
-                        <source src={ThisVideo} type="video/mp4"/>
+                        <source src={it_bilim} type="video/mp4"/>
                     </video>
                     
                     <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg5 d-none d-md-block">

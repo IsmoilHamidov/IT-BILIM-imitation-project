@@ -117,6 +117,7 @@
     },
     
     "C_card1":{
+        "Title":"ТОП Курсы",
         "h":"IT Recruitment",
         "h2":"HR",
         "text1":"IT Bilim Academy",
@@ -238,5 +239,10 @@
         "text7":"Центр Развития IT-знаний - IT-BILIM",
         "text8":"Вдохновлен сайтом IT BILIM",
         "text9":"Hamidov Ismoilxo'ja"
+    },
+
+    "Videos":{
+        "video1":"/Assets/videos/IT-Bilim_ru.mp4",
+        "video2":"/Assets/videos/aboutus_ru.mp4"
     }
 }
