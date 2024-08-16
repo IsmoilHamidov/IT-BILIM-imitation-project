@@ -28,6 +28,7 @@ html{
     position: relative;
     z-index: 10;
     border-radius: 25px;
+    /* border: 2px solid red; */
 }
 .Logo{
     width: 200px;
@@ -41,30 +42,53 @@ html{
 }
 
 
-.text-container {
-    position: relative;
+.language-container {
+    position: absolute;
+    top: 14px;
+    right: 54%;
     display: inline-block;
+    z-index: 20;
+    height: auto;
 }
   
-.text {
-    font-size: 16px;
+.language_text{
+    font-size: 17.5px;
+    font-weight: 400;
     cursor: pointer;
     padding: 10px; 
+    /* border: 2px solid blue; */
+    color: white;
+    filter: drop-shadow(0px 0px 1px black);
+    transition: .5s ease-in-out;
+}
+.language_text img{
+    width: 25px;
+    height: 25px;
 }
   
 .language-button {
+    /* height: 40px;
+    width: 60px; */
     position: absolute;
     top: 100%;
     left: 0;
     margin-top: 5px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
+    padding: 9px 21px;
+    border-radius: 10px;
     background-color: #7eb649;
     color: white;
     cursor: pointer;
+    border: none;
+    transition: .2s ease-in-out;
+    box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.447);
 }
+.text-container:hover .language-button {
+    opacity: 1; 
+    transition: .5s ease-in-out;
+    transform: translateY(0); /* Slide up to its position */
+  }
 .language-button:hover{
-    background-color: #303030;
+    background-color: #575757;
 }
 
 

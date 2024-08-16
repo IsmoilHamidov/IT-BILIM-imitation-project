@@ -6,6 +6,7 @@ import bilgi from "../Assets/bilgi_img.jpg";
 import IT_bilim_logo from "../Assets/logo1_uz.svg";
 import academy from "../Assets/b582c776c9f5.jpg";
 import Bandlik from "../Assets/ed84f4ef2f2e.jpg";
+import down_arrow from "../Assets/down-arrow-5-svgrepo-com.png"
 import Particles_Component from "./Particles";
 import { useTranslation } from "react-i18next";
 
@@ -24,8 +25,8 @@ function Introduction() {
   };
 
    // Determine the text based on the selected language
-   const currentLanguageText = i18n.language === 'uz' ? 'UZ' : 'RU';
-   const hoverLanguageText = i18n.language === 'uz' ? 'RU' : 'UZ';
+   const currentLanguageText = i18n.language === 'uz' ? 'UZ' : 'РУ';
+   const hoverLanguageText = i18n.language === 'uz' ? 'РУ' : 'UZ';
  
   // Button hover function
   const [isHovered, setIsHovered] = useState(false);
@@ -104,29 +105,22 @@ function Introduction() {
 
   return (
     <>
-        <div 
-          className="text-container" 
-          onMouseEnter={handleMouseEnter} 
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="text">
-            {currentLanguageText}
-          </span>
-          {isHovered && (
-            <button className="language-button" onClick={handleChangeLanguage}>
-              {hoverLanguageText}
-            </button>
-          )}
+      
+      <div className="Carsuel_box">
+        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="610">
+
+        <div className="language-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <span className="language_text">
+              {currentLanguageText}
+              <img src={down_arrow} alt="img" />
+            </span>
+            {isHovered && (
+              <button className="language-button" onClick={handleChangeLanguage}>
+                {hoverLanguageText}
+              </button>
+            )}
         </div>
 
-
-      <div className="Carsuel_box">
-        <div 
-          id="carouselExampleControls" 
-          className="carousel slide" 
-          data-bs-ride="carousel" 
-          data-interval="610"
-        >
           <img src={IT_bilim_logo} alt="IT bilim logo" className="Logo" />
           <div className="carousel-inner">
             <Particles_Component />
