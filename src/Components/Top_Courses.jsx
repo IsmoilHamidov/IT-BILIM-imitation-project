@@ -44,7 +44,7 @@ function TopCourses() {
         price1: t('C_card3.text4_price'),
         price2: t('C_card3.text4_price2'),
         duration: t('C_card3.oy'),
-        link: "https://example.com/android-ios-dasturlash"
+        link: "https://bilgi.uz/uz/courses/programmirovanie/mobilnaya-razrabotka/android-ios-razrabotka-/"
       },
       {
         id: 4,
@@ -55,7 +55,7 @@ function TopCourses() {
         price1: t('C_card4.text4_price'),
         price2: t('C_card4.text4_price2'),
         duration: t('C_card4.oy'),
-        link: "https://example.com/net-backend"
+        link: "https://bilgi.uz/uz/courses/programmirovanie/php-razrabotka/net-/net-backend/"
       },
       {
         id: 5,
@@ -66,7 +66,7 @@ function TopCourses() {
         price1: t('C_card5.text4_price'),
         price2: t('C_card5.text4_price2'),
         duration: t('C_card5.oy'),
-        link: "https://example.com/frontend-ishlab-chiqvchi"
+        link: "https://bilgi.uz/courses/programmirovanie/frontend-razrabotka/"
       },
       {
         id: 6,
@@ -77,7 +77,7 @@ function TopCourses() {
         price1: t('C_card6.text4_price'),
         price2: t('C_card6.text4_price2'),
         duration: t('C_card6.oy'),
-        link: "https://example.com/java-ishlab-chiqvchi",
+        link: "https://bilgi.uz/courses/programmirovanie/php-razrabotka/java/java-razrabotchik-s/",
         button_text: t('C_card6.button_text')
       }
     ];
