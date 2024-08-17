@@ -80,14 +80,14 @@
         padding: 40px 20px;
     }
     .info_Project_box h2{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 23.5px;
+        font-weight: 600;
     }
 
     .info_Project_box div p{
         width: 100%;
-        font-size: 14px; 
-        font-weight: 400;
+        font-size: 16px; 
+        font-weight: 500;
         line-height: 23px;
     }
 
@@ -106,9 +106,9 @@
         flex-direction: column;
     }
     .Projects_Swiper h2 {
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 500;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .swiper_btn_group{  
         width: 100px;
@@ -124,7 +124,7 @@
     }
     .swiper_bottom_Card img{
         width: 100%;
-        height: 160px; 
+        height: 180px; 
         overflow: hidden;
         object-fit: cover;
     }
@@ -145,15 +145,17 @@
     }
     .swiper_bottom_card_holder_top h2{
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 5px 0px 15px 0px;
     }
     .swiper_bottom_card_holder_top p{
         margin: 0px;
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 500;
     }
     .swiper_bottom_card_holder a {
         font-size: 15px;
+        font-weight: 500;
     }
     .swiper_bottom_card_holder a i {
        font-size: 20px;
@@ -213,8 +215,7 @@
         width: auto;
         height: auto;
         font-size: 18px;
-        font-weight: bolder;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0px;
     }
     .first_line_text p:nth-child(2){    
@@ -223,13 +224,14 @@
     }
     .grey_text{
         height: auto;
-        font-size: 18px;
-        font-weight: 400;
-        margin: 10px 0px;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0px 15px 0px;
     }
     .second_line_text{
         width: 100%;
         height: auto;
+        margin-bottom: 22px;
     }
     .second_line_text div{
         width: auto;
@@ -240,31 +242,31 @@
         font-size: 16px;
     }
     .second_line_text div h5{
-        font-size: 16px;
+        font-size: 19px;
         font-weight: 600;
     }
     .Line_holder span{
-        font-size: 16px;
+       font-size: 16px;
     }
     .Data_numbers_box{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 60px 40px;
-        row-gap: 10px;
+        padding: 50px 40px;
+        row-gap: 17px;
     }
     .numbers{
         width: 80%;
         height: auto;
     }
     .numbers h3{
-        font-size: 32px;
-        font-weight: 300;
+        font-size: 35px;
+        font-weight: 500;
         margin: 0px;
     }
     .numbers p{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
     }
     /* swiper 2 */
@@ -297,13 +299,13 @@
     }
     .IT_bilim_holder h2{
         width: 100%;
-        font-size: 22px;
-        font-weight: 400;
+        font-size: 24px;
+        font-weight: 500;
         line-height: 32px;
     }
     .IT_bilim_holder a{
         font-size: 24px;
-        font-weight: 300;
+        font-weight: 400;
     }
  
     .card {
@@ -326,7 +328,8 @@
         width: 100%;
         height: auto;
         min-height: 150px;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 26px;
         overflow: hidden; 
       }
     .Green_player{
@@ -352,9 +355,9 @@
         padding: 20px 0px 0px 0px;
     }
       .Map_container h2{
-        font-size: 22px;
-        font-weight: 400;
-        margin: 20px 20px;
+        font-size: 23px;
+        font-weight: 600;
+        margin: 35px 20px;
     }
         .Map_size{
             width: 100%;
@@ -362,6 +365,7 @@
         }
       .Footer{
         /* border: 2px solid red; */
+        padding: 30px 30px 0px 30px;
     }
       .footer_top{
         flex-direction: column;
@@ -377,12 +381,13 @@
       .f_white_text{
         margin: 0px 0px 20px 0px !important;
         font-size: 18px !important;
+        font-weight: 400;
     }
       .f_grey_box p{
-        font-size: 15px;
+        font-size: 16px;
     }
       .f_grey_box a{
-        font-size: 15px;
+        font-size: 16px;
     }
       .Icons_box{
         width: 90%;
@@ -415,15 +420,15 @@
 
     .Email_box div span a{
         color: #a4a4a4;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         transition: .2s ease-in-out;
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 100px;
+        width: 110px;
         height: 44px;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
     }
     .footer_right{
@@ -452,11 +457,11 @@
         align-items: flex-start;
     }
     .Footer_bottom span{
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 17px;
     }
     .Footer_bottom a{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -571,7 +576,6 @@
     }
     .swiper_btn_group{
         width: 100px;
-        margin-top: 10px;
     }
     .swiper_bottom_Card{
         min-width: 100%;
@@ -670,9 +674,8 @@
     .first_line_text p{
         width: auto;
         height: auto;
-        font-size: 18px;
-        font-weight: bolder;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 600;
         margin: 0px;
     }
     .first_line_text p:nth-child(2){    
@@ -681,28 +684,29 @@
     }
     .grey_text{
         height: 30px;
-        font-size: 18px;
-        font-weight: 400;
-        margin: 10px 0px;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0px 15px 0px;
     }
     .second_line_text{
         width: 100%;
         height: auto;
+        margin-bottom: 22px;
     }
     .second_line_text div{
         width: auto;
         margin: 0px 7px 0px 0px;
     }
     .second_line_text div p{
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
     }
     .second_line_text div h5{
-        font-size: 17px;
+        font-size: 19px;
         font-weight: 600;
     }
     .Line_holder span{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     
@@ -720,7 +724,7 @@
     }
     .numbers h3{
         font-size: 38px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0px;
     }
     .numbers p{
@@ -757,12 +761,12 @@
     .IT_bilim_holder h2{
         width: 100%;
         font-size: 27px;
-        font-weight: 400;
-        line-height: 30px;
+        font-weight: 500;
+        line-height: 35px;
     }
     .IT_bilim_holder a{
         font-size: 27px;
-        font-weight: 300;
+        font-weight: 400;
     }
  
     .card {
@@ -810,8 +814,8 @@
     }
       .Map_container h2{
         font-size: 23px;
-        font-weight: 400;
-        margin: 30px 20px;
+        font-weight: 600;
+        margin: 35px 20px;
     }
         .Map_size{
             width: 100%;
@@ -819,6 +823,7 @@
         }
       .Footer{
         /* border: 2px solid red; */
+        padding: 30px 30px 0px 30px;
     }
       .footer_top{
         flex-direction: column;
@@ -834,12 +839,13 @@
     .f_white_text{
         margin: 0px 0px 20px 0px !important;
         font-size: 18px !important;
+        font-weight: 400;
     }
       .f_grey_box p{
-        font-size: 15px;
+        font-size: 16px;
     }
       .f_grey_box a{
-        font-size: 15px;
+        font-size: 16px;
     }
       .Icons_box{
         width: 90%;
@@ -867,7 +873,7 @@
     }
       .Email_box div span{
         width: 100%;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .Email_box div span a{
@@ -909,11 +915,11 @@
         align-items: flex-start;
     }
     .Footer_bottom span{
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 17px;
     }
     .Footer_bottom a{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -1078,18 +1084,17 @@
     .swiper_top{
         display: flex;
         height: auto;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
         margin-bottom: 10px;
     }
     .Projects_Swiper h2 {
         font-size: 30px;
         font-weight: 500;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
     }
     .swiper_btn_group{
-        width: 130px;
-        margin-top: 0px;
+        width: 100px;
+       margin: 0px;
     }
     
     
@@ -1189,7 +1194,7 @@
     }
     .first_line_text{
         width: 100%;
-        height: 90px;
+        height: 100px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -1198,9 +1203,9 @@
     .first_line_text p{
         width: auto;
         height: auto;
-        font-size: 18px;
+        font-size: 21px;
         font-weight: bolder;
-        font-weight: 400;
+        font-weight: 600;
         margin: 0px;
     }
     .first_line_text p:nth-child(2){    
@@ -1208,9 +1213,9 @@
         margin-left: 0px;
     }
     .grey_text{
-        height: 50px;
-        font-size: 18px;
-        font-weight: 400;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 500;
         margin: 5px 0px;
     }
     .second_line_text{
@@ -1222,11 +1227,11 @@
         margin: 0px 7px 10px 0px;
     }
     .second_line_text div p{
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
     }
     .second_line_text div h5{
-        font-size: 17px;
+        font-size: 19px;
         font-weight: 600;
     }
     .Line_holder span{
@@ -1239,7 +1244,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding: 60px 50px;
+        padding: 50px 50px;
         row-gap: 25px;
         column-gap: 10px;
     }
@@ -1249,7 +1254,7 @@
     }
     .numbers h3{
         font-size: 38px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0px;
     }
     .numbers p{
@@ -1287,12 +1292,12 @@
     .IT_bilim_holder h2{
         width: 50%;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 37px;
     }
     .IT_bilim_holder a{
         font-size: 30px;
-        font-weight: 300;
+        font-weight: 400;
     }
  
     .card {
@@ -1341,14 +1346,14 @@
     }
       .Map_container h2{
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 600;
         margin: 30px 20px;
     }
-        .Map_size{
-            width: 100%;
-            height: 400px;
-        }
-      .Footer{
+    .Map_size{
+        width: 100%;
+        height: 400px;
+    }
+    .Footer{
         /* border: 2px solid red; */
     }
       .footer_top{
@@ -1365,12 +1370,13 @@
     .f_white_text{
         margin: 0px 0px 20px 0px !important;
         font-size: 18px !important;
+        font-weight: 400;
     }
       .f_grey_box p{
-        font-size: 15px;
+        font-size: 16px;
     }
       .f_grey_box a{
-        font-size: 15px;
+        font-size: 16px;
     }
       .Icons_box{
         width: 90%;
@@ -1407,7 +1413,7 @@
 
     .Email_box div span a{
         color: #a4a4a4;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         transition: .2s ease-in-out;
         margin: 0px 5px;
@@ -1436,7 +1442,7 @@
         row-gap: 0px;
     }
     .footer_right_child span{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         color: #a4a4a4;
         margin-bottom: 25px;
@@ -1450,12 +1456,12 @@
     }
     .Footer_bottom span{
         width: 47%;
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 0px;
         line-height: 25px;
     }
     .Footer_bottom a{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -1692,7 +1698,7 @@
     .first_line_text p{
         width: auto;
         height: auto;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         margin: 0px;
     }
@@ -1719,7 +1725,7 @@
         font-size: 17px;
     }
     .second_line_text div h5{
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 600;
     }
     .Line_holder span{
@@ -1784,7 +1790,7 @@
     .IT_bilim_holder h2{
         width: 50%;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 38px;
     }
     .IT_bilim_holder a{
@@ -2219,7 +2225,7 @@
     .first_line_text p{
         width: auto;
         height: auto;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         margin: 0px;
     }
@@ -2246,7 +2252,7 @@
         font-size: 17px;
     }
     .second_line_text div h5{
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 600;
     }
     .Line_holder span{
@@ -2311,7 +2317,7 @@
     .IT_bilim_holder h2{
         width: 50%;
         font-size: 33px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 43px;
     }
     .IT_bilim_holder a{
@@ -2731,7 +2737,7 @@
     .first_line_text p{
         width: auto;
         height: auto;
-        font-size: 19px;
+        font-size: 20px;
         font-weight: 500;
         margin: 0px;
     }
@@ -2829,7 +2835,7 @@
     .IT_bilim_holder h2{
         width: 40%;
         font-size: 37px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 45px;
     }
     .IT_bilim_holder a{

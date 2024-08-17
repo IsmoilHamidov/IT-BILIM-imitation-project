@@ -109,7 +109,7 @@ function Introduction() {
       <div className="Carsuel_box">
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-interval="610">
 
-        <div className="language-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="language-container" style={{zIndex:"1"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <span className="language_text">
               {currentLanguageText}
               <img src={down_arrow} alt="img" />

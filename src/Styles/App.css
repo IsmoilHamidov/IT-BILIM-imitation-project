@@ -80,7 +80,7 @@ html{
     cursor: pointer;
     border: none;
     transition: .2s ease-in-out;
-    box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.447);
+    box-shadow: -1px 1px 4px 1px rgba(0, 0, 0, 0.447);
 }
 .text-container:hover .language-button {
     opacity: 1; 
