@@ -543,13 +543,13 @@
         padding: 40px 20px;
     }
     .info_Project_box h2{
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 500;
     }
 
     .info_Project_box div p{
         width: 100%;
-        font-size: 15px; 
+        font-size: 16px; 
         font-weight: 400;
         line-height: 23px;
     }
@@ -675,7 +675,7 @@
         width: auto;
         height: auto;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
         margin: 0px;
     }
     .first_line_text p:nth-child(2){    
@@ -884,7 +884,7 @@
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 100px;
+        width: 110px;
         height: 45px;
         font-size: 16px;
         font-weight: 500;
@@ -1125,7 +1125,7 @@
     }
     .swiper_bottom_card_holder_top h2{
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 5px 0px 20px 0px;
     }
     .swiper_bottom_card_holder_top p{
@@ -1203,9 +1203,9 @@
     .first_line_text p{
         width: auto;
         height: auto;
-        font-size: 21px;
+        font-size: 20px;
         font-weight: bolder;
-        font-weight: 600;
+        font-weight: 500;
         margin: 0px;
     }
     .first_line_text p:nth-child(2){    
@@ -1419,7 +1419,7 @@
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 100px;
+        width: 110px;
         height: 45px;
         font-size: 16px;
         font-weight: 500;
@@ -1650,7 +1650,7 @@
     }
     .swiper_bottom_card_holder_top h2{
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 5px 0px 20px 0px;
     }
     .swiper_bottom_card_holder_top p{
@@ -1708,17 +1708,17 @@
     }
     .grey_text{
         height: 40px;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         margin: 5px 0px;
     }
     .second_line_text{
         width: 100%;
-        height: 140px;
+        height: auto;
     }
     .second_line_text div{
         width: auto;
-        margin: 0px 7px 10px 0px;
+        margin: 0px 7px 0px 0px;
     }
     .second_line_text div p{
         font-weight: 400;
@@ -1751,8 +1751,8 @@
         height: auto;      
     }
     .numbers h3{
-        font-size: 38px;
-        font-weight: 400;
+        font-size: 40px;
+        font-weight: 500;
         margin: 0px;
     }
     .numbers p{
@@ -1913,7 +1913,7 @@
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 100px;
+        width: 110px;
         height: 45px;
         font-size: 16px;
         font-weight: 500;
@@ -2082,7 +2082,7 @@
         justify-content: space-between;
     }
     .info_Project_box h2{
-        font-size: 27px;
+        font-size: 28px;
         font-weight: 500;
     }
 
@@ -2112,7 +2112,7 @@
         margin-bottom: 10px;
     }
     .Projects_Swiper h2 {
-        font-size: 32px;
+        font-size: 33px;
         font-weight: 500;
         margin-bottom: 0px;
     }
@@ -2134,7 +2134,7 @@
     }
     .swiper_bottom_card_holder{
         width: 100%;
-        height:  40%; 
+        height:  44%; 
         display: grid;
         align-content: space-between;
         row-gap: 15px;
@@ -2148,7 +2148,7 @@
     }
     .swiper_bottom_card_holder_top h2{
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 5px 0px 20px 0px;
     }
     .swiper_bottom_card_holder_top p{
@@ -2235,7 +2235,7 @@
     }
     .grey_text{
         height: 50px;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         margin: 5px 0px;
     }
@@ -2252,7 +2252,7 @@
         font-size: 17px;
     }
     .second_line_text div h5{
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 600;
     }
     .Line_holder span{
@@ -2279,7 +2279,7 @@
     }
     .numbers h3{
         font-size: 47px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0px;
     }
     .numbers p{
@@ -2439,7 +2439,7 @@
         margin: 0px 5px;
     }
     .Email_box button{
-        width: 100px;
+        width: 110px;
         height: 45px;
         font-size: 16px;
         font-weight: 500;
@@ -2728,7 +2728,7 @@
     }
     .first_line_text{
         width: 100%;
-        height: 60px;
+        height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -2753,7 +2753,7 @@
     }
     .second_line_text{
         width: 100%;
-        height: 140px;
+        height: 120px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;   
@@ -2770,12 +2770,12 @@
         font-size: 18px;
     }
     .second_line_text div h5{
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 600;
     }
     .Line_holder span{
         height: 35px;
-        font-size: 16px;
+        font-size: 17px;
     }
     .Line_holder span i{
         font-size: 18px;
@@ -2797,7 +2797,7 @@
     }
     .numbers h3{
         font-size: 55px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0px;
     }
     .numbers p{

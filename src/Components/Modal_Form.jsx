@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
-
 function ModalForm() {
   const [t, i18n] = useTranslation("global");
   const [formData, setFormData] = useState({
@@ -15,20 +14,29 @@ function ModalForm() {
   const [errors, setErrors] = useState({});
   const [tooltipMessage, setTooltipMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
+  const [isCheckboxError, setIsCheckboxError] = useState(false);
 
   const handlePhoneChange = (e) => {
     const { value } = e.target;
+    let updatedPhone = '';
+
     if (!value.startsWith('+998 ')) {
-      setFormData({
-        ...formData,
-        phone: '+998 ' + value.replace('+998 ', ''),
-      });
+      updatedPhone = '+998 ' + value.replace('+998 ', '');
     } else {
       const numericPart = value.replace('+998 ', '').replace(/\D/g, '');
-      const limitedValue = '+998 ' + numericPart.slice(0, 9); 
-      setFormData({
-        ...formData,
-        phone: limitedValue,
+      updatedPhone = '+998 ' + numericPart.slice(0, 9);
+    }
+
+    setFormData({
+      ...formData,
+      phone: updatedPhone,
+    });
+
+    if (updatedPhone.length >= 14) { 
+      setErrors({
+        ...errors,
+        phone: '',
       });
     }
   };
@@ -49,6 +57,13 @@ function ModalForm() {
       ...formData,
       [id]: value,
     });
+
+    if (value.trim()) {
+      setErrors({
+        ...errors,
+        [id]: '',
+      });
+    }
   };
 
   const handleEmailChange = (event) => {
@@ -58,11 +73,23 @@ function ModalForm() {
       email: value,
     });
 
-    const isValid = validateEmail(value);
-    if (!isValid) {
-      setTooltipMessage(t('Modal_notifications.modal_email'));
+    if (value.trim() === '') {
+      setTooltipMessage(''); // Clear tooltip if email is empty
+      setErrors({
+        ...errors,
+        email: '',
+      });
     } else {
-      setTooltipMessage('');
+      const isValid = validateEmail(value);
+      if (isValid) {
+        setErrors({
+          ...errors,
+          email: '',
+        });
+        setTooltipMessage('');
+      } else {
+        setTooltipMessage(t('Modal_notifications.modal_email'));
+      }
     }
   };
 
@@ -78,15 +105,25 @@ function ModalForm() {
     }, 5000);
   };
 
+  const handleCheckboxChange = (e) => {
+    setIsChecked(e.target.checked);
+    if (e.target.checked) {
+      setIsCheckboxError(false);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = {};
-  
+
+    if (!isChecked) {
+      setIsCheckboxError(true);
+    }
 
     Object.keys(formData).forEach((key) => {
       if ((key === 'name' || key === 'phone' || key === 'organization') && !formData[key].trim()) {
         newErrors[key] = [t('Modal_notifications.modal_rule')]
-      }  
+      }
       if (key === 'phone' && formData.phone === '+998 ') {
         newErrors[key] = [t('Modal_notifications.modal_rule')]
       }
@@ -94,16 +131,15 @@ function ModalForm() {
         newErrors[key] = [t('Modal_notifications.modal_rule')]
       }
     });
-  
+
     setErrors(newErrors);
-  
-    if (Object.keys(newErrors).length === 0) {
-  
+
+    if (Object.keys(newErrors).length === 0 && isChecked) {
       try {
-        const telegramBotId = '6726738927:AAGIYuTh1DBQ2-1kSnnVtlFIlgZ3TcIAkus'; 
-        const chatId = '966230102'; 
+        const telegramBotId = '6726738927:AAGIYuTh1DBQ2-1kSnnVtlFIlgZ3TcIAkus';
+        const chatId = '966230102';
         const message = `*Title:* Xalqaro Test Markazi\n\n*👤  Ism:* ${formData.name.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*📞  Telefon:* ${formData.phone.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*📧  Email:* ${formData.email.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*🏢  Tashkilot:* ${formData.organization.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}\n\n*💬  Izoh:* ${formData.comment.replace(/[_*[\]()~\`>#+-=|{}.!]/g, '\\$&')}`;
-  
+
         const response = await fetch(`https://api.telegram.org/bot${telegramBotId}/sendMessage`, {
           method: 'POST',
           headers: {
@@ -115,7 +151,7 @@ function ModalForm() {
             parse_mode: 'MarkdownV2',
           }),
         });
-  
+
         if (response.ok) {
           launchToast();
           setFormData({
@@ -130,17 +166,12 @@ function ModalForm() {
         }
       } catch (error) {
         console.error('Error sending message:', error);
-        
       }
     }
   };
-  
-  
-  
 
   return (
     <form className="Modal_form" onSubmit={handleSubmit}>
- 
       <label htmlFor="name">{t("Modal_all.text2")}</label>
       <div className="input-wrapper">
         <input
@@ -204,13 +235,28 @@ function ModalForm() {
       </div>
 
       <div className="d-flex align-items-center my-2">
-        <input className="form-check-input me-3 my-0" type="checkbox" defaultChecked />
-        <span>
+        <input
+          className="form-check-input me-3 my-0"
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+        />
+        <span className={`${isCheckboxError ? 'text-danger' : ''}`}>
           {t("Modal_all.text7")}
-          <a href="https://it-bilim.uz/politika-konfidentsialnosti/" target="_blank" rel="noopener noreferrer" tabIndex="0">{t("Modal_all.text8")}</a>
+          <a
+            href="https://it-bilim.uz/politika-konfidentsialnosti/"
+            target="_blank"
+            rel="noopener noreferrer"
+            tabIndex="0"
+          >
+            {t("Modal_all.text8")}
+          </a>
         </span>
       </div>
-      <button className="btn grey transparent small" type="submit">{t("Modal_all.text9")}</button>
+
+      <button className="btn grey transparent small" type="submit">
+        {t("Modal_all.text9")}
+      </button>
     </form>
   );
 }
