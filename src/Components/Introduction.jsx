@@ -11,6 +11,7 @@ import Particles_Component from "./Particles";
 import { useTranslation } from "react-i18next";
 
 
+
 function Introduction() {
   // langauge changing function
   const [t, i18n] = useTranslation("global");
@@ -27,11 +28,15 @@ function Introduction() {
    // Determine the text based on the selected language
    const currentLanguageText = i18n.language === 'uz' ? 'UZ' : 'РУ';
    const hoverLanguageText = i18n.language === 'uz' ? 'РУ' : 'UZ';
- 
-  // Button hover function
-  const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => setIsHovered(true);
-  const handleMouseLeave = () => setIsHovered(false);
+   
+   // Button hover function
+   const [isHovered, setIsHovered] = useState(false);
+   const handleMouseEnter = () => setIsHovered(true);
+   const handleMouseLeave = () => setIsHovered(false);
+  
+    //  Offcanvas langauge selecting 
+    const selectedLanguageText = i18n.language === 'uz' ? 'UZ' : 'РУ';
+    const otherLanguageText = i18n.language === 'uz' ? 'РУ' : 'UZ';
 
 
 
@@ -182,6 +187,17 @@ function Introduction() {
                                   <img src={IT_bilim_logo} alt="Logo" className="canvas_img" />
                                   <i className="fa-solid fa-xmark text-white h-auto" data-bs-dismiss="offcanvas" aria-label="Close" style={{fontSize: "30px"}}></i>
                               </div>
+
+                              <button onClick={handleChangeLanguage} style={{ width:'90px', height:'30px', background: 'transparent', border: 'none', cursor: 'pointer'}}>
+                                    <span style={{ color: 'gray', fontSize:'18px'}}>
+                                      {selectedLanguageText}
+                                    </span>
+                                    <span style={{ color: 'white',  fontSize:'18px'}}>
+                                      {" | "}
+                                      {otherLanguageText}
+                                    </span>
+                                </button>
+
                               <div className="offcanvas-body">
                                   <div className="canvas_navs">
                                     <a  aria-current="page" href="#About_us">{t("navbar.text1")}</a>
