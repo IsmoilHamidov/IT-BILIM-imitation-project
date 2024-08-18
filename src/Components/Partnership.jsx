@@ -24,7 +24,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
 
-
 function Partnership() {
     const [t, i18n] = useTranslation("global");
     const images = [
@@ -39,7 +38,7 @@ function Partnership() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0,  // Setting autoplaySpeed to 0 for continuous movement
+        autoplaySpeed: 10,  // Set autoplaySpeed to a small value
         cssEase: "linear",
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -76,7 +75,7 @@ function Partnership() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0,  // Setting autoplaySpeed to 0 for continuous movement
+        autoplaySpeed: 10,  // Set autoplaySpeed to a small value
         cssEase: "linear",
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -106,6 +105,18 @@ function Partnership() {
             }
         ]
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            window.dispatchEvent(new Event('resize'));
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <div className="Projects_Swiper" id="Partners" style={{ backgroundColor: "#F3F3F3" }}>

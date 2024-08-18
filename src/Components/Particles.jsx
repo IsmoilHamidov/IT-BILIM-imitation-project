@@ -73,7 +73,7 @@ export default function Particles_Component() {
                   straight: false,
                 },
                 number: {
-                  value: 102,
+                  value: 104,
                   density: {
                     enable: true,
                     value_area: 140,

@@ -242,7 +242,7 @@
     },
 
     "Videos":{
-        "video1":"/Assets/videos/IT-Bilim_ru.mp4",
+        "video1":"../Assets/videos/IT_Bilim_ru.mp4",
         "video2":"/Assets/videos/aboutus_ru.mp4"
     }
 }
