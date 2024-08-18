@@ -76,16 +76,24 @@ function Footer() {
               </div>
               <div className="Icons_box">
                 <div>
-                  <img src="https://it-bilim.uz/themes/assets/images/icons/social/tg.svg" alt="telegram" />
+                  <a href="https://t.me/itbilimmarkazi">
+                    <img src="https://it-bilim.uz/themes/assets/images/icons/social/tg.svg" alt="telegram" />
+                  </a>
                 </div>
                 <div>
-                  <img src="https://it-bilim.uz/themes/assets/images/icons/social/inst.svg" alt="instagram" />
+                  <a href="https://www.instagram.com/itbilim.uz/">
+                    <img src="https://it-bilim.uz/themes/assets/images/icons/social/inst.svg" alt="instagram" />
+                  </a>
                 </div>
                 <div>
-                  <img src="https://it-bilim.uz/themes/assets/images/icons/social/facebook.svg" alt="facebook" />
+                  <a href="https://m.facebook.com/p/IT-BILIM-100088991186352/?wtsid=rdr_0e3oqWTrPkmqbtlXI">
+                    <img src="https://it-bilim.uz/themes/assets/images/icons/social/facebook.svg" alt="facebook" />
+                  </a>
                 </div>
                 <div>
-                  <img src="https://it-bilim.uz/themes/assets/images/icons/social/youtube.svg" alt="youtube" />
+                  <a href="https://m.youtube.com/channel/UCk4gAV3wIYj6yaN-SNsxw8Q">
+                    <img src="https://it-bilim.uz/themes/assets/images/icons/social/youtube.svg" alt="youtube" />
+                  </a>
                 </div>
               </div>
               <form className="Email_box" onSubmit={handleSubmit}>
