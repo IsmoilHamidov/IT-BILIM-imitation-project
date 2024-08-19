@@ -7,10 +7,16 @@ import russian_language from "./Translation/ru/russian_language.json";
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
+const setDefaultLanguage = () => {
+  const savedLanguage = localStorage.getItem("language");
+  const defaultLanguage = savedLanguage ? savedLanguage : "uz";
+  i18next.changeLanguage(defaultLanguage);
+};
+
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: localStorage.getItem("language") || "uz", // Persist the selected language
-  fallbackLng: 'uz', // Fallback to Uzbek if translation is missing
+  lng: 'uz', // Default language
+  fallbackLng: 'uz',
   resources: {
     uz: {
       global: uzbek_language
@@ -19,8 +25,11 @@ i18next.init({
       global: russian_language
     },
   },
-  debug: true, // Enable this for troubleshooting if needed
+  debug: true,
 });
+
+// Set language after i18next is initialized
+setDefaultLanguage();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
